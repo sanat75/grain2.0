@@ -86,8 +86,8 @@ const Operational = () => {
         </div>
         <div className="absolute -z-20 w-[60%] h-[60%] rounded-full green__gradient bottom-40" />
       </div>
-      <div className="w-full h-full flex  justify-end md:w-1/2">
-        <div className="font-bold pt-10 text-center md:text-end space-y-5 w-96">
+      <div className="w-full h-full flex justify-center  md:justify-end md:w-1/2">
+        <div className="font-bold pt-10 text-center md:text-end space-y-5 w-80">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold">
             <h1>
               <span className="bg-clip-text bg-gradient-to-r text-primary">

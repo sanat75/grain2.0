@@ -39,7 +39,7 @@ const Hero = () => {
             alt="analytics gif"
             width={100}
             height={100}
-            className="w-96 h-96 md:w-full md:h-full  "
+            className="w-80 h-80 md:w-full md:h-full  "
           />
           <div className="absolute -z-20 w-[60%] h-[60%] rounded-full green__gradient bottom-40" />
         </div>

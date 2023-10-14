@@ -14,7 +14,7 @@ const Customer = () => {
               </span>
             </h1>
           </div>
-          <div className="w-96 text-zinc-600 text-xs md:text-sm font-normal">
+          <div className="w-80 text-zinc-600 text-xs md:text-sm font-normal">
             Customer analytics involves collecting and analyzing data to
             understand customer behavior and preferences. It helps businesses
             make data-driven decisions, improve marketing, and enhance customer
