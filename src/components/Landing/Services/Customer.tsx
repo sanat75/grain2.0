@@ -24,8 +24,8 @@ const Customer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full  md:w-1/2">
-        <div className="grid grid-cols-1 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2 lg:grid-cols-2 dark:text-gray-400">
+      <div className="w-full h-full  md:w-1/2 relative">
+        <div className="grid grid-cols-1 gap-8 text-gray-500 sm:gap-12 md:grid-cols-2 lg:grid-cols-2 dark:text-gray-400 ">
           <Card>
             <CardHeader>
               <div className="w-full flex justify-center">
@@ -40,7 +40,8 @@ const Customer = () => {
             </CardHeader>
             <CardContent>
               Customer churn refers to the rate at which customers stop using a
-              company's products or services. It is a key metric for businesses
+              company&apos;s products or services. It is a key metric for
+              businesses
             </CardContent>
           </Card>
           <Card>
@@ -97,10 +98,12 @@ const Customer = () => {
             </CardHeader>
             <CardContent>
               Customer winback is a strategic process to re-engage former
-              customers who have stopped using a company's products or services,
+              customers who have stopped using a company&apos;s products or
+              services,
             </CardContent>
           </Card>
         </div>
+        <div className="absolute -z-20 w-[60%] h-[60%] rounded-full green__gradient bottom-40" />
       </div>
     </div>
   );

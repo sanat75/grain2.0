@@ -32,14 +32,14 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full  md:w-1/2">
+      <div className="w-full h-full  md:w-1/2 relative">
         <div className="font-bold items-center md:pt-32 flex justify-center space-y-5">
           <Image
             src={"/assets/images/Metrics.svg"}
             alt="analytics gif"
             width={100}
             height={100}
-            className="w-96 h-96 md:w-full md:h-full relative "
+            className="w-96 h-96 md:w-full md:h-full  "
           />
           <div className="absolute -z-20 w-[60%] h-[60%] rounded-full green__gradient bottom-40" />
         </div>
