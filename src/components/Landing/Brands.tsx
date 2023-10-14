@@ -21,7 +21,7 @@ const Brands = () => {
           </Link>
           <Link href="#" className="flex justify-center items-center">
             <Image
-              src={"/assets/images/grain-client-logos/bell.svg"}
+              src={"/assets/images/grain-client-logos/Bell.svg"}
               alt="aldo"
               width={150}
               height={150}
