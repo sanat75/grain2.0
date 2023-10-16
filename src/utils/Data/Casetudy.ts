@@ -41,4 +41,18 @@ export const Casetudy = [
       "Designed an advanced analytics solution focused on identifying new sales and booking opportunities for Allstream’s B2B Division. The solution provides direct visibility into High Value and High-Sales volume prospect businesses, allowing Zayo to develop an advanced customer- segmentation based marketing and pricing strategies.",
     image: "/assets/images/grain-client-logos/zayo.svg",
   },
+  {
+    id: 7,
+    title: "Ecommerce- Homesquare.com",
+    content:
+      "Homesquare.com specializes in providing ecommerce and logistics solutions to manufacturers, retailers and end-consumers. Successfully deployed a team of data scientists and software engineers to develop a machine learning infrastructure to optimize pricing for single and multi-seller products on Amazon, Walmart and other website channels.",
+    image: "/assets/images/grain-client-logos/homesquare.svg",
+  },
+  {
+    id: 8,
+    title: "Metals & Mining- Vale Canada",
+    image: "/assets/images/grain-client-logos/vale.svg",
+    content:
+      "Developed a plant-wide dynamic simulation and optimization software for one of the largest metals mining companies. The software allows production engineers working at the processing plant to operate the facility at the prescribed optimal sets points of controllers and ensures that the operating conditions and capacity constraints are met.",
+  },
 ];
