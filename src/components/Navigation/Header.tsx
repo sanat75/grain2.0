@@ -10,7 +10,7 @@ const Header = () => {
         <Wrapper>
           <div className="flex h-14 items-center justify-between border-b ">
             <Link href="/" className="flex z-40 font-semibold">
-              <span>GRAIN.</span>
+              <span>GRAIN ANALYTICS.</span>
             </Link>
 
             <div className="hidden items-center space-x-2 sm:flex">

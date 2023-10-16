@@ -28,8 +28,11 @@ const Brands = () => {
     }
   }, []);
   return (
-    <main className="relative flex flex-col justify-center bg-secondary overflow-hidden mt-10 ">
-      <div className="w-full max-w-5xl mx-auto px-4 md:px-2 py-24">
+    <main className="relative flex flex-col justify-center bg-secondary overflow-hidden mt-10">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl space-y-5 font-extrabold text-center text-primary pt-20">
+        Trusted by Leading Brands:
+      </h1>
+      <div className="w-full max-w-5xl mx-auto px-4 md:px-2 py-20">
         <div className="text-center">
           <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
             <ul
