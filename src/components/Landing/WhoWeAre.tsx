@@ -6,7 +6,7 @@ import Link from "next/link";
 const WhoWeAre = () => {
   return (
     <div className="h-full w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-      <div className="w-full h-full  md:w-1/2">
+      <div className="w-full h-full md:w-1/2">
         <div className="font-bold pt-10 md:pt-32 text-center md:text-start space-y-5 ">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold">
             <h1>

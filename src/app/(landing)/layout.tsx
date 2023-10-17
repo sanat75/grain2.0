@@ -3,6 +3,7 @@ import Brands from "@/components/Landing/Brands";
 import CaseStudy from "@/components/Landing/CaseStudy";
 import Customer from "@/components/Landing/Services/Customer";
 import Operational from "@/components/Landing/Services/Operational";
+import WhatWeDo from "@/components/Landing/WhatWeDo";
 import WhoWeAre from "@/components/Landing/WhoWeAre";
 
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
@@ -12,11 +13,15 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
 
       <Brands />
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
-        Who We Are as a Company:
+        Who We Are
       </h1>
       <Wrapper>
         <WhoWeAre />
       </Wrapper>
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
+        What We Do
+      </h1>
+      <WhatWeDo />
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
         Our DNA
       </h1>
