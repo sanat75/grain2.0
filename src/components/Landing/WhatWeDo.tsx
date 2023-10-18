@@ -34,6 +34,9 @@ const WhatWeDo = () => {
               licensing structure and renewals.
             </li>
           </ol>
+          <Button variant={"outline"} className="w-44 mt-20 text-white rounded">
+            LEARN MORE
+          </Button>
         </Card>
         <Card className="w-full md:w-1/2 h-[300px] md:min-h-[650px] rounded-none border-none flex justify-center items-center">
           <div className="w-full h-full relative">
@@ -92,6 +95,9 @@ const WhatWeDo = () => {
               licensing structure and renewals.
             </li>
           </ol>
+          <Button variant={"outline"} className="w-44 mt-20 text-white rounded">
+            LEARN MORE
+          </Button>
         </Card>
       </div>
     </>

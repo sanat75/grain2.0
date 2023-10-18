@@ -1,5 +1,13 @@
 export const Casetudy = [
   {
+    id: 0,
+    title: "CLIENTS STORIES",
+    desc: "Designed an advanced analytics solution focused on identifying new sales.",
+    content:
+      "Designed an advanced analytics solution focused on identifying new sales and booking opportunities for Bells B2B Division. The solution provides direct visibility into High Value and High-Sales volume prospect businesses, allowing Bell to develop an advanced customer-segmentation based marketing and pricing strategies.",
+    image: "/assets/images/grain-client-logos/Bell.svg",
+  },
+  {
     id: 1,
     title: "Telecommunication- Bell Canada",
     desc: "Designed an advanced analytics solution focused on identifying new sales.",
@@ -31,13 +39,13 @@ export const Casetudy = [
       "Currently leading a digital transformation project enabling ALDO to move its Point of Sales, Inventory and Transaction data from traditional environments such as SAP, Oracle and MicroStrategy to Cloud (Amazon Web Services). The team has identified 100+ diverse data sources that have to be migrated to the target cloud environment.",
     image: "/assets/images/grain-client-logos/aldo.svg",
   },
-  // {
-  //   id: 5,
-  //   title: "Real Estate- Brookfield",
-  //   content:
-  //     "Developed an advanced analytics solution to accurately predict work order cost quotes for the Facilities Management Group using machine learning models such as Neural Networks and Gradient Boosted Trees, leading to $500K in annual operational cost savings.",
-  //   image: "/assets/images/grain-client-logos/Brookfield.svg",
-  // },
+  {
+    id: 5,
+    title: "Real Estate- Brookfield",
+    content:
+      "Developed an advanced analytics solution to accurately predict work order cost quotes for the Facilities Management Group using machine learning models such as Neural Networks and Gradient Boosted Trees, leading to $500K in annual operational cost savings.",
+    image: "/assets/images/grain-client-logos/Brookfield.svg",
+  },
   // {
   //   id: 6,
   //   title: "Telecommunication – Zayo & Allstream",

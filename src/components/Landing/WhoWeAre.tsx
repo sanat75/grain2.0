@@ -25,7 +25,7 @@ const WhoWeAre = () => {
             match you with the right people, processes, and tools to get there –
             coaching you the entire way.
           </div>
-          <div className="w-full flex md:justify-start justify-end pt-4">
+          <div className="w-full flex  pt-4">
             <Button className="text-white flex gap-2 items-center hover:scale-105 transition-all">
               <span>Work With us</span>
               <span>
