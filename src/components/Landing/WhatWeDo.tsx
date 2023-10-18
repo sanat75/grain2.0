@@ -49,7 +49,7 @@ const WhatWeDo = () => {
               height={100}
               className="w-80 h-80 md:w-full md:h-full"
             />
-            <div className="absolute -z-20 w-[60%] h-[60%] rounded-full green__gradient bottom-40" />
+            {/* <div className="absolute -z-20 w-[60%] h-[60%] rounded-full green__gradient bottom-40" /> */}
           </div>
         </div>
       </Card>
