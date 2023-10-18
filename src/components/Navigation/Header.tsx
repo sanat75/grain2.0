@@ -31,7 +31,7 @@ const Header = () => {
 
   // Define the header classes based on the scroll state
   const headerClasses = `fixed h-14 inset-x-0 top-0 z-30 w-full transition-all ${
-    scrolled ? "bg-primary text-white" : "text-white"
+    scrolled ? "bg-gradient-emerald text-white" : "text-white"
   }`;
 
   return (

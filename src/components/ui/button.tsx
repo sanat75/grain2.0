@@ -10,6 +10,7 @@ const buttonVariants = cva(
     variants: {
       variant: {
         premium: "text-white bg-gradient-to-r from-red-500 to-orange-500",
+        primary: "bg-gradient-emerald shadow text-white",
         default:
           "bg-primary text-primary-foreground shadow hover:bg-primary/90 text-white",
         destructive:

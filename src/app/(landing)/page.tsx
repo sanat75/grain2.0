@@ -1,5 +1,6 @@
 import Wrapper from "@/components/Container/Wrapper";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -24,9 +25,7 @@ export default function Home() {
             <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold text-white">
               <h1>
                 Revitalizing Data Insights with{" "}
-                <span className="bg-clip-text bg-gradient-to-r text-primary">
-                  Innovation.
-                </span>{" "}
+                <span className="text-primary">Innovation.</span>{" "}
               </h1>
             </div>
             <div className="text-sm md:text-xl font-light text-zinc-300">
@@ -38,8 +37,14 @@ export default function Home() {
             </div>
             <div>
               <Link href={"/contact"}>
-                <Button className="md:text-lg p-4 md:p-6  font-semibold">
-                  Contact Us
+                <Button
+                  variant={"primary"}
+                  className="md:text-lg p-4 md:p-6  font-semibold flex gap-2 hover:scale-105 transition-all"
+                >
+                  <span>Contact Us</span>
+                  <span>
+                    <ArrowRight />
+                  </span>
                 </Button>
               </Link>
             </div>

@@ -1,9 +1,11 @@
 import React from "react";
 import Wrapper from "../Container/Wrapper";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 
 const WhoWeAre = () => {
   return (
-    <div className="min-h-[350px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4 bg-gradient-to-r from-green-500 to-green-700">
+    <div className="min-h-[350px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4 bg-gradient-emerald">
       <Wrapper>
         <div className="font-bold  text-center md:text-start  ">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-extrabold text-white">
@@ -21,6 +23,17 @@ const WhoWeAre = () => {
             simple formula to help you win: define the goal, find the gaps, then
             match you with the right people, processes, and tools to get there –
             coaching you the entire way.
+          </div>
+          <div className="w-full flex justify-end pt-4">
+            <Button
+              variant={"outline"}
+              className="text-white flex gap-2 items-center hover:scale-105 transition-all"
+            >
+              <span>Work With us</span>
+              <span>
+                <ArrowRight />
+              </span>
+            </Button>
           </div>
         </div>
       </Wrapper>

@@ -16,6 +16,13 @@ module.exports = {
       },
     },
     extend: {
+      textColor: {
+        "gradient-emerald": "linear-gradient(90deg, #10B981, #065F46)",
+      },
+      backgroundImage: {
+        "gradient-emerald": "linear-gradient(to right, #10B981, #065F46)",
+      },
+
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

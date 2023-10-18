@@ -16,11 +16,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
       </div>
 
       <WhoWeAre />
-
       <Brands />
-      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
-        Who We Are
-      </h1>
 
       <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
         What We Do
