@@ -3,7 +3,7 @@ import Wrapper from "../Container/Wrapper";
 
 const WhoWeAre = () => {
   return (
-    <div className="min-h-[350px] w-full flex flex-col justify-center md:flex-row md:justify-between px-4 bg-gradient-to-r from-green-500 to-green-700">
+    <div className="min-h-[350px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4 bg-gradient-to-r from-green-500 to-green-700">
       <Wrapper>
         <div className="font-bold  text-center md:text-start  ">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-extrabold text-white">
