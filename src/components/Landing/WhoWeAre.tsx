@@ -2,12 +2,13 @@ import React from "react";
 import Wrapper from "../Container/Wrapper";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 const WhoWeAre = () => {
   return (
-    <div className="min-h-[350px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4 bg-gradient-emerald">
-      <Wrapper>
-        <div className="font-bold  text-center md:text-start  ">
+    <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4 bg-gradient-emerald">
+      <div className="w-full max-w-screen-xl px-2.5 md:px-12 flex justify-between items-center">
+        <div className="font-bold  text-center md:text-start md:w-1/2">
           <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-extrabold text-white">
             <h1>
               WE TRANSFORM{" "}
@@ -36,7 +37,15 @@ const WhoWeAre = () => {
             </Button>
           </div>
         </div>
-      </Wrapper>
+        <div className="hidden md:flex md:w-1/2 h-full justify-end items-center">
+          <Image
+            alt="growth image"
+            src={"/assets/images/growth.svg"}
+            width={500}
+            height={500}
+          />
+        </div>
+      </div>
     </div>
   );
 };

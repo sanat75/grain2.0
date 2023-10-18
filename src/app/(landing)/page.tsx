@@ -17,7 +17,6 @@ export default function Home() {
             height={1080}
             className="object-cover w-full h-full"
           />
-          <div className="absolute inset-0 bg-black opacity-20 backdrop-filter backdrop-blur-sm" />
         </div>
 
         <Wrapper className="absolute">
