@@ -29,7 +29,7 @@ export const Casetudy = [
     desc: "Developed an automated machine learning infrastructure to monitor employee sales.",
     content:
       "Developed an automated machine learning infrastructure to monitor employee sales and performance metrics across Canadian Personal Banking to identify outlier employees engaged in non-customer friendly business practices. The project has a projected value of $10M+ in operational and brand reputation risk savings.",
-    image: "/assets/images/grain-client-logos/tdbank.png",
+    image: "/assets/images/grain-client-logos/TDbank.svg",
   },
   {
     id: 4,
@@ -42,6 +42,7 @@ export const Casetudy = [
   {
     id: 5,
     title: "Real Estate- Brookfield",
+    desc: "Developed an advanced analytics solution to accurately predict work order cost quotes.",
     content:
       "Developed an advanced analytics solution to accurately predict work order cost quotes for the Facilities Management Group using machine learning models such as Neural Networks and Gradient Boosted Trees, leading to $500K in annual operational cost savings.",
     image: "/assets/images/grain-client-logos/Brookfield.svg",
