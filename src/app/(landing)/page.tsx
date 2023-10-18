@@ -11,7 +11,7 @@ export default function Home() {
         <div className="relative w-full h-full">
           <Image
             alt="analytics background image"
-            src={"/assets/images/space_analytics.jpg"}
+            src={"/assets/Hero/spaceanalytics.png"}
             width={1920}
             height={1080}
             className="object-cover w-full h-full"
