@@ -75,3 +75,13 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll-bar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
