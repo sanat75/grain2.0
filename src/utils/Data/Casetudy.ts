@@ -20,7 +20,7 @@ export const Casetudy = [
     title: "Retail- Canadian Tire Corporation",
     desc: "Deployed an off-the-shelf demand planning  suite.",
     content:
-      "Deployed an off-the-shelf demand planning  suite. Our solution helped reduce forecast inaccuracies to less than 5% for 95% of the stores resulting in improved labor plans. The solution deployed helps identify detailed root causes for stores with high forecast errors which then enables corrective actions to be taken in the form of data set up or parameter changes in the Demand Planning solution.",
+      "Deployed an off-the-shelf demand planning  suite. Our solution helped reduce forecast inaccuracies to less than 5% for 95% of the stores resulting in improved labor plans. The solution deployed helps identify detailed root causes for stores with high forecast errors which then enables corrective actions.",
     image: "/assets/images/grain-client-logos/canadian-tire.svg",
   },
   {

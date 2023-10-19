@@ -1,120 +1,103 @@
+"use client";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 
-const Brands = () => {
+interface BrandsProps {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  className: string;
+}
+
+const Brands: React.FC = () => {
+  const brands = [
+    "/assets/images/grain-client-logos/aldo.svg",
+    "/assets/images/grain-client-logos/Bell.svg",
+    "/assets/images/grain-client-logos/zayo.svg",
+    "/assets/images/grain-client-logos/Brookfield.svg",
+    "/assets/images/grain-client-logos/canadian-tire.svg",
+    "/assets/images/grain-client-logos/Deloitte.svg",
+    "/assets/images/grain-client-logos/homesquare.svg",
+    "/assets/images/grain-client-logos/Queens.svg",
+    "/assets/images/grain-client-logos/SportChek.png",
+    "/assets/images/grain-client-logos/TDbank.svg",
+    "/assets/images/grain-client-logos/toronto.png",
+    "/assets/images/grain-client-logos/vale.svg",
+  ];
+  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", () => {
+        if (
+          scrollContainer.scrollLeft + scrollContainer.clientWidth ===
+          scrollContainer.scrollWidth
+        ) {
+          const firstBrand = brands.shift();
+          brands.push(firstBrand || "");
+
+          scrollContainer.scrollLeft = 0;
+        }
+      });
+    }
+
+    return () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener("scroll", () => {
+          if (
+            scrollContainer.scrollLeft + scrollContainer.clientWidth ===
+            scrollContainer.scrollWidth
+          ) {
+            const firstBrand = brands.shift();
+            brands.push(firstBrand || ""); // add null check here
+
+            scrollContainer.scrollLeft = 0;
+          }
+        });
+      }
+    };
+  }, [brands]);
+
   return (
-    <main className="flex overflow-x-scroll  hide-scroll-bar">
-      <div className="flex flex-nowrap ">
-        <div className="w-64 h-64 flex items-center justify-center  hover:bg-secondary hover:shadow-2xl transition-all border">
-          <Image
-            src={"/assets/images/grain-client-logos/aldo.svg"}
-            alt="aldo"
-            width={"100"}
-            height={"100"}
-            className=" transition ease-in-out "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/Bell.svg"}
-            alt="aldo"
+    <main
+      className="flex overflow-x-scroll hide-scroll-bar"
+      ref={scrollContainerRef}
+    >
+      <div className="flex flex-nowrap">
+        {brands.map((src, index) => (
+          <BrandItem
+            key={index}
+            src={src}
+            alt={`brand-${index}`}
             width={150}
             height={150}
-            className="  transition ease-in-out  "
+            className="transition ease-in-out"
           />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/zayo.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/Brookfield.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out  "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/canadian-tire.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out  "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/Deloitte.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out  "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/homesquare.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out  "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/Queens.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="   transition ease-in-out  p-2 "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/SportChek.png"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="   transition ease-in-out  p-2 "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/TDbank.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out   "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/toronto.png"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="   transition ease-in-out  p-2 "
-          />
-        </div>
-        <div className="w-64 flex items-center justify-center   h-64 hover:bg-secondary hover:shadow-2xl transition-all border ">
-          <Image
-            src={"/assets/images/grain-client-logos/vale.svg"}
-            alt="aldo"
-            width={150}
-            height={150}
-            className="  transition ease-in-out  "
-          />
-        </div>
+        ))}
       </div>
     </main>
   );
 };
+
+const BrandItem: React.FC<BrandsProps> = ({
+  src,
+  alt,
+  width,
+  height,
+  className,
+}) => (
+  <div className="w-48 h-48 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-white bg-secondary">
+    <Image
+      src={src}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+    />
+  </div>
+);
 
 export default Brands;
