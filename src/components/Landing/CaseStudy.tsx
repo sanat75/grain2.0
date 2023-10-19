@@ -26,7 +26,7 @@ const CaseStudy = () => {
             <>
               <Card
                 key={item.id}
-                className="h-96 flex flex-col gap-y-4 items-center justify-center rounded-none px-4 py-4 md:px-4 md:py-4 hover:bg-secondary  transition duration-500 ease-in-out "
+                className="h-96 flex flex-col gap-y-4 items-center justify-center rounded-none px-4 py-4 md:px-4 md:py-4 hover:bg-secondary  transition duration-500 ease-in-out border-none"
               >
                 <CardTitle className="text-primary text-center font-bold text-3xl">
                   {item.title}
@@ -34,7 +34,7 @@ const CaseStudy = () => {
               </Card>
             </>
           ) : (
-            <Card className="w-full h-96 bg-transparent  group perspective">
+            <Card className="w-full h-96 bg-transparent  group perspective border-none">
               <div
                 className={`relative preserve-3d  w-full h-full duration-1000 ${
                   flippedCardId === item.id ? "my-rotate-y-180" : ""

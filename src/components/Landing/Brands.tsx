@@ -33,16 +33,22 @@ const Brands: React.FC = () => {
     const scrollContainer = scrollContainerRef.current;
 
     if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", () => {
-        if (
-          scrollContainer.scrollLeft + scrollContainer.clientWidth ===
-          scrollContainer.scrollWidth
-        ) {
-          const firstBrand = brands.shift();
-          brands.push(firstBrand || "");
+      let startX: number | null = null;
 
-          scrollContainer.scrollLeft = 0;
+      scrollContainer.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+      });
+
+      scrollContainer.addEventListener("touchmove", (e) => {
+        if (startX !== null) {
+          const diffX = startX - e.touches[0].clientX;
+          scrollContainer.scrollLeft += diffX;
+          startX = e.touches[0].clientX;
         }
+      });
+
+      scrollContainer.addEventListener("touchend", () => {
+        startX = null;
       });
     }
 
