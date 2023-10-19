@@ -66,7 +66,7 @@ const CaseStudy = () => {
                   className="absolute my-rotate-y-180 backface-hidden w-full h-full bg-secondary overflow-hidden"
                   onClick={() => handleCardClick(item.id)}
                 >
-                  <div className="text-center flex flex-col items-center py-4 md:py-14 h-full text-gray-800 px-2 md:gap-4 gap-1 ">
+                  <div className="text-center flex flex-col items-center justify-center py-4 md:py-14 h-full text-gray-800 px-2 md:gap-4 gap-1 ">
                     <h1 className="text-xl md:text-3xl text-primary font-semibold">
                       {item.title}
                     </h1>

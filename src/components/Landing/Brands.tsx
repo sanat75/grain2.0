@@ -72,8 +72,8 @@ const Brands: React.FC = () => {
             key={index}
             src={src}
             alt={`brand-${index}`}
-            width={150}
-            height={150}
+            width={100}
+            height={100}
             className="transition ease-in-out"
           />
         ))}
