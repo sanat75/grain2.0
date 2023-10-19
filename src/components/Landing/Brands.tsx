@@ -12,6 +12,8 @@ interface BrandsProps {
 
 const Brands: React.FC = () => {
   const brands = [
+    "/assets/images/grain-client-logos/KPMG.svg",
+    "/assets/images/grain-client-logos/Allstream.svg",
     "/assets/images/grain-client-logos/aldo.svg",
     "/assets/images/grain-client-logos/Bell.svg",
     "/assets/images/grain-client-logos/zayo.svg",
