@@ -34,7 +34,7 @@ const CaseStudy = () => {
               </Card>
             </>
           ) : (
-            <Card className="w-full h-96 bg-transparent cursor-pointer group perspective">
+            <Card className="w-full h-96 bg-transparent  group perspective">
               <div
                 className={`relative preserve-3d  w-full h-full duration-1000 ${
                   flippedCardId === item.id ? "my-rotate-y-180" : ""
