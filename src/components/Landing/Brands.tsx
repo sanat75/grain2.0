@@ -28,27 +28,39 @@ const Brands: React.FC = () => {
     "/assets/images/grain-client-logos/vale.svg",
   ];
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  // if user hit last brand, add brand array to the end of the array and if you try to scroll right side add array in the front of the array
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+    if (scrollContainer) {
+      scrollContainer.addEventListener("scroll", () => {
+        if (
+          scrollContainer.scrollLeft + scrollContainer.clientWidth >=
+          scrollContainer.scrollWidth
+        ) {
+          scrollContainer.scrollLeft = 0;
+        }
+        if (scrollContainer.scrollLeft <= 0) {
+          scrollContainer.scrollLeft =
+            scrollContainer.scrollWidth - scrollContainer.clientWidth;
+        }
+      });
+    }
+  }, []);
 
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
 
     if (scrollContainer) {
-      let startX: number | null = null;
+      scrollContainer.addEventListener("scroll", () => {
+        if (
+          scrollContainer.scrollLeft + scrollContainer.clientWidth ===
+          scrollContainer.scrollWidth
+        ) {
+          const firstBrand = brands.shift();
+          brands.push(firstBrand || "");
 
-      scrollContainer.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-      });
-
-      scrollContainer.addEventListener("touchmove", (e) => {
-        if (startX !== null) {
-          const diffX = startX - e.touches[0].clientX;
-          scrollContainer.scrollLeft += diffX;
-          startX = e.touches[0].clientX;
+          scrollContainer.scrollLeft = 0;
         }
-      });
-
-      scrollContainer.addEventListener("touchend", () => {
-        startX = null;
       });
     }
 
@@ -60,6 +72,7 @@ const Brands: React.FC = () => {
             scrollContainer.scrollWidth
           ) {
             const firstBrand = brands.shift();
+
             brands.push(firstBrand || ""); // add null check here
 
             scrollContainer.scrollLeft = 0;
@@ -68,7 +81,6 @@ const Brands: React.FC = () => {
       }
     };
   }, [brands]);
-
   return (
     <main
       className="flex overflow-x-scroll hide-scroll-bar"

@@ -1,8 +1,7 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Brands from "@/components/Landing/Brands";
 import CaseStudy from "@/components/Landing/CaseStudy";
-import Customer from "@/components/Landing/Services/Customer";
-import Operational from "@/components/Landing/Services/Operational";
+import OurDNA from "@/components/Landing/OurDNA";
 import WhatWeDo from "@/components/Landing/WhatWeDo";
 import WhoWeAre from "@/components/Landing/WhoWeAre";
 import Header from "@/components/Navigation/Header";
@@ -20,13 +19,12 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
         LET&apos;S TAP INTO YOUR DATA
       </h1>
       <WhatWeDo />
+
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
+        YOUR ANALYTICS JOURNEY BEGINS HERE
+      </h1>
+      <OurDNA />
       <CaseStudy />
-      <Wrapper>
-        <Customer />
-      </Wrapper>
-      <Wrapper className="pt-10">
-        <Operational />
-      </Wrapper>
     </>
   );
 };
