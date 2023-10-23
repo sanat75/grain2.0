@@ -2,6 +2,7 @@ import Wrapper from "@/components/Container/Wrapper";
 import Brands from "@/components/Landing/Brands";
 import CaseStudy from "@/components/Landing/CaseStudy";
 import OurDNA from "@/components/Landing/OurDNA";
+import DNATimeLine from "@/components/Landing/Services/DNATimeLine";
 import TimeLine from "@/components/Landing/Services/TimeLine";
 import WhatWeDo from "@/components/Landing/WhatWeDo";
 import WhoWeAre from "@/components/Landing/WhoWeAre";
@@ -27,6 +28,10 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
       </h1>
       {/* <OurDNA /> */}
       <TimeLine />
+      <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
+        YOUR ANALYTICS JOURNEY BEGINS HERE
+      </h1>
+      <DNATimeLine />
       <CaseStudy />
     </>
   );
