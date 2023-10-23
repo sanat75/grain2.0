@@ -28,25 +28,6 @@ const Brands: React.FC = () => {
     "/assets/images/grain-client-logos/vale.svg",
   ];
   const scrollContainerRef = useRef<HTMLDivElement | null>(null);
-  // if user hit last brand, add brand array to the end of the array and if you try to scroll right side add array in the front of the array
-  useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
-    if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", () => {
-        if (
-          scrollContainer.scrollLeft + scrollContainer.clientWidth >=
-          scrollContainer.scrollWidth
-        ) {
-          scrollContainer.scrollLeft = 0;
-        }
-        if (scrollContainer.scrollLeft <= 0) {
-          scrollContainer.scrollLeft =
-            scrollContainer.scrollWidth - scrollContainer.clientWidth;
-        }
-      });
-    }
-  }, []);
-
   useEffect(() => {
     const scrollContainer = scrollContainerRef.current;
 

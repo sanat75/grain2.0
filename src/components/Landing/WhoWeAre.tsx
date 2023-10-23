@@ -1,15 +1,44 @@
+"use client";
 import React from "react";
-import Wrapper from "../Container/Wrapper";
+
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const WhoWeAre = () => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.7,
+  });
+
+  const animationVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 1, type: "spring", bounce: 0.5 },
+    },
+  };
+
+  // Trigger the animation when inView becomes true
+  if (inView) {
+    controls.start("visible");
+  }
+
   return (
-    <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4 ">
+    <motion.div
+      ref={ref}
+      initial="hidden"
+      animate={controls}
+      variants={animationVariants}
+      className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4"
+    >
       <div className="w-full max-w-screen-xl px-2.5 md:px-12 flex justify-between items-center">
-        <div className="font-bold  text-center md:text-start md:w-1/2">
-          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl  font-extrabold ">
+        <div className="font-bold text-center md:text-start md:w-1/2">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
             <h1>
               WE TRANSFORM{" "}
               <span className="bg-clip-text bg-gradient-to-r text-primary">
@@ -25,7 +54,7 @@ const WhoWeAre = () => {
             match you with the right people, processes, and tools to get there –
             coaching you the entire way.
           </div>
-          <div className="w-full flex  pt-4">
+          <div className="w-full flex pt-4">
             <Button className="text-white flex gap-2 items-center hover:scale-105 transition-all">
               <span>Work With us</span>
               <span>
@@ -43,7 +72,7 @@ const WhoWeAre = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

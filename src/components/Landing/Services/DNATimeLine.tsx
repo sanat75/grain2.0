@@ -1,7 +1,7 @@
 "use client";
 import Wrapper from "@/components/Container/Wrapper";
 import { Button } from "@/components/ui/button";
-import { Card, CardFooter } from "@/components/ui/card";
+import { Card } from "@/components/ui/card";
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -13,7 +13,7 @@ const DNATimeLine = () => {
   };
 
   const buttonVariants = {
-    hidden: { opacity: 0, x: 20 },
+    // hidden: { opacity: 0, x: 20 },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -31,16 +31,16 @@ const DNATimeLine = () => {
   const [ref1, inView1] = useInView({
     triggerOnce: false,
     delay: 100,
-    threshold: 0.5,
+    threshold: 0.7,
   });
   const [ref2, inView2] = useInView({
     triggerOnce: false,
     delay: 100,
-    threshold: 0.5,
+    threshold: 0.7,
   });
   return (
     <Wrapper>
-      <ol className="items-center sm:flex">
+      <ol className="items-center sm:flex overflow-hidden">
         <motion.li
           ref={ref}
           initial="hidden"
