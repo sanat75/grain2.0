@@ -26,7 +26,7 @@ const Brands: React.FC = () => {
     "/assets/images/grain-client-logos/TDbank.svg",
     "/assets/images/grain-client-logos/toronto.png",
     "/assets/images/grain-client-logos/vale.svg",
-    "/assets/images/grain-client-logos/smith.svg",
+    "/assets/images/grain-client-logos/smith.png",
   ];
   useEffect(() => {
     const div = document.getElementById("logos-container");
