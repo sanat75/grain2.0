@@ -1,13 +1,5 @@
 export const Casetudy = [
   {
-    id: 0,
-    title: "CLIENTS STORIES",
-    desc: "Designed an advanced analytics solution focused on identifying new sales.",
-    content:
-      "Designed an advanced analytics solution focused on identifying new sales and booking opportunities for Bells B2B Division. The solution provides direct visibility into High Value and High-Sales volume prospect businesses, allowing Bell to develop an advanced customer-segmentation based marketing and pricing strategies.",
-    image: "/assets/images/grain-client-logos/Bell.svg",
-  },
-  {
     id: 1,
     title: "Telecommunication- Bell Canada",
     desc: "Designed an advanced analytics solution focused on identifying new sales.",

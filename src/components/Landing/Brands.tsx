@@ -1,6 +1,6 @@
 "use client";
-import { useEffect, useRef } from "react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 interface BrandsProps {
   src: string;
@@ -27,47 +27,26 @@ const Brands: React.FC = () => {
     "/assets/images/grain-client-logos/toronto.png",
     "/assets/images/grain-client-logos/vale.svg",
   ];
-  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
-    const scrollContainer = scrollContainerRef.current;
+    const div = document.getElementById("logos-container");
 
-    if (scrollContainer) {
-      scrollContainer.addEventListener("scroll", () => {
-        if (
-          scrollContainer.scrollLeft + scrollContainer.clientWidth ===
-          scrollContainer.scrollWidth
-        ) {
-          const firstBrand = brands.shift();
-          brands.push(firstBrand || "");
-
-          scrollContainer.scrollLeft = 0;
-        }
-      });
+    if (div) {
+      div.insertAdjacentHTML("afterend", div.outerHTML);
+      const nextSibling = div?.nextSibling as HTMLElement;
+      nextSibling?.setAttribute("aria-hidden", "true");
     }
-
+    // write clean up
     return () => {
-      if (scrollContainer) {
-        scrollContainer.removeEventListener("scroll", () => {
-          if (
-            scrollContainer.scrollLeft + scrollContainer.clientWidth ===
-            scrollContainer.scrollWidth
-          ) {
-            const firstBrand = brands.shift();
-
-            brands.push(firstBrand || ""); // add null check here
-
-            scrollContainer.scrollLeft = 0;
-          }
-        });
-      }
+      const nextSibling = div?.nextSibling as HTMLElement;
+      nextSibling?.remove();
     };
-  }, [brands]);
+  }, []);
   return (
-    <main
-      className="flex overflow-x-scroll hide-scroll-bar"
-      ref={scrollContainerRef}
-    >
-      <div className="flex flex-nowrap">
+    <main className=" w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+      <div
+        id="logos-container"
+        className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+      >
         {brands.map((src, index) => (
           <BrandItem
             key={index}
@@ -90,7 +69,7 @@ const BrandItem: React.FC<BrandsProps> = ({
   height,
   className,
 }) => (
-  <div className="w-48 h-48 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-white bg-secondary">
+  <div className="w-48 h-48 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-secondary">
     <Image
       src={src}
       alt={alt}

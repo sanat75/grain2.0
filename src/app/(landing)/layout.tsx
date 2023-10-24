@@ -4,6 +4,7 @@ import CaseStudy from "@/components/Landing/CaseStudy";
 import OurDNA from "@/components/Landing/OurDNA";
 import DNATimeLine from "@/components/Landing/Services/DNATimeLine";
 import TimeLine from "@/components/Landing/Services/TimeLine";
+import Studies from "@/components/Landing/Studies";
 import WhatWeDo from "@/components/Landing/WhatWeDo";
 import WhoWeAre from "@/components/Landing/WhoWeAre";
 import Header from "@/components/Navigation/Header";
@@ -29,7 +30,8 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
         YOUR ANALYTICS JOURNEY BEGINS HERE
       </h1>
       <DNATimeLine />
-      <CaseStudy />
+      {/* <CaseStudy /> */}
+      <Studies />
     </>
   );
 };
