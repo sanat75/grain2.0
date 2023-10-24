@@ -1,4 +1,5 @@
 import Wrapper from "@/components/Container/Wrapper";
+import Footer from "@/components/Footer/Footer";
 import Brands from "@/components/Landing/Brands";
 import CaseStudy from "@/components/Landing/CaseStudy";
 import OurDNA from "@/components/Landing/OurDNA";
@@ -32,6 +33,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
       <DNATimeLine />
       {/* <CaseStudy /> */}
       <Studies />
+      <Footer />
     </>
   );
 };

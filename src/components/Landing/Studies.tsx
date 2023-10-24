@@ -29,7 +29,7 @@ const Studies = () => {
       animate={inView ? "visible" : "hidden"}
       initial="hidden"
     >
-      <div className="w-full h-24 max-h-48 border-b flex justify-center items-center">
+      <div className="w-full h-24 md:h-48 border-b md:border flex justify-center items-center">
         <motion.h1
           className="text-primary text-center font-bold text-3xl"
           initial={{ opacity: 0 }}
@@ -42,7 +42,7 @@ const Studies = () => {
 
       {Casetudy.map((item: any, i: any) => (
         <motion.div
-          className="w-full h-48 border-b flex justify-between"
+          className="w-full h-48 border-b md:border flex justify-between"
           key={i}
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
