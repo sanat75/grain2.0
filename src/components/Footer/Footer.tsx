@@ -34,7 +34,7 @@ const Footer = () => {
                   hsingh@grainanalytics.ca
                 </li>
                 <li className="flex items-center  text-sm">
-                  <LocateFixedIcon className="mr-2  text-sm" />
+                  <LocateFixedIcon className="mr-2  text-sm break-words" />
                   Suite 2902, 33 Elm Drive, Mississauga, Ontario, L5B 4M2
                 </li>
               </ul>
@@ -42,22 +42,22 @@ const Footer = () => {
             <div className="w-full md:w-1/3">
               <h2 className="text-lg font-semibold mb-4">Socials</h2>
               <div className="flex gap-4">
-                <Link
+                {/* <Link
                   className="cursor-pointer"
                   href="https://twitter.com/_Harsh_raghav_"
                   target="_blank"
                 >
                   <Twitter />
-                </Link>
-                <Link
+                </Link> */}
+                {/* <Link
                   href="https://harshraghav.tech"
                   target="_blank"
                   className="cursor-pointer"
                 >
                   <Globe />
-                </Link>
+                </Link> */}
                 <Link
-                  href="https://www.linkedin.com/in/harsh-kumar-raghav-7285311b9/"
+                  href="https://www.linkedin.com/company/grain-analytics/"
                   target="_blank"
                   className="cursor-pointer"
                 >

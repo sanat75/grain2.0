@@ -32,6 +32,9 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
       </h1>
       <DNATimeLine />
       {/* <CaseStudy /> */}
+      <h1 className="uppercase hidden sm:block text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
+        Spotlight: Data-driven Client Stories
+      </h1>
       <Studies />
       <Footer />
     </>

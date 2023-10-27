@@ -8,48 +8,40 @@ import { useInView } from "react-intersection-observer";
 import { buttonVariants } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 
-const fadeInVariant = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-};
-
-const scaleVariant = {
-  hover: { scale: 1.05 },
-};
-
 const Studies = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
+  };
+
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.5,
+    threshold: 0.3,
   });
+
   return (
     <motion.div
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
       ref={ref}
-      animate={inView ? "visible" : "hidden"}
+      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      variants={containerVariants}
       initial="hidden"
+      animate={inView ? "visible" : "hidden"}
     >
-      <div className="w-full h-24 md:h-48 border-b md:border flex justify-center items-center">
-        <motion.h1
-          className="text-primary text-center font-bold text-3xl"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-        >
+      <div className="md:hidden w-full h-24 md:h-48 border-b md:border flex justify-center items-center">
+        <h1 className="text-primary text-center font-bold text-3xl">
           CLIENTS STORIES
-        </motion.h1>
+        </h1>
       </div>
 
       {Casetudy.map((item: any, i: any) => (
         <motion.div
-          className="w-full h-48 border-b md:border flex justify-between"
+          className="w-full h-48 border-b md:border flex justify-between md:h-56"
           key={i}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: i * 0.1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
         >
           <div className="w-1/4 h-full flex justify-center items-center">
-            <motion.div variants={scaleVariant} whileHover="hover">
+            <div>
               <Image
                 src={item.image}
                 alt={item.title}
@@ -58,22 +50,14 @@ const Studies = () => {
                 objectFit="cover"
                 objectPosition="center"
               />
-            </motion.div>
+            </div>
           </div>
           <div className="w-3/4 h-full flex flex-col justify-center p-2 gap-y-2">
-            <motion.h1
-              className="text-primary uppercase font-bold text-sm"
-              variants={fadeInVariant}
-            >
+            <h1 className="text-primary uppercase font-bold text-sm">
               {item.title}
-            </motion.h1>
-            <motion.p
-              className="text-muted-foreground text-sm"
-              variants={fadeInVariant}
-            >
-              {item.desc}
-            </motion.p>
-            <motion.div className="flex justify-end " variants={fadeInVariant}>
+            </h1>
+            <p className="text-muted-foreground text-sm">{item.desc}</p>
+            <div className="flex justify-end ">
               <Link
                 href="/"
                 className={buttonVariants({
@@ -82,14 +66,11 @@ const Studies = () => {
                   className: "px-2 border-primary text-primary",
                 })}
               >
-                <motion.div
-                  whileHover="hover"
-                  className="flex justify-center items-center"
-                >
+                <div className="flex justify-center items-center">
                   Read More <ArrowRight className="ml-1" />
-                </motion.div>
+                </div>
               </Link>
-            </motion.div>
+            </div>
           </div>
         </motion.div>
       ))}

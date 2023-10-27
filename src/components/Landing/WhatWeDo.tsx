@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
-import { Card, CardFooter } from "../ui/card";
 import Image from "next/image";
 import { Button } from "../ui/button";
 interface WhatWeDoDetailCardProps {
@@ -75,15 +74,12 @@ const WhatWeDoDetailCard = ({ list, color }: WhatWeDoDetailCardProps) => {
   };
 
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      variants={cardVariants}
+    <div
       className={` ${color} rounded-none border-none px-8 w-full md-w-1/2 py-4 min-h-[650px] flex justify-center flex-col`}
     >
       <motion.ol
         className="grid grid-col-1 md:grid-cols-3 gap-8"
+        ref={ref}
         variants={{ visible: { transition: { staggerChildren: 0.2 } } }} // Adjust the stagger duration
       >
         {list.map((item, index) => (
@@ -106,7 +102,7 @@ const WhatWeDoDetailCard = ({ list, color }: WhatWeDoDetailCardProps) => {
           LEARN MORE
         </Button>
       </motion.div>
-    </motion.div>
+    </div>
   );
 };
 const WhatWeDo = () => {

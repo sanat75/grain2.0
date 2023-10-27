@@ -23,18 +23,18 @@ const DNATimeLine = () => {
   };
 
   const [ref, inView] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     delay: 100,
     threshold: 0.5,
   });
 
   const [ref1, inView1] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     delay: 100,
     threshold: 0.7,
   });
   const [ref2, inView2] = useInView({
-    triggerOnce: false,
+    triggerOnce: true,
     delay: 100,
     threshold: 0.7,
   });
