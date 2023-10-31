@@ -22,20 +22,14 @@ const Studies = () => {
   return (
     <motion.div
       ref={ref}
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3"
       variants={containerVariants}
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
     >
-      <div className="md:hidden w-full h-24 md:h-48 border-b md:border flex justify-center items-center">
-        <h1 className="text-primary text-center font-bold text-3xl">
-          CLIENTS STORIES
-        </h1>
-      </div>
-
       {Casetudy.map((item: any, i: any) => (
         <motion.div
-          className="w-full h-48 border-b md:border flex justify-between md:h-56"
+          className="w-full h-48 border md:border flex flex-col items-center text-center justify-between md:h-56"
           key={i}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -53,24 +47,12 @@ const Studies = () => {
             </div>
           </div>
           <div className="w-3/4 h-full flex flex-col justify-center p-2 gap-y-2">
-            <h1 className="text-primary uppercase font-bold text-sm">
+            <h1 className="text-primary uppercase font-semibold text-sm break-words">
               {item.title}
             </h1>
-            <p className="text-muted-foreground text-sm">{item.desc}</p>
-            <div className="flex justify-end ">
-              <Link
-                href="/"
-                className={buttonVariants({
-                  variant: "outline",
-                  size: "sm",
-                  className: "px-2 border-primary text-primary",
-                })}
-              >
-                <div className="flex justify-center items-center">
-                  Read More <ArrowRight className="ml-1" />
-                </div>
-              </Link>
-            </div>
+            {/* <p className="text-muted-foreground text-sm">{item.desc}</p> */}
+
+            {/* <div className="flex justify-end "></div> */}
           </div>
         </motion.div>
       ))}
