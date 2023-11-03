@@ -42,6 +42,7 @@ export const Casetudy = [
   {
     id: 6,
     title: "Telecommunication – Zayo & Allstream",
+    desc: "Developed an advanced analytics solution to accurately predict work order cost quotes.",
     content:
       "Designed an advanced analytics solution focused on identifying new sales and booking opportunities for Allstream’s B2B Division. The solution provides direct visibility into High Value and High-Sales volume prospect businesses, allowing Zayo to develop an advanced customer- segmentation based marketing and pricing strategies.",
     image: "/assets/images/grain-client-logos/zayo.svg",
