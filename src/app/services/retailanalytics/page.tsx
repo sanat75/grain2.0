@@ -1,4 +1,5 @@
 import Wrapper from "@/components/Container/Wrapper";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Navigation/Header";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -13,9 +14,9 @@ const page = () => {
         Retail Analytics
       </div>
       <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col sm:flex-row justify-between items-center">
-          <div className="font-bold text-center md:text-start md:w-1/2 p-8">
-            <div className="text-xl  font-extrabold  mt-10 sm:mt-0">
+        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
+          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
+            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1>
                 Forecasting impacts critical business areas, including labor
                 budgets, customer service, promotions and employee schedules.
@@ -56,8 +57,8 @@ const page = () => {
               height={100}
             />
           </div>
-          <div className="font-bold text-center md:text-start md:w-1/2 p-8">
-            <div className="text-xl  font-extrabold  mt-10 sm:mt-0">
+          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
+            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1>Just the highlights: Why Logile Forecasting?</h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
@@ -83,9 +84,9 @@ const page = () => {
         </Wrapper>
       </div>
       <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col sm:flex-row justify-between items-center">
-          <div className="font-bold text-center md:text-start md:w-1/2 p-8">
-            <div className="text-xl  font-extrabold  mt-10 sm:mt-0">
+        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
+          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
+            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1>
                 Get the power of unparalleled AI and self-learning automation
               </h1>
@@ -152,8 +153,8 @@ const page = () => {
               height={100}
             />
           </div>
-          <div className="font-bold text-center md:text-start md:w-1/2 p-8">
-            <div className="text-xl  font-extrabold  mt-10 sm:mt-0">
+          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
+            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1>Better capabilities for better results</h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
@@ -176,6 +177,7 @@ const page = () => {
           </div>
         </Wrapper>
       </div>
+      <Footer />
     </div>
   );
 };
