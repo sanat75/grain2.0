@@ -68,7 +68,7 @@ const Hero = () => {
         >
           <Image
             alt="analytics background image"
-            src={"/assets/Hero/spaceanalytics.png"}
+            src={"/assets/Hero/main-1.png"}
             width={1920}
             height={1080}
             className="object-cover w-full h-full"
@@ -87,12 +87,12 @@ const Hero = () => {
               <span className="text-primary">Innovation.</span>{" "}
             </h1>
           </div>
-          <div className="text-sm md:text-xl font-light text-zinc-200">
-            Pioneering the Age of Data Science and AI Advancements.
-          </div>
-          <div className="text-zinc-200  text-xs md:text-sm font-normal">
-            We assist organizations in harnessing their data potential by
-            combining strategic insight with development proficiency.
+          <div className="text-sm md:text-lg font-light text-white">
+            <p> Pioneering the Age of Data Science and AI Advancements.</p>
+            <p>
+              We assist organizations in harnessing their data potential by
+              combining strategic insight with development proficiency.
+            </p>
           </div>
           <div>
             <Link href={"/contact"}>
@@ -101,10 +101,7 @@ const Hero = () => {
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
               >
-                <Button
-                  variant={"primary"}
-                  className="md:text-lg p-4 md:p-6 font-semibold flex gap-2 hover:scale-105 transition-all"
-                >
+                <Button className="md:text-lg p-4 text-black md:p-6 font-semibold flex gap-2 hover:scale-105 transition-all">
                   <span>Contact Us</span>
                   <span>
                     <ArrowRight />

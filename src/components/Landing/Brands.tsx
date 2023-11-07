@@ -46,7 +46,7 @@ const Brands: React.FC = () => {
     <main className=" w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
       <div
         id="logos-container"
-        className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
+        className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll grayscale hover:grayscale-0"
       >
         {brands.map((src, index) => (
           <BrandItem
@@ -55,7 +55,7 @@ const Brands: React.FC = () => {
             alt={`brand-${index}`}
             width={100}
             height={100}
-            className="transition ease-in-out"
+            className="transition ease-in-out "
           />
         ))}
       </div>
@@ -70,7 +70,7 @@ const BrandItem: React.FC<BrandsProps> = ({
   height,
   className,
 }) => (
-  <div className="w-48 h-48 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-secondary">
+  <div className="w-48 h-48 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-secondary ">
     <Image
       src={src}
       alt={alt}
