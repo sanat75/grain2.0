@@ -52,9 +52,9 @@ const CaseStudy = () => {
                   <CardTitle className="text-primary text-center font-semibold text-lg">
                     {item.title}
                   </CardTitle>
-                  <CardDescription className="text-center">
+                  {/* <CardDescription className="text-center">
                     {item.desc}
-                  </CardDescription>
+                  </CardDescription> */}
                   <div
                     className="rounded-full cursor-pointer bg-primary w-10 h-10 text-white flex justify-center items-center"
                     onClick={() => handleCardClick(item.id)}

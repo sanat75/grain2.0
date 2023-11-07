@@ -171,7 +171,7 @@ const WhatWeDo = () => {
             />
           </div>
           <div className="absolute  text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold text-white border-white border-4">
-            ADVISORY SERVICES
+            DEVELOPMENT SERVICES
           </div>
         </motion.div>
         <WhatWeDoDetailCard

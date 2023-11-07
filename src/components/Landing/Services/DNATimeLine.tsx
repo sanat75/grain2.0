@@ -6,6 +6,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { DotIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 const DNATimeLine = () => {
   const cardVariants = {
@@ -39,6 +40,7 @@ const DNATimeLine = () => {
     delay: 100,
     threshold: 0.7,
   });
+  const Router = useRouter();
   return (
     <Wrapper>
       <ol className="items-center sm:flex overflow-hidden">
@@ -163,7 +165,11 @@ const DNATimeLine = () => {
                   Churn Prediction
                 </motion.p>
                 <motion.div variants={buttonVariants}>
-                  <Button variant={"outline"} className="mt-2">
+                  <Button
+                    variant={"outline"}
+                    className="mt-2"
+                    onClick={() => Router.push("/services/retailanalytics")}
+                  >
                     Learn more{" "}
                     <svg
                       className="w-3 h-3 ml-2"

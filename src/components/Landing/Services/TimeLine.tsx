@@ -42,276 +42,139 @@ const TimeLine = () => {
   };
   return (
     <Wrapper>
-      <ol className="relative border-l mb-10">
-        <li className="mb-10 ml-4 py-3" ref={ref}>
-          <motion.div
-            className="absolute  mt-2 -left-3 border gray-900  z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full ring-0 animate-pulse ring-emerald-300  sm:ring-8  shrink-0"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            <svg
-              className="w-2.5 h-2.5 text-primary dark:text-blue-300"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-            </svg>
-          </motion.div>
-          <motion.h3
-            className="text-lg font-semibold text-gray-900 dark:text-white ml-2"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            Customer Analytics
-          </motion.h3>
-          <motion.p
-            className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            Get access to our team of data experts to keep driving your
-            analytics program forward. Our data engineers secure your analytics
-            assets by guiding your transition to the cloud.
-          </motion.p>
-          <div className="flex w-full flex-wrap justify-between gap-y-2">
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">1.</span> Conversation
-              Rate Modeling
-            </motion.p>
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">2.</span> Customer
-              Lifetime value
-            </motion.p>
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">3.</span> Customer Churn
-              Prediction
-            </motion.p>
+      <div className=" flex flex-col justify-center">
+        <div className="py-1 sm:max-w-3xl sm:mx-auto w-full px-2 sm:px-0">
+          <div className="relative text-gray-700 antialiased text-sm font-semibold">
+            {/* <!-- Vertical bar running through middle --> */}
+            <div className="hidden sm:block w-1 bg-yellow-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+
+            {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-start w-full mx-auto items-center">
+                  <div className="w-full sm:w-1/2 sm:pr-8">
+                    <div className="p-4 bg-white rounded shadow border">
+                      Now this is a story all about how, Now this is a story all
+                      about how, Now this is a story all about how, Now this is
+                      a story all about how, Now this is a story all about how,
+                      Now this is a story all about how, Now this is a story all
+                      about how, Now this is a story all about how, Now this is
+                      a story all about how, Now this is a story all about how,
+                      Now this is a story all about how, Now this is a story all
+                      about how, Now this is a story all about how, Now this is
+                      a story all about how,
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-full bg-yellow-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-end w-full mx-auto items-center">
+                  <div className="w-full sm:w-1/2 sm:pl-8">
+                    <div className="p-4 bg-white rounded shadow border">
+                      My life got flipped turned upside down,
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-full bg-yellow-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Left section, set by justify-start and sm:pr-8 --> */}
+            <div className="mt-6 sm:mt-0 sm:mb-12">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-start w-full mx-auto items-center">
+                  <div className="w-full sm:w-1/2 sm:pr-8">
+                    <div className="p-4 bg-white rounded shadow border">
+                      And I'd like to take a minute, just sit right there,
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-full bg-yellow-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            {/* <!-- Right section, set by justify-end and sm:pl-8 --> */}
+            <div className="mt-6 sm:mt-0">
+              <div className="flex flex-col sm:flex-row items-center">
+                <div className="flex justify-end w-full mx-auto items-center">
+                  <div className="w-full sm:w-1/2 sm:pl-8">
+                    <div className="p-4 bg-white rounded shadow border">
+                      I'll tell you how I became the Prince of a town called Bel
+                      Air.
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-full bg-yellow-500 border-white border-4 w-8 h-8 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 text-white"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
           </div>
-          <motion.div
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={buttonVariant}
-          >
-            <Button variant={"outline"} className="mt-2">
-              Learn more{" "}
-              <svg
-                className="w-3 h-3 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </Button>
-          </motion.div>
-        </li>
-        <li className="mb-10 ml-4 py-3" ref={ref}>
-          <motion.div
-            className="absolute  mt-2 -left-3 border gray-900  z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full ring-0 animate-pulse ring-emerald-300  sm:ring-8  shrink-0"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            <svg
-              className="w-2.5 h-2.5 text-primary dark:text-blue-300"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-            </svg>
-          </motion.div>
-          <motion.h3
-            className="text-lg font-semibold text-gray-900 dark:text-white ml-2"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            Operational Analytics
-          </motion.h3>
-          <motion.p
-            className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            Get access to our team of data experts to keep driving your
-            analytics program forward. Our data engineers secure your analytics
-            assets by guiding your transition to the cloud.
-          </motion.p>
-          <div className="flex w-full flex-wrap justify-between gap-y-2">
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">1.</span> Conversation
-              Rate Modeling
-            </motion.p>
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">2.</span> Customer
-              Lifetime value
-            </motion.p>
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">3.</span> Customer Churn
-              Prediction
-            </motion.p>
-          </div>
-          <motion.div
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={buttonVariant}
-          >
-            <Button variant={"outline"} className="mt-2">
-              Learn more{" "}
-              <svg
-                className="w-3 h-3 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </Button>
-          </motion.div>
-        </li>
-        <li className="mb-10 ml-4 py-3" ref={ref}>
-          <motion.div
-            className="absolute  mt-2 -left-3 border gray-900  z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full ring-0 animate-pulse ring-emerald-300  sm:ring-8  shrink-0"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            <svg
-              className="w-2.5 h-2.5 text-primary dark:text-blue-300"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-            </svg>
-          </motion.div>
-          <motion.h3
-            className="text-lg font-semibold text-gray-900 dark:text-white ml-2"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            Pricing Analytics
-          </motion.h3>
-          <motion.p
-            className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={variants}
-          >
-            Our data engineers secure your analytics assets by guiding your
-            transition to the cloud. Our data engineers secure your analytics
-            assets by guiding your transition to the cloud.
-          </motion.p>
-          <div className="flex w-full flex-wrap justify-between gap-y-2">
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">1.</span> Conversation
-              Rate Modeling
-            </motion.p>
-            <motion.p
-              className="w-1/2 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">2.</span> Customer
-              Lifetime value
-            </motion.p>
-            <motion.p
-              className="w-full sm:w-1/2 md:w-1/3 text-primary text-sm"
-              initial="hidden"
-              animate={inView ? "visible" : "hidden"}
-              variants={variants}
-            >
-              <span className="font-semibold text-lg">3.</span> Customer Churn
-              Prediction
-            </motion.p>
-          </div>
-          <motion.div
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            variants={buttonVariant}
-          >
-            <Button variant={"outline"} className="mt-2">
-              Learn more{" "}
-              <svg
-                className="w-3 h-3 ml-2"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 14 10"
-              >
-                <path
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M1 5h12m0 0L9 1m4 4L9 9"
-                />
-              </svg>
-            </Button>
-          </motion.div>
-        </li>
-        {/* Repeat the same pattern for other list items */}
-      </ol>
+        </div>
+      </div>
     </Wrapper>
   );
 };

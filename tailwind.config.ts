@@ -35,7 +35,8 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        "gradient-emerald": "linear-gradient(to right, #10B981, #065F46)",
+        "gradient-emerald":
+          "linear-gradient(to right, rgb(254, 240, 138), rgb(234, 179, 8))",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -44,7 +45,7 @@ module.exports = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          secondary: "#0b2653",
+          secondary: "#f97316",
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
