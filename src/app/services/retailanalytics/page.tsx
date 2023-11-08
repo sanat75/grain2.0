@@ -10,7 +10,7 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div className="w-full h-80 flex justify-center items-center text-primary font-bold bg-primary-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+      <div className="w-full h-80 flex justify-center items-center text-white font-bold bg-primary-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         Retail Analytics
       </div>
       <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">

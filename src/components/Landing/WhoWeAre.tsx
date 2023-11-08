@@ -36,9 +36,9 @@ const WhoWeAre = () => {
         initial="hidden"
         animate={controls}
         variants={animationVariants}
-        className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4"
+        className="min-h-[350px] md:min-h-[650px] w-full flex flex-col justify-between items-center md:flex-row md:justify-between px-4"
       >
-        <div className="w-full max-w-screen-xl px-2.5 md:px-12 flex justify-between items-center">
+        <div className="w-full max-w-screen-xl  flex justify-between  items-center">
           <div className="font-bold text-center md:text-start md:w-1/2">
             <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold">
               <h1>
@@ -57,7 +57,7 @@ const WhoWeAre = () => {
               to get there – coaching you the entire way.
             </div>
             <div className="w-full flex pt-4 justify-center sm:justify-start">
-              <Button className="text-white flex gap-2 items-center hover:scale-105 transition-all">
+              <Button className="text-white bg-primary-secondary flex gap-2 items-center hover:scale-105 transition-all">
                 <span>Work With us</span>
                 <span>
                   <ArrowRight />

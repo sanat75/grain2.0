@@ -4,25 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Wrapper from "@/components/Container/Wrapper";
 import { Button, buttonVariants } from "@/components/ui/button";
-
-// const animationVariants = {
-//   hidden: {
-//     opacity: 0,
-//     y: 20,
-//     rotate: -20,
-//   },
-//   visible: {
-//     opacity: 1,
-//     y: 0,
-//     rotate: 0,
-//     transition: {
-//       duration: 0.8,
-//       type: "spring", // Add a spring animation for a bouncier effect
-//       damping: 5, // Adjust damping to control bounciness
-//       stiffness: 80, // Adjust stiffness to control speed
-//     },
-//   },
-// };
+import { useRouter } from "next/navigation";
 
 // ! suttle animation
 const animationVariants = {
@@ -53,6 +35,7 @@ const TimeLine = () => {
     triggerOnce: true,
     threshold: 0.2,
   });
+  const Router = useRouter();
   return (
     <motion.div
       className="flex flex-col justify-center"
@@ -176,6 +159,7 @@ const TimeLine = () => {
                       </p>
                     </div>
                     <Button
+                      onClick={() => Router.push("/services/retailanalytics")}
                       variant={"outline"}
                       className="border-primary text-primary mt-3 hover:border-primary-secondary hover:text-primary-secondary transition-all"
                     >
