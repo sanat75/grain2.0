@@ -12,6 +12,7 @@ import WhoWeAre from "@/components/Landing/WhoWeAre";
 import Header from "@/components/Navigation/Header";
 import StudyDesk from "@/components/Study/StudyDesk";
 import StudyMob from "@/components/Study/StudyMob";
+import StudySlide from "@/components/Study/StudySlide";
 
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -58,8 +59,9 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
           Our approach starts with understanding your data evolution stage.
         </p>
       </div>
-      <StudyDesk />
-      <StudyMob />
+      {/* <StudyDesk /> */}
+      <StudySlide />
+      {/* <StudyMob /> */}
       <Footer />
     </>
   );
