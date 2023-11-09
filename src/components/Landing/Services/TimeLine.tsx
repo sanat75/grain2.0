@@ -45,7 +45,7 @@ const TimeLine = () => {
       ref={ref}
     >
       <div className="py-1 sm:max-w-6xl sm:mx-auto w-full px-2 sm:px-0">
-        <div className="relative text-gray-700 antialiased text-sm font-semibold">
+        <div className="relative text-gray-700  antialiased text-sm font-semibold">
           <div className="hidden sm:block w-1 bg-yellow-300 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
           {/* Left section */}
@@ -120,7 +120,7 @@ const TimeLine = () => {
 
           {/* Right section */}
           <motion.div
-            className="mt-6 sm:mt-0 sm:mb-12"
+            className="mt-10 sm:mt-0 sm:mb-12"
             variants={animationVariants}
             initial="hidden"
             animate={inView1 ? "visible" : "hidden"}
@@ -190,7 +190,7 @@ const TimeLine = () => {
 
           {/* Left section */}
           <motion.div
-            className="mt-6 sm:mt-0 sm:mb-12"
+            className="mt-10 sm:mt-0 sm:mb-12"
             variants={animationVariants}
             initial="hidden"
             animate={inView2 ? "visible" : "hidden"}

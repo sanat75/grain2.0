@@ -36,7 +36,7 @@ const WhoWeAre = () => {
         initial="hidden"
         animate={controls}
         variants={animationVariants}
-        className="min-h-[350px] md:min-h-[650px] w-full flex flex-col justify-between items-center md:flex-row md:justify-between px-4"
+        className="min-h-[350px] md:min-h-[650px] mt-8 sm:mt-0 w-full flex flex-col justify-between items-center md:flex-row md:justify-between px-4"
       >
         <div className="w-full max-w-screen-xl  flex justify-between  items-center">
           <div className="font-bold text-center md:text-start md:w-1/2">

@@ -23,7 +23,7 @@ const StudySlide = () => {
   };
 
   return (
-    <div className="max-w-5xl h-[500px] w-full m-auto py-16 px-4 relative group">
+    <div className="max-w-5xl h-[475px] w-full m-auto py-16 px-4 relative group">
       {Casetudy.map((item, index) => (
         <div
           key={index}
@@ -40,7 +40,7 @@ const StudySlide = () => {
             height={100}
             className="p-4 w-32 h-32"
           />
-          <h1 className="text-center text-xl font-bold text-black">
+          <h1 className="text-center text-xl font-bold px-10 md:px-0 text-black">
             {item.title}
           </h1>
           <div className=" md:p-10 rounded-3xl">

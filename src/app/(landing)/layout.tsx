@@ -51,7 +51,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
 
       {/* <Studies /> */}
       <h1 className="uppercase block text-xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3"></h1>
-      <div className=" md:p-10 py-10 px-3 text-center">
+      <div className="  px-3 text-center">
         <h1 className="text-xl font-extrabold  text-primary uppercase ">
           Spotlight: Data-driven Client Stories
         </h1>
