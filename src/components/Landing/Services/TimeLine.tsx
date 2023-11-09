@@ -90,6 +90,7 @@ const TimeLine = () => {
                       </p>
                     </div>
                     <Button
+                      onClick={() => Router.push("/services/customeranalytics")}
                       variant={"outline"}
                       className="border-primary text-primary mt-3 hover:border-primary-secondary hover:text-primary-secondary transition-all"
                     >
@@ -229,6 +230,7 @@ const TimeLine = () => {
                       </p>
                     </div>
                     <Button
+                      onClick={() => Router.push("/services/pricinganalytics")}
                       variant={"outline"}
                       className="border-primary text-primary mt-3 hover:border-primary-secondary hover:text-primary-secondary transition-all"
                     >

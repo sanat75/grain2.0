@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Seprator = () => {
   return (
-    <Wrapper className="relative sm:rounded-3xl w-4/5 my-10 sm:my-30 h-80  text-white flex justify-center items-center bg-[#071C33]">
+    <Wrapper className="relative sm:rounded-3xl sm:w-4/5 my-10 sm:my-30 h-80  text-white flex justify-center items-center bg-[#071C33]">
       <Image
         alt="get in touch"
         src="/assets/images/ggetintouch.png"
