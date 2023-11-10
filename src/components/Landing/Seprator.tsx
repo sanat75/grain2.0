@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const Seprator = () => {
   return (
-    <Wrapper className="relative p-4 sm:rounded-3xl sm:w-4/5 mt-10 sm:my-30 h-80  text-white flex justify-center items-center bg-[#071C33]">
+    <div className="relative p-4  mt-10 sm:my-30 h-80  text-white flex justify-center items-center bg-[#071C33]">
       <Image
         alt="get in touch"
         src="/assets/images/ggetintouch.png"
-        className="absolute top-0 right-0 w-full h-full sm:rounded-3xl "
+        className="absolute top-0 right-0 w-full h-full  "
         width={500}
         height={500}
       />
@@ -29,7 +29,7 @@ const Seprator = () => {
           Get in touch <SendIcon className="h-4 w-4 ml-2" />
         </Button>
       </div>
-    </Wrapper>
+    </div>
   );
 };
 
