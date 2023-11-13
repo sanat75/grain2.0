@@ -56,7 +56,7 @@ const page = () => {
               />
             </CardHeader>
             <CardContent className="text-2xl font-semibold">
-              What's New in Grain: Send Automated Meeting Summaries to HubSpot
+              Whats New in Grain: Send Automated Meeting Summaries to HubSpot
             </CardContent>
           </Card>
           <Card className="w-full h-[450px] sm:w-[550px] shadow-lg border-none">
@@ -114,7 +114,7 @@ const page = () => {
               />
             </CardHeader>
             <CardContent className="text-2xl font-semibold">
-              What's New in Grain: Video Library, #Tags, and More
+              Whats New in Grain: Video Library, #Tags, and More
             </CardContent>
           </Card>
           <Card className="w-full h-[450px] sm:w-[550px] shadow-lg border-none">
