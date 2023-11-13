@@ -1,8 +1,7 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Navigation/Header";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { Card, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
 
@@ -10,8 +9,15 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div className="w-full h-80 flex justify-center items-center text-white font-bold bg-primary-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-        Retail Analytics
+      <div className="relative w-full h-96 flex justify-center items-center text-white font-bold bg-[#071C33] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        <Image
+          alt="get in touch"
+          src="/assets/background/background2.png"
+          className="absolute top-0 right-0 w-full h-full  "
+          width={500}
+          height={500}
+        />
+        <p className="absolute"> Retail Analytics</p>
       </div>
       <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
         <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
@@ -62,23 +68,25 @@ const page = () => {
               <h1>Just the highlights: Why Logile Forecasting?</h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
-              <li>
-                The industry best forecast accuracy: 95% on daily items and
-                sales for all but the smallest departments
-              </li>
-              <li>
-                AI-driven, machine-learning forecasting using dozens of
-                industry-leading and Logile-proprietary algorithms to forecast
-                every metric
-              </li>
-              <li>
-                Event/data tagging and cross-comprehensive forecast granularity
-                at the 15-minute, task level
-              </li>
-              <li>Continuous reforecasting</li>
-              <li>
-                Forecast accuracy improvements of 15-25% for your business
-              </li>
+              <ul style={{ listStyleType: "disc", paddingLeft: "1em" }}>
+                <li>
+                  The industry best forecast accuracy: 95% on daily items and
+                  sales for all but the smallest departments
+                </li>
+                <li>
+                  AI-driven, machine-learning forecasting using dozens of
+                  industry-leading and Logile-proprietary algorithms to forecast
+                  every metric
+                </li>
+                <li>
+                  Event/data tagging and cross-comprehensive forecast
+                  granularity at the 15-minute, task level
+                </li>
+                <li>Continuous reforecasting</li>
+                <li>
+                  Forecast accuracy improvements of 15-25% for your business
+                </li>
+              </ul>
             </div>
           </div>
         </Wrapper>
@@ -96,39 +104,41 @@ const page = () => {
                 Extremely accurate, reliable forecast delivered in a completely
                 automated workflow requiring little or no manual intervention
               </p>
-              <li>
-                Goes well beyond methods like moving averages and exponential
-                smoothing and includes recent advances in statistical learning
-                and pattern recognition
-              </li>
-              <li>
-                AI-driven, machine-learning forecasting using dozens of
-                industry-leading and Logile-proprietary algorithms to forecast
-                every metric
-              </li>
-              <li>
-                Self-learning AI constantly reviews and changes algorithms as
-                needed over time for each element in each store, based on what
-                is proven to be the most accurate and reliable method
-              </li>
-              <li>
-                Each forecast metric in each store may use a different algorithm
-                based on statistical accuracy in individual stores
-              </li>
-              <li>
-                Enables precision scheduling that delivers your service and
-                queuing standards with minimal waste
-              </li>
-              <li>
-                Allows use of sister-store data for new or remodeled stores if
-                needed
-              </li>
-              <li>
-                Unique forecasting approach can be shared across your different
-                departments and loyalty marketing to understand customer and
-                item volumes by time of day—as forecasted from department
-                interval POS data
-              </li>
+              <ul style={{ listStyleType: "disc", paddingLeft: "1em" }}>
+                <li>
+                  Goes well beyond methods like moving averages and exponential
+                  smoothing and includes recent advances in statistical learning
+                  and pattern recognition
+                </li>
+                <li>
+                  AI-driven, machine-learning forecasting using dozens of
+                  industry-leading and Logile-proprietary algorithms to forecast
+                  every metric
+                </li>
+                <li>
+                  Self-learning AI constantly reviews and changes algorithms as
+                  needed over time for each element in each store, based on what
+                  is proven to be the most accurate and reliable method
+                </li>
+                <li>
+                  Each forecast metric in each store may use a different
+                  algorithm based on statistical accuracy in individual stores
+                </li>
+                <li>
+                  Enables precision scheduling that delivers your service and
+                  queuing standards with minimal waste
+                </li>
+                <li>
+                  Allows use of sister-store data for new or remodeled stores if
+                  needed
+                </li>
+                <li>
+                  Unique forecasting approach can be shared across your
+                  different departments and loyalty marketing to understand
+                  customer and item volumes by time of day—as forecasted from
+                  department interval POS data
+                </li>
+              </ul>
             </div>
           </div>
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
@@ -177,6 +187,15 @@ const page = () => {
           </div>
         </Wrapper>
       </div>
+      {/* <Wrapper>
+        <Card>
+          <div></div>
+          <div>
+            <CardHeader>Key Benefits</CardHeader>
+          </div>
+        </Card>
+      </Wrapper> */}
+
       <Footer />
     </div>
   );

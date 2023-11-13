@@ -61,7 +61,7 @@ const TimeLine = () => {
               <div className="flex justify-start w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pr-8">
                   <motion.div
-                    className="p-4 bg-primary rounded-2xl shadow border"
+                    className="p-4 transition-all fade-in-60 hover:bg-primary rounded-2xl shadow border bg-[#071C33]"
                     variants={animationVariants}
                     initial="hidden"
                     animate={inView ? "visible" : "hidden"}
@@ -175,7 +175,7 @@ const TimeLine = () => {
               <div className="flex justify-start w-full mx-auto items-center">
                 <div className="w-full sm:w-1/2 sm:pr-8">
                   <motion.div
-                    className="p-4 bg-primary rounded-2xl shadow border"
+                    className="p-4 transition-all fade-in-60 hover:bg-primary rounded-2xl shadow border bg-[#071C33]"
                     variants={animationVariants}
                     initial="hidden"
                     animate={inView2 ? "visible" : "hidden"}
