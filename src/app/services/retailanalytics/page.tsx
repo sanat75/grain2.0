@@ -1,7 +1,7 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Navigation/Header";
-import { Card, CardHeader } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Image from "next/image";
 import React from "react";
 
@@ -187,15 +187,45 @@ const page = () => {
           </div>
         </Wrapper>
       </div>
-      {/* <Wrapper>
-        <Card>
-          <div></div>
-          <div>
-            <CardHeader>Key Benefits</CardHeader>
-          </div>
+      <Wrapper>
+        <Card className="bg-primary-secondary/20 mt-10">
+          <CardHeader>
+            <CardTitle className="text-3xl">Key Benefits</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <li>
+              Creates highly accurate sales and volume forecasts at weekly,
+              daily department and interval levels
+            </li>
+            <li>
+              Leverages a library of industry-typical and proprietary
+              machine-learning algorithms
+            </li>
+            <li>
+              Layers in defined events and holidays including accurate
+              transposition of moving holidays
+            </li>
+            <li>
+              Supports automated tagging for weather, promotional planning and
+              other data sources
+            </li>
+            <li>
+              Analyzes the performance of each algorithm and selects the best
+              algorithm to use for forecasting each metric in each store
+            </li>
+            <li>Weekly forecasting occurs in a highly automated workflow</li>
+            <li>
+              Supports automated tagging for weather, promotional planning and
+              other data sources
+            </li>
+            <li>
+              Analyzes the performance of each algorithm and selects the best
+              algorithm to use for forecasting each metric in each store
+            </li>
+            <li>Weekly forecasting occurs in a highly automated workflow</li>
+          </CardContent>
         </Card>
-      </Wrapper> */}
-
+      </Wrapper>
       <Footer />
     </div>
   );
