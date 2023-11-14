@@ -105,7 +105,7 @@ const page = () => {
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1 className="text-3xl">
-                Share your Customer's Perspective Everywhere
+                Share your Customer&apos;s Perspective Everywhere
               </h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
@@ -179,7 +179,7 @@ const page = () => {
                 height={100}
               />
               <CardTitle className="text-xl mt-4 font-semibold">
-                Embed Your Customer's Perspective in Product Briefs and
+                Embed Your Customer&apos;s Perspective in Product Briefs and
                 Engineering Tickets
               </CardTitle>
               <CardDescription>
