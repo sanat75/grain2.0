@@ -1,38 +1,67 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Navigation/Header";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
-      <Header />
-      <div className="w-full h-80 flex justify-center items-center text-white font-bold bg-primary-secondary text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-        Pricing Analytics
+    <>
+      <Wrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+        <h1 className="max-w-4xl text-2xl font-bold md:text-3xl lg:text-4xl">
+          Build Better Products With{" "}
+          <span className="text-primary">Customer Insights </span>
+        </h1>
+        <p className="mt-5 max-w-prose dark:text-gray-400 text-gray-600  sm:text-lg">
+          Understand and communicate the needs of your customers to align
+          stakeholders around the most important problems to solve.
+        </p>
+
+        <Link
+          className={buttonVariants({
+            size: "lg",
+            className: "mt-5",
+          })}
+          href="/sign-up"
+        >
+          Try for Free <ArrowRight className="ml-2 h-5 w-5" />
+        </Link>
+      </Wrapper>
+      <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        <div className="mt-16 flow-root sm:mt-24">
+          <Card className="bg-primary-foreground -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+            <Image
+              alt="growth image"
+              src={"/assets/images/analyitics_background.jpg"}
+              className="rounded-md shadow-lg w-full h"
+              width={500}
+              height={100}
+            />
+          </Card>
+        </div>
       </div>
       <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
         <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>
-                Forecasting impacts critical business areas, including labor
-                budgets, customer service, promotions and employee schedules.
-                When the forecast is off, it affects your store managers’
-                ability to adhere to plans and budgets and can impact
-                productivity, service and sales. Real-time forecast accuracy is
-                not only critical—it is imperative.
+              <h1 className="text-3xl">
+                Build a Roadmap based on User Stories
               </h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
-              The best forecasting provides incredible accuracy that is
-              consistently reliable over time. This requires an intelligent
-              system that analyzes and accounts for metrics like sales, SKU, and
-              individual and consolidated UPCs to support granular forecasting
-              across the retail chain. Our Forecasting solution delivers all of
-              this—automatically.
+              Your research is only as valuable as its reach. Amplify your
+              findings by turning hours of customer interviews into beautiful
+              and engaging stories—ready to share with your stakeholders.
             </div>
           </div>
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
@@ -59,26 +88,14 @@ const page = () => {
           </div>
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>Just the highlights: Why Logile Forecasting?</h1>
+              <h1 className="text-3xl">
+                Customer Meetings to Insights in Seconds
+              </h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
-              <li>
-                The industry best forecast accuracy: 95% on daily items and
-                sales for all but the smallest departments
-              </li>
-              <li>
-                AI-driven, machine-learning forecasting using dozens of
-                industry-leading and Logile-proprietary algorithms to forecast
-                every metric
-              </li>
-              <li>
-                Event/data tagging and cross-comprehensive forecast granularity
-                at the 15-minute, task level
-              </li>
-              <li>Continuous reforecasting</li>
-              <li>
-                Forecast accuracy improvements of 15-25% for your business
-              </li>
+              Ditch the manual notes and capture insightful moments as they
+              happen. No need to edit long recordings, switch between multiple
+              apps or re-type your call notes.
             </div>
           </div>
         </Wrapper>
@@ -87,48 +104,14 @@ const page = () => {
         <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>
-                Get the power of unparalleled AI and self-learning automation
+              <h1 className="text-3xl">
+                Share your Customer's Perspective Everywhere
               </h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
-              <p>
-                Extremely accurate, reliable forecast delivered in a completely
-                automated workflow requiring little or no manual intervention
-              </p>
-              <li>
-                Goes well beyond methods like moving averages and exponential
-                smoothing and includes recent advances in statistical learning
-                and pattern recognition
-              </li>
-              <li>
-                AI-driven, machine-learning forecasting using dozens of
-                industry-leading and Logile-proprietary algorithms to forecast
-                every metric
-              </li>
-              <li>
-                Self-learning AI constantly reviews and changes algorithms as
-                needed over time for each element in each store, based on what
-                is proven to be the most accurate and reliable method
-              </li>
-              <li>
-                Each forecast metric in each store may use a different algorithm
-                based on statistical accuracy in individual stores
-              </li>
-              <li>
-                Enables precision scheduling that delivers your service and
-                queuing standards with minimal waste
-              </li>
-              <li>
-                Allows use of sister-store data for new or remodeled stores if
-                needed
-              </li>
-              <li>
-                Unique forecasting approach can be shared across your different
-                departments and loyalty marketing to understand customer and
-                item volumes by time of day—as forecasted from department
-                interval POS data
-              </li>
+              Share and collaborate with your team effortlessly. Publish Grain
+              highlights and stories directly into your team’s favorite tools
+              like Slack, Asana, Notion, and Productboard.
             </div>
           </div>
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
@@ -155,30 +138,76 @@ const page = () => {
           </div>
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>Better capabilities for better results</h1>
+              <h1 className="text-3xl">Democratize Research Insights</h1>
             </div>
             <div className="text-zinc-600 text-md font-normal pt-14">
-              Benefit from extensive data/event tagging to appropriately
-              influence selection of specific history for enhanced accuracy. You
-              can programmatically automate data tagging for weather specific to
-              each stores zip code, and leverage detailed promotional tagging
-              for enhanced UPC-level forecasting. Gain renewed advantage at your
-              front end. Customize queueing service standards by day and time of
-              day or for not busy, busy or extremely busy times in your
-              forecast. And with detailed POS volume data, you are enabled to
-              accurately forecast express, regular and self-checkout volumes for
-              dynamic, interval-specific use of store-specific labor standards
-              for item processing and tendering by method. Optimize throughput,
-              shorten customer queues, and improve customer satisfaction through
-              better scheduling. If your current system misses the mark on peak
-              express volumes like busy lunch rushes, you will see the positive
-              difference in Logiles approach.
+              Use Grain on your customer meetings to build an easy-to-use,
+              searchable repository of customer and market knowledge. Your
+              stakeholders can hear from the customer first hand, without any
+              hand-holding.
             </div>
           </div>
         </Wrapper>
       </div>
-      <Footer />
-    </div>
+      <Wrapper>
+        <div className="w-full flex flex-wrap gap-2 justify-between items-center mt-10 sm:mt-20 ">
+          <Card className="w-full h-[450px] sm:w-[350px] shadow-lg border">
+            <CardHeader>
+              <Image
+                alt="growth image"
+                src={"/assets/images/analytics_background.jpg"}
+                className="rounded-md shadow-lg w-full h-56"
+                width={100}
+                height={100}
+              />
+              <CardTitle className="text-xl mt-4 font-semibold">
+                Parse and Analyze All Your Interviews
+              </CardTitle>
+              <CardDescription>
+                Clip the golden nuggets from your customer interviews and share
+                them effortlessly.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          <Card className="w-full h-[450px] sm:w-[350px] shadow-lg border">
+            <CardHeader>
+              <Image
+                alt="growth image"
+                src={"/assets/images/getintouch.png"}
+                className="rounded-md shadow-lg w-full h-56"
+                width={100}
+                height={100}
+              />
+              <CardTitle className="text-xl mt-4 font-semibold">
+                Embed Your Customer's Perspective in Product Briefs and
+                Engineering Tickets
+              </CardTitle>
+              <CardDescription>
+                Let your stakeholders hear from customers first-hand on the most
+                important problems to solve.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+          <Card className="w-full h-[450px] sm:w-[350px] shadow-lg border">
+            <CardHeader>
+              <Image
+                alt="growth image"
+                src={"/assets/images/ggetintouch.png"}
+                className="rounded-md shadow-lg w-full h-56"
+                width={100}
+                height={100}
+              />
+              <CardTitle className="text-xl mt-4 font-semibold">
+                Compile Stories of User Feedback
+              </CardTitle>
+              <CardDescription>
+                Remix and combine customer clips to tell a powerful narrative.
+              </CardDescription>
+            </CardHeader>
+          </Card>
+        </div>
+      </Wrapper>
+    </>
   );
 };
 
