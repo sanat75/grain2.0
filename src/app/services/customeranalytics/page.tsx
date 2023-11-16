@@ -64,8 +64,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/analytics_background.jpg"}
+                src={"/assets/images/pagesimages/1.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
@@ -78,8 +79,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/getintouch.png"}
+                src={"/assets/images/pagesimages/2.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
@@ -93,8 +95,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/ggetintouch.png"}
+                src={"/assets/images/pagesimages/3.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
@@ -108,8 +111,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/analyitics_background.jpg"}
+                src={"/assets/images/pagesimages/4.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
@@ -122,8 +126,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/analytics_background.jpg"}
+                src={"/assets/images/pagesimages/5.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
@@ -136,8 +141,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/getintouch.png"}
+                src={"/assets/images/pagesimages/6.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
@@ -150,8 +156,9 @@ const page = () => {
             <CardHeader>
               <Image
                 alt="growth image"
-                src={"/assets/images/ggetintouch.png"}
+                src={"/assets/images/pagesimages/7.png"}
                 className="rounded-md shadow-lg w-full h-56"
+                quality={100}
                 width={100}
                 height={100}
               />
