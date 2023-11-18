@@ -32,7 +32,7 @@ const page = () => {
                 not only critical—it is imperative.
               </h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
+            <div className="text-zinc-600 text-md font-normal pt-3">
               The best forecasting provides incredible accuracy that is
               consistently reliable over time. This requires an intelligent
               system that analyzes and accounts for metrics like sales, SKU, and
@@ -67,7 +67,7 @@ const page = () => {
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1>Just the highlights: Why Logile Forecasting?</h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
+            <div className="text-zinc-600 text-md font-normal pt-3">
               <ul style={{ listStyleType: "disc", paddingLeft: "1em" }}>
                 <li>
                   The industry best forecast accuracy: 95% on daily items and
@@ -99,7 +99,7 @@ const page = () => {
                 Get the power of unparalleled AI and self-learning automation
               </h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
+            <div className="text-zinc-600 text-md font-normal pt-3">
               <p>
                 Extremely accurate, reliable forecast delivered in a completely
                 automated workflow requiring little or no manual intervention
@@ -167,7 +167,7 @@ const page = () => {
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
               <h1>Better capabilities for better results</h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
+            <div className="text-zinc-600 text-md font-normal pt-3">
               Benefit from extensive data/event tagging to appropriately
               influence selection of specific history for enhanced accuracy. You
               can programmatically automate data tagging for weather specific to

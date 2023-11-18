@@ -37,14 +37,15 @@ const page = () => {
           Try for Free <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
       </Wrapper>
-      <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="mt-16 flow-root sm:mt-24">
-          <Card className="bg-primary-foreground -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+      <div className="hidden sm:block mx-auto max-w-3xl px-6 lg:px-8">
+        <div className="flow-root ">
+          <Card className="border-none shadow-none -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
             <Image
               alt="growth image"
-              src={"/assets/images/pagesimages/1.png"}
-              className="rounded-md shadow-lg w-full h"
-              width={500}
+              src={"/assets/images/pagesimages/8.svg"}
+              className="w-full"
+              width={100}
+              quality={100}
               height={100}
             />
           </Card>
@@ -150,8 +151,8 @@ const page = () => {
         </Wrapper>
       </div>
       <Wrapper>
-        <div className="w-full flex flex-wrap gap-2 justify-between items-center mt-10 sm:mt-20 ">
-          <Card className="w-full h-[450px] sm:w-[350px] shadow-lg border">
+        <div className="w-full flex flex-wrap gap-2 justify-between items-center  sm:mb-20 ">
+          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
             <CardHeader>
               <Image
                 alt="growth image"
@@ -160,16 +161,16 @@ const page = () => {
                 width={100}
                 height={100}
               />
-              <CardTitle className="text-xl mt-4 font-semibold">
+              <CardTitle className="text-lg  mt-4 font-medium text-center">
                 Parse and Analyze All Your Interviews
               </CardTitle>
-              <CardDescription>
+              {/* <CardDescription>
                 Clip the golden nuggets from your customer interviews and share
                 them effortlessly.
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
           </Card>
-          <Card className="w-full h-[450px] sm:w-[350px] shadow-lg border">
+          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
             <CardHeader>
               <Image
                 alt="growth image"
@@ -178,17 +179,17 @@ const page = () => {
                 width={100}
                 height={100}
               />
-              <CardTitle className="text-xl mt-4 font-semibold">
+              <CardTitle className="text-lg  mt-4 font-medium text-center">
                 Embed Your Customer&apos;s Perspective in Product Briefs and
                 Engineering Tickets
               </CardTitle>
-              <CardDescription>
+              {/* <CardDescription>
                 Let your stakeholders hear from customers first-hand on the most
                 important problems to solve.
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
           </Card>
-          <Card className="w-full h-[450px] sm:w-[350px] shadow-lg border">
+          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
             <CardHeader>
               <Image
                 alt="growth image"
@@ -197,12 +198,12 @@ const page = () => {
                 width={100}
                 height={100}
               />
-              <CardTitle className="text-xl mt-4 font-semibold">
+              <CardTitle className="text-lg  mt-4 font-medium text-center">
                 Compile Stories of User Feedback
               </CardTitle>
-              <CardDescription>
+              {/* <CardDescription>
                 Remix and combine customer clips to tell a powerful narrative.
-              </CardDescription>
+              </CardDescription> */}
             </CardHeader>
           </Card>
         </div>

@@ -13,6 +13,7 @@ import Header from "@/components/Navigation/Header";
 import StudyDesk from "@/components/Study/StudyDesk";
 import StudyMob from "@/components/Study/StudyMob";
 import StudySlide from "@/components/Study/StudySlide";
+import MobileScroll from "@/components/mobileScroll/MobileScroll";
 
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -37,8 +38,14 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
             Our approach starts with understanding your data evolution stage.
           </p>
         </div>
-        <TimeLine />
+        <div className="block sm:hidden">
+          <TimeLine />
+        </div>
+        <div className="sm:block hidden">
+          <MobileScroll />
+        </div>
       </div>
+
       <Seprator />
       {/* <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
         YOUR ANALYTICS JOURNEY BEGINS HERE

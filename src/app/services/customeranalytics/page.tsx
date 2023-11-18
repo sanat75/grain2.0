@@ -40,7 +40,7 @@ const page = () => {
             </div>
           </div>
         </div>
-        <Card className="w-full  mt-10 flex flex-col sm:flex-row p-4 justify-between items-center sm:px-4 bg-primary-secondary/20">
+        <Card className="w-full  mt-10 flex flex-col sm:flex-row p-4 justify-between items-center sm:px-4 bg-primary/20">
           <CardHeader>
             <CardTitle className="text-sm text-start uppercase text-primary">
               FEATURED ARTICLE
@@ -59,7 +59,7 @@ const page = () => {
             />
           </div>
         </Card>
-        <div className="w-full flex flex-wrap gap-5 justify-between items-center mt-10 sm:mt-20 ">
+        <div className="w-full flex flex-wrap gap-16 justify-center  items-center mt-10 sm:mt-20 ">
           <Card className="w-full h-[450px] sm:w-[550px] shadow-lg border">
             <CardHeader>
               <Image
