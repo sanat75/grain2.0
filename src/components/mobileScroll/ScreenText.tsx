@@ -1,11 +1,16 @@
 "use client";
 import Image from "next/image";
 import React, { useState, useRef, useEffect } from "react";
+import { Button } from "../ui/button";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+
 interface ScreenTextProps {
   screen: {
     heading: string;
     description: string;
     mobile_img: string;
+    route: string;
   };
   setCurrentImg: React.Dispatch<React.SetStateAction<number>>;
   i: number;
@@ -56,6 +61,14 @@ const ScreenText = ({ screen, setCurrentImg, i }: ScreenTextProps) => {
         </div>
       </div>
       <div className="screen-description">{screen.description}</div>
+      <Link href={screen.route}>
+        <Button
+          variant={"outline"}
+          className="border-primary text-primary hover:border-primary-secondary hover:text-primary-secondary mt-5"
+        >
+          <span>Know More</span> <ArrowRight className="w-4 h-4 ml-2" />
+        </Button>
+      </Link>
     </div>
   );
 };

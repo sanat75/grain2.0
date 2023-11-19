@@ -103,12 +103,12 @@
   }
 }
 
-.max-width {
+.max-width-class {
   max-width: 70%;
   margin: auto;
 }
 
-.flex {
+.flex-box {
   display: flex;
 }
 
@@ -117,7 +117,7 @@
   align-items: center;
 }
 
-.flex-col {
+.flex-column {
   flex-direction: column;
 }
 

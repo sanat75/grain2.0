@@ -10,12 +10,14 @@ const scrollData = [
     description:
       "Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
     mobile_img: "/assets/images/vertical/v1.png",
+    route: "/services/customeranalytics",
   },
   {
     heading: "Retail Analytics",
     description:
       " Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
     mobile_img: "/assets/images/vertical/v2.png",
+    route: "/services/retailanalytics",
   },
 
   {
@@ -23,6 +25,7 @@ const scrollData = [
     description:
       " Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
     mobile_img: "/assets/images/vertical/v3.png",
+    route: "/services/pricinganalytics",
   },
 ];
 
@@ -30,7 +33,7 @@ const MobileScroll = () => {
   const [currentImg, setCurrentImg] = useState(0);
 
   return (
-    <div className="max-width flex mobile-scroll">
+    <div className="max-width-class flex-box mobile-scroll">
       <div className="scroll-full-screen-wrapper">
         {scrollData.map((screen, i) => (
           <div className="scroll-full-screen" key={i}>
@@ -40,7 +43,7 @@ const MobileScroll = () => {
       </div>
       <div className="mobile-mockup-wrapper non-mobile">
         <div className="mobile-mockup">
-          <div className="mobile-mockup-screen flex absolute-center ">
+          <div className="mobile-mockup-screen flex-box absolute-center">
             <Image
               src={scrollData[currentImg].mobile_img}
               alt=""

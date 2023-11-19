@@ -1,12 +1,4 @@
-import {
-  Globe,
-  Linkedin,
-  LocateFixedIcon,
-  Mail,
-  Phone,
-  SendIcon,
-  Twitter,
-} from "lucide-react";
+import { SendIcon } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { Input } from "../ui/input";
@@ -14,11 +6,11 @@ import { Input } from "../ui/input";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#071C33] text-white mt-10 px-4 md:px-0">
+      <footer className="bg-[#071C33] text-white mt-10 px-4 md:px-0 ">
         <div className=" px-8 py-8 md:py-12">
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
-            <div className="w-full md:w-2/5 p-10">
-              <h1 className="text-xl text-primary font-extrabold  flex gap-x-2  uppercase  font-main font-semi-bold items-center cursor-pointer">
+            <div className="w-full md:w-2/5">
+              <h1 className="text-xl  text-primary font-extrabold  flex gap-x-2  uppercase  font-main font-semi-bold items-center cursor-pointer">
                 Grain Analytics
               </h1>
               <p className="text-sm leading-relaxed my-3">
