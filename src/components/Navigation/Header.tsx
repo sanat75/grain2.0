@@ -43,12 +43,11 @@ const Header = () => {
               <span>GRAIN ANALYTICS.</span>
             </Link>
 
-            <div className="hidden items-center space-x-2 sm:flex">
+            <div className="hidden items-center space-x-2 sm:flex font-bold">
               <Link
                 href="/"
                 className={buttonVariants({
                   variant: "ghost",
-                  size: "sm",
                 })}
               >
                 Managed Analytics
@@ -57,7 +56,6 @@ const Header = () => {
                 href="/"
                 className={buttonVariants({
                   variant: "ghost",
-                  size: "sm",
                 })}
               >
                 Services
@@ -66,7 +64,6 @@ const Header = () => {
                 href="/dna"
                 className={buttonVariants({
                   variant: "ghost",
-                  size: "sm",
                 })}
               >
                 Our DNA
@@ -75,7 +72,6 @@ const Header = () => {
                 href="/"
                 className={buttonVariants({
                   variant: "ghost",
-                  size: "sm",
                 })}
               >
                 About
@@ -84,7 +80,6 @@ const Header = () => {
                 href="/"
                 className={buttonVariants({
                   variant: "ghost",
-                  size: "sm",
                 })}
               >
                 Contact US

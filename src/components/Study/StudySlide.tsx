@@ -23,7 +23,7 @@ const StudySlide = () => {
   };
 
   return (
-    <div className="max-w-5xl h-[475px] w-full m-auto py-16 px-4 relative group">
+    <div className="max-w-5xl h-[525px] w-full m-auto py-16 px-4 relative group">
       {Casetudy.map((item, index) => (
         <div
           key={index}
@@ -33,19 +33,19 @@ const StudySlide = () => {
               : "hidden"
           }`}
         >
-          <Image
-            src={item.image}
-            alt={item.title}
-            width={100}
-            height={100}
-            className="p-4 w-32 h-32"
-          />
-          <h1 className="text-center text-xl font-bold px-10 md:px-0 text-black">
-            {item.title}
-          </h1>
-          <div className=" md:p-10 rounded-3xl">
-            {/* in small screen show only 30 word  */}
-
+          <div className="w-full h-1/2 flex justify-evenly  flex-col items-center">
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={100}
+              height={100}
+              className="p-4 w-32 h-32"
+            />
+            <h1 className="text-center text-xl font-bold px-10 md:px-0 text-black">
+              {item.title}
+            </h1>
+          </div>
+          <div className=" md:p-10 rounded-3xl  h-1/2">
             <p className="hidden md:block">{item.content}</p>
             <p className="md:hidden text-center mt-4">
               {item.content.slice(0, 130)}...
