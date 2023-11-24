@@ -15,6 +15,8 @@ import StudyDesk from "@/components/Study/StudyDesk";
 import StudyMob from "@/components/Study/StudyMob";
 import StudySlide from "@/components/Study/StudySlide";
 import MobileScroll from "@/components/mobileScroll/MobileScroll";
+import MobileScreen from "../mobileScroll/MobileScreen";
+import Team from "../Team/Team";
 
 const Home = () => {
   return (
@@ -37,6 +39,7 @@ const Home = () => {
         </div>
         <div className="block sm:hidden">
           <TimeLine />
+          <MobileScreen />
         </div>
         <div className="sm:block hidden">
           <MobileScroll />
@@ -66,6 +69,9 @@ const Home = () => {
       {/* <StudyDesk /> */}
       <StudySlide />
       {/* <StudyMob /> */}
+      <Wrapper>
+        <Team />
+      </Wrapper>
     </>
   );
 };

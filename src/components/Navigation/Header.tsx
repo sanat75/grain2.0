@@ -3,6 +3,13 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { buttonVariants } from "../ui/button";
 import Wrapper from "../Container/Wrapper";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+} from "@/components/ui/navigation-menu";
+import { ListItem, components } from "./Navigation";
 
 const Header = () => {
   // State to track whether the user has scrolled
@@ -44,6 +51,26 @@ const Header = () => {
             </Link>
 
             <div className="hidden items-center space-x-2 sm:flex font-bold">
+              <NavigationMenu>
+                <NavigationMenuItem className="list-none">
+                  <NavigationMenuTrigger className="bg-transparent ">
+                    Components
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                      {components.map((component) => (
+                        <ListItem
+                          key={component.title}
+                          title={component.title}
+                          href={component.href}
+                        >
+                          {component.description}
+                        </ListItem>
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+              </NavigationMenu>
               <Link
                 href="/"
                 className={buttonVariants({
@@ -52,14 +79,7 @@ const Header = () => {
               >
                 Managed Analytics
               </Link>
-              <Link
-                href="/"
-                className={buttonVariants({
-                  variant: "ghost",
-                })}
-              >
-                Services
-              </Link>
+
               <Link
                 href="/dna"
                 className={buttonVariants({

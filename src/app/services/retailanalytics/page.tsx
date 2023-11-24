@@ -1,50 +1,194 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Navigation/Header";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button, buttonVariants } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const page = () => {
   return (
-    <div>
-      <Header />
-      <div className="relative w-full h-96 flex justify-center items-center text-white font-bold bg-[#071C33] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
-        <Image
-          alt="get in touch"
-          src="/assets/background/background2.png"
-          className="absolute top-0 right-0 w-full h-full  "
-          width={500}
-          height={500}
-        />
-        <p className="absolute"> Retail Analytics</p>
+    <>
+      <div className="font-bold pt-36  text-center space-y-5">
+        <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
+          <h1>
+            Limitless Possibilities, One Platform:{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
+              Grain Analytics
+            </span>{" "}
+          </h1>
+        </div>
+        <div className="text-sm md:text-xl font-light text-zinc-400">
+          AI-powered Chatbot, Code, Video, Music, and Image Generation - All in
+          One Place.
+        </div>
+        <div>
+          <Link href={"/signin"}>
+            <Button
+              variant="premium"
+              className="md:text-lg p-4 md:p-6 rounded-full font-semibold"
+            >
+              Start Generating For Free
+            </Button>
+          </Link>
+        </div>
+        <div className="text-zinc-400 text-xs md:text-sm font-normal">
+          No credit card required.
+        </div>
+      </div>
+      <div className="w-full h-56 justify-center  flex items-center flex-col px-4 text-center gap-y-4">
+        <h1 className="font-extrabold text-2xl md:text-4xl">
+          Turn your ideas into reality, Let AI enhance your creativity.
+        </h1>
+        <p className="text-gray-400 text-sm md:text-lg">
+          Engage with Genius: Embrace the Unrivaled Potential of AI
+          Conversations.
+        </p>
+      </div>
+      <div>
+        <div className="relative isolate">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          >
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-500"
+            />
+          </div>
+        </div>
+
+        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+          <div className="mt-16 flow-root sm:mt-24">
+            <Card className="bg-primary-foreground -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+              <Image
+                alt="growth image"
+                src={"/assets/images/pagesimages/2.png"}
+                className="w-full"
+                width={1419}
+                height={732}
+                quality={100}
+              />
+            </Card>
+          </div>
+        </div>
+      </div>
+      <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
+        <div className="mb-12 px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl sm:text-center">
+            <h2 className="mt-2 font-bold text-4xl ">
+              Start chatting in minutes
+            </h2>
+            <p className="mt-4 text-lg dark:text-gray-400 text-gray-600">
+              Chatting to your PDF files has never been easier than with
+              Infinidocs.
+            </p>
+          </div>
+        </div>
+        {/* steps */}
+        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1 bg-primary-foreground p-8 rounded-lg shadow-lg border">
+            <span className="text-sm font-medium text-primary">Step 1</span>
+            <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
+              <span className="text-xl font-semibold">
+                Sign up for an account
+              </span>
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                Either starting out with a free plan or choose our{" "}
+                <Link
+                  href="/pricing"
+                  className="text-primary underline underline-offset-2"
+                >
+                  pro plan
+                </Link>
+                .
+              </span>
+            </div>
+          </li>
+          <li className="md:flex-1 bg-primary-foreground p-8 rounded-lg shadow-lg border">
+            <span className="text-sm font-medium text-primary">Step 2</span>
+            <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
+              <span className="text-xl font-semibold">
+                Upload your PDF file
+              </span>
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                We&apos;ll process your file and make it ready for you to chat
+                with.
+              </span>
+            </div>
+          </li>
+          <li className="md:flex-1 bg-primary-foreground p-8 rounded-lg shadow-lg border">
+            <span className="text-sm font-medium text-primary">Step 3</span>
+            <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
+              <span className="text-xl font-semibold">
+                Start asking questions
+              </span>
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                It&apos;s that simple. Try out Infinidocs today - it really
+                takes less than a minute.
+              </span>
+            </div>
+          </li>
+        </ol>
+
+        <div className="relative isolate">
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+          >
+            <div
+              style={{
+                clipPath:
+                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+              }}
+              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-500"
+            />
+          </div>
+        </div>
+      </div>
+      {/* <div className="hidden sm:block mx-auto max-w-3xl px-6 lg:px-8">
+        <div className="flow-root ">
+          <Card className="border-none shadow-none -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+            <Image
+              alt="growth image"
+              src={"/assets/images/pagesimages/8.svg"}
+              className="w-full"
+              width={100}
+              quality={100}
+              height={100}
+            />
+          </Card>
+        </div>
       </div>
       <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
         <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>
-                Forecasting impacts critical business areas, including labor
-                budgets, customer service, promotions and employee schedules.
-                When the forecast is off, it affects your store managers’
-                ability to adhere to plans and budgets and can impact
-                productivity, service and sales. Real-time forecast accuracy is
-                not only critical—it is imperative.
+              <h1 className="text-3xl">
+                Build a Roadmap based on User Stories
               </h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-3">
-              The best forecasting provides incredible accuracy that is
-              consistently reliable over time. This requires an intelligent
-              system that analyzes and accounts for metrics like sales, SKU, and
-              individual and consolidated UPCs to support granular forecasting
-              across the retail chain. Our Forecasting solution delivers all of
-              this—automatically.
+            <div className="text-zinc-600 text-md font-normal pt-14">
+              Your research is only as valuable as its reach. Amplify your
+              findings by turning hours of customer interviews into beautiful
+              and engaging stories—ready to share with your stakeholders.
             </div>
           </div>
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
             <Image
               alt="growth image"
-              src={"/assets/images/analyitics_background.jpg"}
+              src={"/assets/images/pagesimages/2.png"}
               className="rounded-md shadow-lg w-full h"
               width={500}
               height={100}
@@ -57,7 +201,7 @@ const page = () => {
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
             <Image
               alt="growth image"
-              src={"/assets/images/analytics_background.jpg"}
+              src={"/assets/images/pagesimages/3.png"}
               className="rounded-md shadow-lg w-full h"
               width={500}
               height={100}
@@ -65,28 +209,14 @@ const page = () => {
           </div>
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>Just the highlights: Why Logile Forecasting?</h1>
+              <h1 className="text-3xl">
+                Customer Meetings to Insights in Seconds
+              </h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-3">
-              <ul style={{ listStyleType: "disc", paddingLeft: "1em" }}>
-                <li>
-                  The industry best forecast accuracy: 95% on daily items and
-                  sales for all but the smallest departments
-                </li>
-                <li>
-                  AI-driven, machine-learning forecasting using dozens of
-                  industry-leading and Logile-proprietary algorithms to forecast
-                  every metric
-                </li>
-                <li>
-                  Event/data tagging and cross-comprehensive forecast
-                  granularity at the 15-minute, task level
-                </li>
-                <li>Continuous reforecasting</li>
-                <li>
-                  Forecast accuracy improvements of 15-25% for your business
-                </li>
-              </ul>
+            <div className="text-zinc-600 text-md font-normal pt-14">
+              Ditch the manual notes and capture insightful moments as they
+              happen. No need to edit long recordings, switch between multiple
+              apps or re-type your call notes.
             </div>
           </div>
         </Wrapper>
@@ -95,56 +225,20 @@ const page = () => {
         <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>
-                Get the power of unparalleled AI and self-learning automation
+              <h1 className="text-3xl">
+                Share your Customer&apos;s Perspective Everywhere
               </h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-3">
-              <p>
-                Extremely accurate, reliable forecast delivered in a completely
-                automated workflow requiring little or no manual intervention
-              </p>
-              <ul style={{ listStyleType: "disc", paddingLeft: "1em" }}>
-                <li>
-                  Goes well beyond methods like moving averages and exponential
-                  smoothing and includes recent advances in statistical learning
-                  and pattern recognition
-                </li>
-                <li>
-                  AI-driven, machine-learning forecasting using dozens of
-                  industry-leading and Logile-proprietary algorithms to forecast
-                  every metric
-                </li>
-                <li>
-                  Self-learning AI constantly reviews and changes algorithms as
-                  needed over time for each element in each store, based on what
-                  is proven to be the most accurate and reliable method
-                </li>
-                <li>
-                  Each forecast metric in each store may use a different
-                  algorithm based on statistical accuracy in individual stores
-                </li>
-                <li>
-                  Enables precision scheduling that delivers your service and
-                  queuing standards with minimal waste
-                </li>
-                <li>
-                  Allows use of sister-store data for new or remodeled stores if
-                  needed
-                </li>
-                <li>
-                  Unique forecasting approach can be shared across your
-                  different departments and loyalty marketing to understand
-                  customer and item volumes by time of day—as forecasted from
-                  department interval POS data
-                </li>
-              </ul>
+            <div className="text-zinc-600 text-md font-normal pt-14">
+              Share and collaborate with your team effortlessly. Publish Grain
+              highlights and stories directly into your team’s favorite tools
+              like Slack, Asana, Notion, and Productboard.
             </div>
           </div>
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
             <Image
               alt="growth image"
-              src={"/assets/images/analyitics_background.jpg"}
+              src={"/assets/images/pagesimages/4.png"}
               className="rounded-md shadow-lg w-full h"
               width={500}
               height={100}
@@ -157,7 +251,7 @@ const page = () => {
           <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
             <Image
               alt="growth image"
-              src={"/assets/images/analyitics_background.jpg"}
+              src={"/assets/images/pagesimages/5.png"}
               className="rounded-md shadow-lg w-full h"
               width={500}
               height={100}
@@ -165,69 +259,76 @@ const page = () => {
           </div>
           <div className="font-bold  md:text-start md:w-1/2 md:p-8">
             <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1>Better capabilities for better results</h1>
+              <h1 className="text-3xl">Democratize Research Insights</h1>
             </div>
-            <div className="text-zinc-600 text-md font-normal pt-3">
-              Benefit from extensive data/event tagging to appropriately
-              influence selection of specific history for enhanced accuracy. You
-              can programmatically automate data tagging for weather specific to
-              each stores zip code, and leverage detailed promotional tagging
-              for enhanced UPC-level forecasting. Gain renewed advantage at your
-              front end. Customize queueing service standards by day and time of
-              day or for not busy, busy or extremely busy times in your
-              forecast. And with detailed POS volume data, you are enabled to
-              accurately forecast express, regular and self-checkout volumes for
-              dynamic, interval-specific use of store-specific labor standards
-              for item processing and tendering by method. Optimize throughput,
-              shorten customer queues, and improve customer satisfaction through
-              better scheduling. If your current system misses the mark on peak
-              express volumes like busy lunch rushes, you will see the positive
-              difference in Logiles approach.
+            <div className="text-zinc-600 text-md font-normal pt-14">
+              Use Grain on your customer meetings to build an easy-to-use,
+              searchable repository of customer and market knowledge. Your
+              stakeholders can hear from the customer first hand, without any
+              hand-holding.
             </div>
           </div>
         </Wrapper>
-      </div>
+      </div> */}
       <Wrapper>
-        <Card className="bg-primary-secondary/20 mt-10">
-          <CardHeader>
-            <CardTitle className="text-3xl">Key Benefits</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <li>
-              Creates highly accurate sales and volume forecasts at weekly,
-              daily department and interval levels
-            </li>
-            <li>
-              Leverages a library of industry-typical and proprietary
-              machine-learning algorithms
-            </li>
-            <li>
-              Layers in defined events and holidays including accurate
-              transposition of moving holidays
-            </li>
-            <li>
-              Supports automated tagging for weather, promotional planning and
-              other data sources
-            </li>
-            <li>
-              Analyzes the performance of each algorithm and selects the best
-              algorithm to use for forecasting each metric in each store
-            </li>
-            <li>Weekly forecasting occurs in a highly automated workflow</li>
-            <li>
-              Supports automated tagging for weather, promotional planning and
-              other data sources
-            </li>
-            <li>
-              Analyzes the performance of each algorithm and selects the best
-              algorithm to use for forecasting each metric in each store
-            </li>
-            <li>Weekly forecasting occurs in a highly automated workflow</li>
-          </CardContent>
-        </Card>
+        <div className="w-full flex flex-wrap gap-2 justify-between items-center  sm:mb-20 ">
+          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
+            <CardHeader>
+              <Image
+                alt="growth image"
+                src={"/assets/images/pagesimages/6.png"}
+                className="rounded-md shadow-lg w-full h-56"
+                width={100}
+                height={100}
+              />
+              <CardTitle className="text-lg  mt-4 font-medium text-center">
+                Parse and Analyze All Your Interviews
+              </CardTitle>
+              {/* <CardDescription>
+                Clip the golden nuggets from your customer interviews and share
+                them effortlessly.
+              </CardDescription> */}
+            </CardHeader>
+          </Card>
+          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
+            <CardHeader>
+              <Image
+                alt="growth image"
+                src={"/assets/images/pagesimages/7.png"}
+                className="rounded-md shadow-lg w-full h-56"
+                width={100}
+                height={100}
+              />
+              <CardTitle className="text-lg  mt-4 font-medium text-center">
+                Embed Your Customer&apos;s Perspective in Product Briefs and
+                Engineering Tickets
+              </CardTitle>
+              {/* <CardDescription>
+                Let your stakeholders hear from customers first-hand on the most
+                important problems to solve.
+              </CardDescription> */}
+            </CardHeader>
+          </Card>
+          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
+            <CardHeader>
+              <Image
+                alt="growth image"
+                src={"/assets/images/pagesimages/2.png"}
+                className="rounded-md shadow-lg w-full h-56"
+                width={100}
+                height={100}
+              />
+              <CardTitle className="text-lg  mt-4 font-medium text-center">
+                Compile Stories of User Feedback
+              </CardTitle>
+              {/* <CardDescription>
+                Remix and combine customer clips to tell a powerful narrative.
+              </CardDescription> */}
+            </CardHeader>
+          </Card>
+        </div>
       </Wrapper>
-      <Footer />
-    </div>
+    </>
   );
 };
 
