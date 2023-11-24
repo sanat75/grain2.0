@@ -1,5 +1,5 @@
 "use client";
-import "./MobileScroll.css";
+// import "./MobileScroll.css";
 import { motion, Variants } from "framer-motion";
 
 interface Props {

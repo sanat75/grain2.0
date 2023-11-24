@@ -39,7 +39,7 @@ const Home = () => {
         </div>
         <div className="block sm:hidden">
           <TimeLine />
-          <MobileScreen />
+          {/* <MobileScreen /> */}
         </div>
         <div className="sm:block hidden">
           <MobileScroll />
