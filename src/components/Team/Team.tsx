@@ -28,30 +28,30 @@ const Team = () => {
         <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
           <div className="flex flex-nowrap gap-4 ">
             <TeamCard
-              name="Coriss Ambady"
+              name="Stavya Singh"
               profession="Web Developer"
-              imageSrc="https://i.ibb.co/T1J9LD4/image-03-2.jpg"
+              imageSrc="/assets/images/team/PHOTO-2023-11-25-00-51-03.jpg"
             />
             <TeamCard
+              name="Arunim Chaudhary"
+              profession="Web Developer"
+              imageSrc="/assets/images/team/PHOTO-2023-11-25-00-52-19.jpg"
+            />
+            <TeamCard
+              name="Chanddeep Singh"
+              profession="Web Developer"
+              imageSrc="/assets/images/team/PHOTO-2023-11-25-00-53-28.jpg"
+            />
+            <TeamCard
+              name="tanishq Malik"
+              profession="Web Developer"
+              imageSrc="/assets/images/team/Tanishq Malik.jpg"
+            />
+            {/* <TeamCard
               name="Coriss Ambady"
               profession="Web Developer"
               imageSrc="https://i.ibb.co/8P6cvVy/image-01-1.jpg"
-            />
-            <TeamCard
-              name="Coriss Ambady"
-              profession="Web Developer"
-              imageSrc="https://i.ibb.co/30tGtjP/image-04.jpg"
-            />
-            <TeamCard
-              name="Coriss Ambady"
-              profession="Web Developer"
-              imageSrc="https://i.ibb.co/yVVT0Dp/image-02-2.jpg"
-            />
-            <TeamCard
-              name="Coriss Ambady"
-              profession="Web Developer"
-              imageSrc="https://i.ibb.co/8P6cvVy/image-01-1.jpg"
-            />
+            /> */}
           </div>
         </div>
         <Link href={"/about"} className="w-full flex justify-end">

@@ -1,7 +1,6 @@
 "use client";
 import Wrapper from "@/components/Container/Wrapper";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
@@ -10,12 +9,15 @@ import { useRouter } from "next/navigation";
 
 const DNATimeLine = () => {
   const cardVariants = {
-    hidden: { opacity: 0, x: 50 },
+    hidden: { opacity: 0, x: 100 },
     visible: { opacity: 1, x: 0 },
   };
-
+  const cardVariants1 = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
   const buttonVariants = {
-    // hidden: { opacity: 0, x: 20 },
+    hidden: { opacity: 0, x: 20 },
     visible: { opacity: 1, x: 0 },
   };
 
@@ -51,52 +53,33 @@ const DNATimeLine = () => {
           variants={cardVariants}
           className="relative mb-6 sm:mb-0"
         >
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full animate-pulse ring-emerald-300 shrink-0">
               <DotIcon className="text-primary h-6 w-6" />
             </div>
             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-          </div>
+          </div> */}
           <motion.div variants={textVariants}>
-            <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-primary-secondary">
+              <h3 className="text-2xl my-2 font-semibold text-primary">
                 Customer Analytics
               </h3>
               <motion.p
                 variants={textVariants}
-                className="font-normal text-muted-foreground text-sm"
+                className="font-normal text-white text-sm "
               >
                 Get access to our team of data experts to keep driving your
                 analytics program forward. Our data engineers secure your
                 analytics assets by guiding your transition to the cloud.
               </motion.p>
               <div className="flex w-full flex-wrap justify-between gap-y-2">
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">1.</span> Conversation
-                  Rate Modeling
-                </motion.p>
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">2.</span> Customer
-                  Lifetime value
-                </motion.p>
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">3.</span> Customer
-                  Churn Prediction
-                </motion.p>
                 <motion.div variants={buttonVariants}>
-                  <Button variant={"outline"} className="mt-2">
-                    Learn more{" "}
+                  <Button
+                    variant={"outline"}
+                    className="mt-5 border-primary text-primary hover:bg-primary hover:text-white transition-all ease-in-out"
+                  >
                     <svg
-                      className="w-3 h-3 ml-2"
+                      className="w-3 h-3"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -120,59 +103,37 @@ const DNATimeLine = () => {
           ref={ref1}
           initial="hidden"
           animate={inView1 ? "visible" : "hidden"}
-          variants={cardVariants}
+          variants={cardVariants1}
           className="relative mb-6 sm:mb-0"
         >
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full animate-pulse ring-emerald-300 shrink-0">
               <DotIcon className="text-primary h-6 w-6" />
             </div>
             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-          </div>
+          </div> */}
           <motion.div variants={textVariants}>
-            <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-blue-950">
+              <h3 className="text-2xl my-2 font-semibold text-primary-secondary">
                 Retail Analytics
               </h3>
               <motion.p
                 variants={textVariants}
-                className="font-normal text-muted-foreground text-sm"
+                className="font-normal text-white text-sm"
               >
                 Get access to our team of data experts to keep driving your
                 analytics program forward. Our data engineers secure your
                 analytics assets by guiding your transition to the cloud.
               </motion.p>
               <div className="flex w-full flex-wrap justify-between gap-y-2">
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">1.</span> Planing and
-                  Forecasting
-                </motion.p>
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">2.</span> Workforce
-                  Manangement
-                </motion.p>
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">3.</span> Customer
-                  Churn Prediction
-                </motion.p>
                 <motion.div variants={buttonVariants}>
                   <Button
                     variant={"outline"}
-                    className="mt-2"
+                    className="mt-5 border-primary text-primary hover:bg-primary hover:text-white transition-all ease-in-out"
                     onClick={() => Router.push("/services/retailanalytics")}
                   >
-                    Learn more{" "}
                     <svg
-                      className="w-3 h-3 ml-2"
+                      className="w-3 h-3"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -199,52 +160,33 @@ const DNATimeLine = () => {
           variants={cardVariants}
           className="relative mb-6 sm:mb-0"
         >
-          <div className="flex items-center">
+          {/* <div className="flex items-center">
             <div className="z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full animate-pulse ring-emerald-300 shrink-0">
               <DotIcon className="text-primary h-6 w-6" />
             </div>
             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-          </div>
+          </div> */}
           <motion.div variants={textVariants}>
-            <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3">
-              <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
+            <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-primary-secondary">
+              <h3 className="text-2xl my-2 font-semibold text-primary">
                 Customer Analytics
               </h3>
               <motion.p
                 variants={textVariants}
-                className="font-normal text-muted-foreground text-sm"
+                className="font-normal text-white text-sm"
               >
                 Get access to our team of data experts to keep driving your
                 analytics program forward. Our data engineers secure your
                 analytics assets by guiding your transition to the cloud.
               </motion.p>
               <div className="flex w-full flex-wrap justify-between gap-y-2">
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">1.</span> Conversation
-                  Rate Modeling
-                </motion.p>
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">2.</span> Customer
-                  Lifetime value
-                </motion.p>
-                <motion.p
-                  variants={textVariants}
-                  className="w-full sm:w-1/2 text-primary text-sm"
-                >
-                  <span className="font-semibold text-lg">3.</span> Customer
-                  Churn Prediction
-                </motion.p>
                 <motion.div variants={buttonVariants}>
-                  <Button variant={"outline"} className="mt-2">
-                    Learn more{" "}
+                  <Button
+                    variant={"outline"}
+                    className="mt-5 border-primary text-primary hover:bg-primary hover:text-white transition-all ease-in-out"
+                  >
                     <svg
-                      className="w-3 h-3 ml-2"
+                      className="w-3 h-3"
                       aria-hidden="true"
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"

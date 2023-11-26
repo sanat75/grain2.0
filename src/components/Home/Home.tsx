@@ -38,8 +38,9 @@ const Home = () => {
           </p>
         </div>
         <div className="block sm:hidden">
-          <TimeLine />
+          {/* <TimeLine /> */}
           {/* <MobileScreen /> */}
+          <DNATimeLine />
         </div>
         <div className="sm:block hidden">
           <MobileScroll />
@@ -50,7 +51,6 @@ const Home = () => {
       {/* <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
   YOUR ANALYTICS JOURNEY BEGINS HERE
 </h1> */}
-      {/* <DNATimeLine /> */}
       {/* <h1 className="uppercase block text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
   Spotlight: Data-driven Client Stories
 </h1>
