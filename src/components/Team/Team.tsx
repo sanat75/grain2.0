@@ -17,7 +17,7 @@ const Team = () => {
               </h2>
               <p className="text-base text-body-color dark:text-dark-6">
                 We are a team of passionate people whose goal is to improve
-                everyone's life through disruptive products.
+                everyone&apos;s life through disruptive products.
               </p>
             </div>
           </div>
