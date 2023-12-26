@@ -94,7 +94,7 @@ const Footer = () => {
                   SUBSCRIBE TO OUR NEWSLETTER
                 </h1>
                 <Input
-                  className="w-3/5 rounded-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-secondary focus:border-transparent"
+                  className="w-full md:w-3/5 rounded-sm bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-secondary focus:border-transparent"
                   placeholder="Enter your email address"
                 />
                 <Button className="bg-primary-secondary text-white px-8 py-2  mt-4">
