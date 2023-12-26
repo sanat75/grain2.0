@@ -53,12 +53,6 @@ const DNATimeLine = () => {
           variants={cardVariants}
           className="relative mb-6 sm:mb-0"
         >
-          {/* <div className="flex items-center">
-            <div className="z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full animate-pulse ring-emerald-300 shrink-0">
-              <DotIcon className="text-primary h-6 w-6" />
-            </div>
-            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-          </div> */}
           <motion.div variants={textVariants}>
             <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-primary-secondary">
               <h3 className="text-2xl my-2 font-semibold text-primary">
@@ -108,12 +102,6 @@ const DNATimeLine = () => {
           variants={cardVariants1}
           className="relative mb-6 sm:mb-0"
         >
-          {/* <div className="flex items-center">
-            <div className="z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full animate-pulse ring-emerald-300 shrink-0">
-              <DotIcon className="text-primary h-6 w-6" />
-            </div>
-            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-          </div> */}
           <motion.div variants={textVariants}>
             <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-blue-950">
               <h3 className="text-2xl my-2 font-semibold text-primary-secondary">
@@ -164,12 +152,6 @@ const DNATimeLine = () => {
           variants={cardVariants}
           className="relative mb-6 sm:mb-0"
         >
-          {/* <div className="flex items-center">
-            <div className="z-10 flex items-center justify-center w-6 h-6 bg-emerald-100 rounded-full animate-pulse ring-emerald-300 shrink-0">
-              <DotIcon className="text-primary h-6 w-6" />
-            </div>
-            <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
-          </div> */}
           <motion.div variants={textVariants}>
             <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-primary-secondary">
               <h3 className="text-2xl my-2 font-semibold text-primary">
