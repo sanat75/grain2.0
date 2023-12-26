@@ -104,7 +104,7 @@ export const TeamCard = ({
 }) => {
   return (
     <div>
-      <div className="w-64 relative pb-56 mb-4 rounded shadow lg:pb-64">
+      <div className="w-48 md:w-64 relative pb-56 mb-4 rounded shadow lg:pb-64">
         <img
           className="absolute object-cover w-full h-full rounded"
           src={imageSrc}
@@ -112,7 +112,7 @@ export const TeamCard = ({
         />
       </div>
       <div className="flex flex-col sm:text-center">
-        <p className="text-lg font-bold">{name}</p>
+        <p className="text-sm font-semibold">{name}</p>
         <p className="mb-5 text-xs text-gray-800">{profession}</p>
         <div className="flex items-center space-x-3 sm:justify-center">
           <a

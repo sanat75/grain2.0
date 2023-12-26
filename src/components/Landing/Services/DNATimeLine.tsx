@@ -155,7 +155,7 @@ const DNATimeLine = () => {
           <motion.div variants={textVariants}>
             <div className="border mt-3 sm:pr-8 p-4 mr-3 mb-3 rounded-2xl bg-primary-secondary">
               <h3 className="text-2xl my-2 font-semibold text-primary">
-                Customer Analytics
+                Pricing Analytics
               </h3>
               <motion.p
                 variants={textVariants}
