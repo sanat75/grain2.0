@@ -25,19 +25,19 @@ export const components: {
     title: "Customer Analytics",
     href: "/services/customeranalytics",
     description:
-      "Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
+      "Our proven AI and ML provide actionable predictions of customer activity, proven to guide business decisions for better results. Build optimized user acquisition and retention strategies through advanced knowledge of user behavior and precise targeting.",
   },
   {
     title: "Retail Analytics",
     href: "/services/retailanalytics",
     description:
-      " Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
+      "Predict future consumer demand for everything you sell. Get insight into the factors that drive demand. Inform data-driven decisions across the business, including sales, finance, marketing, and production. Improve inventory levels, reduce costs, and deliver products efficiently to make customers happy.",
   },
   {
     title: "Price Analytics",
     href: "/services/pricinganalytics",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "Complex analytics applied to comprehensive data generate the right roadmap to improve the top line, margins, market share, and customer experience. Bring together real-time insights from your e-commerce site, customer data, competitive research, and more.",
   },
 ];
 

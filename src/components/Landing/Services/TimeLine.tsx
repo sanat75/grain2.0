@@ -71,10 +71,11 @@ const TimeLine = () => {
                       Customer Analytics
                     </h1>
                     <p className="text-white text-sm font-normal">
-                      Get access to our team of data experts to keep driving
-                      your analytics program forward. Our data engineers secure
-                      your analytics assets by guiding your transition to the
-                      cloud.
+                      Our proven AI and ML provide actionable predictions of
+                      customer activity, proven to guide business decisions for
+                      better results. Build optimized user acquisition and
+                      retention strategies through advanced knowledge of user
+                      behavior and precise targeting.
                     </p>
                     <div className="text-white text-sm font-normal mt-3">
                       <p>
@@ -128,10 +129,12 @@ const TimeLine = () => {
                       Retail Analytics
                     </h1>
                     <p className="text-white text-sm font-normal">
-                      Get access to our team of data experts to keep driving
-                      your analytics program forward. Our data engineers secure
-                      your analytics assets by guiding your transition to the
-                      cloud.
+                      Predict future consumer demand for everything you sell.
+                      Get insight into the factors that drive demand. Inform
+                      data- driven decisions across the business, including
+                      sales, finance, marketing, and production. Improve
+                      inventory levels, reduce costs, and deliver products
+                      efficiently to make customers happy.
                     </p>
                     <div className="text-white text-sm font-normal mt-3">
                       <p>
@@ -185,10 +188,12 @@ const TimeLine = () => {
                       Pricing Analytics
                     </h1>
                     <p className="text-white text-sm font-normal">
-                      Get access to our team of data experts to keep driving
-                      your analytics program forward. Our data engineers secure
-                      your analytics assets by guiding your transition to the
-                      cloud.
+                      Predict future consumer demand for everything you sell.
+                      Get insight into the factors that drive demand. Inform
+                      data- driven decisions across the business, including
+                      sales, finance, marketing, and production. Improve
+                      inventory levels, reduce costs, and deliver products
+                      efficiently to make customers happy.
                     </p>
                     <div className="text-white text-sm font-normal mt-3">
                       <p>
