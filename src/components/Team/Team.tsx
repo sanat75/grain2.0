@@ -24,20 +24,25 @@ const Team = () => {
         </div>
 
         <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
-          <div className="flex flex-nowrap gap-16 ">
+          <div className="flex flex-nowrap gap-8 md:gap-16">
             <TeamCard
-              name="Harshdeep Singh"
-              profession="Masters in Management Analytics- Founder & Principal Consultant"
+              name="Harshdeep Singh (MMA)"
+              profession="Founder & Principal Consultant"
               imageSrc="/assets/images/team/harsh.jpg"
             />
             <TeamCard
-              name="⁠Mikhail Nediak"
-              profession="PhD in Operations Research & Distinguished Professor of Operations Management- Principal Consultant              "
+              name="Yuri Levin"
+              profession="Professor of Management Analytics & Principal Consultant"
+              imageSrc="/assets/images/team/images3.jpeg"
+            />
+            <TeamCard
+              name="⁠Mikhail Nediak (PHD)"
+              profession="Principal Consultant"
               imageSrc="/assets/images/team/images1.jpg"
             />
             <TeamCard
-              name="Fraser Gray Smith"
-              profession="MIB, MSc- Analytics & Data Science Advisor"
+              name="Fraser Gray Smith (MIB, MSc)"
+              profession="Analytics & Data Science Advisor"
               imageSrc="/assets/images/team/john.jpeg"
             />
             <TeamCard

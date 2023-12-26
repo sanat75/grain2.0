@@ -8,14 +8,14 @@ const scrollData = [
   {
     heading: "Customer Analytics",
     description:
-      "Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
+      "Our proven AI and ML provide actionable predictions of customer activity, proven to guide business decisions for better results. Build optimized user acquisition and retention strategies through advanced knowledge of user behaviorand precise targeting.",
     mobile_img: "/assets/images/vertical/v1.png",
     route: "/services/customeranalytics",
   },
   {
     heading: "Retail Analytics",
     description:
-      " Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
+      "Predict future consumer demand for everything you sell. Get insight into the factors that drive demand. Inform data- driven decisions across the business, including sales, finance, marketing, and production. Improve inventory levels, reduce costs, and deliver products efficiently to make customers happy.",
     mobile_img: "/assets/images/vertical/v2.png",
     route: "/services/retailanalytics",
   },
@@ -23,7 +23,7 @@ const scrollData = [
   {
     heading: "Pricing Analytics",
     description:
-      " Get access to our team of data experts to keep driving your analytics program forward. Our data engineers secure your analytics assets by guiding your transition to the cloud.",
+      "Complex analytics applied to comprehensive data generate the right roadmap to improve the top line, margins, market share, and customer experience. Bring together real-time insights from your e-commerce site, customer data, competitive research, and more.",
     mobile_img: "/assets/images/vertical/v3.png",
     route: "/services/pricinganalytics",
   },
