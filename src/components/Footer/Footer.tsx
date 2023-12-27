@@ -28,7 +28,7 @@ const Footer = () => {
               </p>
               <div>
                 <Link href={"/contact"}>
-                  <Button className="bg-primary-secondary text-white px-8 py-2  mt-4">
+                  <Button className="bg-primary text-white px-8 py-2  mt-4">
                     Get in touch <SendIcon className="w-4 h-4 ml-2" />
                   </Button>
                 </Link>

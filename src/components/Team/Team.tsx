@@ -86,9 +86,6 @@ const Team = () => {
             />
           </div>
         </div>
-        <Link href={"/about"} className="w-full flex justify-end">
-          <Button>Show More</Button>
-        </Link>
       </div>
     </section>
   );
