@@ -69,7 +69,7 @@ const MobileDNATimeLine = () => {
                 : "hidden"
             }`}
           >
-            <h1 className="font-bold text-6xl text-primary">
+            <h1 className="font-bold text-4xl text-primary">
               {screen.heading}
             </h1>
             <p className="text-md py-4 text-white">{screen.description}</p>
