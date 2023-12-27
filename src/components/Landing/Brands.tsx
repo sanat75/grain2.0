@@ -53,8 +53,8 @@ const Brands: React.FC = () => {
             key={index}
             src={src}
             alt={`brand-${index}`}
-            width={100}
-            height={100}
+            width={60}
+            height={60}
             className="transition ease-in-out "
           />
         ))}
@@ -70,7 +70,7 @@ const BrandItem: React.FC<BrandsProps> = ({
   height,
   className,
 }) => (
-  <div className="w-48 h-48 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-secondary grayscale hover:grayscale-0 ">
+  <div className="w-32 h-32 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-dashed border-secondary grayscale hover:grayscale-0 ">
     <Image
       src={src}
       alt={alt}

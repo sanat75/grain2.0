@@ -17,6 +17,7 @@ import StudySlide from "@/components/Study/StudySlide";
 import MobileScroll from "@/components/mobileScroll/MobileScroll";
 import MobileScreen from "../mobileScroll/MobileScreen";
 import Team from "../Team/Team";
+import MobileDNATimeLine from "../Landing/Services/MobileDNATimeLine";
 
 const Home = () => {
   return (
@@ -40,7 +41,8 @@ const Home = () => {
         <div className="block sm:hidden">
           {/* <TimeLine /> */}
           {/* <MobileScreen /> */}
-          <DNATimeLine />
+          {/* <DNATimeLine /> */}
+          <MobileDNATimeLine />
         </div>
         <div className="sm:block hidden">
           <MobileScroll />
@@ -67,7 +69,9 @@ const Home = () => {
         </p>
       </div>
       {/* <StudyDesk /> */}
-      <StudySlide />
+      <Wrapper>
+        <StudySlide />
+      </Wrapper>
       {/* <StudyMob /> */}
       <Wrapper>
         <Team />

@@ -66,13 +66,17 @@ const Hero = () => {
           variants={imageVariants}
           className="object-cover w-full h-full "
         >
-          <Image
+          {/* <Image
             alt="analytics background image"
             src={"/assets/Hero/main-1.png"}
             width={1920}
             height={1080}
             className="object-cover w-full h-full"
-          />
+          /> */}
+          <video autoPlay loop muted className="object-cover w-full h-full">
+            <source src="/assets/videos/home-screen.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </motion.div>
       </div>
 
@@ -81,13 +85,13 @@ const Hero = () => {
           variants={textVariants}
           className="font-bold pt-10 md:pt-32 space-y-5"
         >
-          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold text-white">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold">
             <h1>
               Revitalizing Data Insights with{" "}
               <span className="text-primary">Innovation.</span>{" "}
             </h1>
           </div>
-          <div className="text-sm md:text-lg font-light text-white">
+          <div className="text-sm md:text-lg font-medium">
             <p> Pioneering the Age of Data Science and AI Advancements.</p>
             <p>
               We assist organizations in harnessing their data potential by
@@ -101,8 +105,8 @@ const Hero = () => {
                 initial="hidden"
                 animate={inView ? "visible" : "hidden"}
               >
-                <Button className="md:text-lg p-4 text-black md:p-6 font-semibold flex gap-2 hover:scale-105 transition-all">
-                  <span>Contact Us</span>
+                <Button className="md:text-lg p-4 text-white md:p-6 font-semibold flex gap-2 hover:scale-105 transition-all">
+                  <span>Book a demo</span>
                   <span>
                     <ArrowRight />
                   </span>

@@ -48,7 +48,7 @@ const StudySlide = () => {
           <div className=" md:p-10 rounded-3xl  h-1/2">
             <p className="hidden md:block">{item.content}</p>
             <p className="md:hidden text-center mt-4">
-              {item.content.slice(0, 130)}...
+              {item.content.slice(0, 230)}...
             </p>
           </div>
         </div>

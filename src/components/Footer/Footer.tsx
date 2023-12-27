@@ -42,21 +42,17 @@ const Footer = () => {
                   </h2>
                   <ul className="text-sm md:text-base leading-relaxed flex flex-col gap-3">
                     <li className="flex items-center text-sm">
-                      Data Evolution Solutions
+                      Customer Analytics
                     </li>
                     <li className="flex items-center text-sm">
-                      Data Engineering
-                    </li>
-                    <li className="flex items-center text-sm">Automation</li>
-                    <li className="flex items-center text-sm">
-                      Business Intelligence
+                      Supply Chain Analytics
                     </li>
                     <li className="flex items-center text-sm">
-                      Advanced Analytics
+                      Pricing Analytics
                     </li>
                   </ul>
                 </div>
-                <div className="w-full md:w-1/3">
+                {/* <div className="w-full md:w-1/3">
                   <h2 className="text-lg font-semibold mb-4 text-primary">
                     PARTNERS
                   </h2>
@@ -85,11 +81,11 @@ const Footer = () => {
                     <li className="flex items-center text-sm">FAQs</li>
                     <li className="flex items-center text-sm">Contact Us</li>
                   </ul>
-                </div>
+                </div> */}
               </div>
-              <div className="w-full h-[2px] bg-primary my-10" />
+              {/* <div className="w-full h-[2px] bg-primary my-10" /> */}
 
-              <div>
+              {/* <div>
                 <h1 className="text-lg text-primary-secondary font-semibold mb-4">
                   SUBSCRIBE TO OUR NEWSLETTER
                 </h1>
@@ -100,17 +96,17 @@ const Footer = () => {
                 <Button className="bg-primary-secondary text-white px-8 py-2  mt-4">
                   Subscribe
                 </Button>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </footer>
-      <div className="w-full h-10 flex justify-center items-center bg-primary-secondary text-white shadow-light-shadow text-center">
+      {/* <div className="w-full h-10 flex justify-center items-center bg-primary-secondary text-white shadow-light-shadow text-center">
         <p className="text-sm ">
           &copy; 2023 Grain Analytics. All Rights Reserved by Grain Analytics
           Software Pvt Ltd
         </p>
-      </div>
+      </div> */}
     </>
   );
 };

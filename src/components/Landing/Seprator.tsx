@@ -18,7 +18,7 @@ const Seprator = () => {
         <h1 className="text-3xl md:text-5xl font-bold text-primary-secondary my-3">
           Ready to get started?
         </h1>
-        <p className="text-md md:text-lg font-medium">
+        <p className="text-md md:text-lg font-medium text-center p-2">
           We work with you to identify gaps and find solutions perfect for you
           and your unique journey.
         </p>
