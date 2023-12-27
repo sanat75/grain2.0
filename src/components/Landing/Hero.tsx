@@ -61,7 +61,8 @@ const Hero = () => {
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
     >
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full ">
+        <div className="absolute inset-0 bg-black/50" />
         <motion.div
           variants={imageVariants}
           className="object-cover w-full h-full "
@@ -73,7 +74,7 @@ const Hero = () => {
             height={1080}
             className="object-cover w-full h-full"
           /> */}
-          <video autoPlay loop muted className="object-cover w-full h-full">
+          <video autoPlay loop muted className="object-cover w-full h-full ">
             <source src="/assets/videos/home-screen.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
@@ -83,15 +84,15 @@ const Hero = () => {
       <Wrapper className="absolute">
         <motion.div
           variants={textVariants}
-          className="font-bold pt-10 md:pt-32 space-y-5"
+          className="font-bold pt-10 md:pt-32 space-y-5  "
         >
-          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold">
+          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold text-white">
             <h1>
               Revitalizing Data Insights with{" "}
               <span className="text-primary">Innovation.</span>{" "}
             </h1>
           </div>
-          <div className="text-sm md:text-lg font-medium">
+          <div className="text-sm md:text-lg font-medium text-white">
             <p> Pioneering the Age of Data Science and AI Advancements.</p>
             <p>
               We assist organizations in harnessing their data potential by

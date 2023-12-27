@@ -56,7 +56,7 @@ const Team = () => {
             <TeamCard
               name="Harsh Raghav"
               profession="Technical Consultant & Software Developer"
-              imageSrc="/assets/images/team/me.jpg"
+              imageSrc="/assets/images/team/hraghav.jpeg"
             />
             <TeamCard
               name="Lokesh Verma"
