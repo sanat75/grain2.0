@@ -38,7 +38,7 @@ const page = () => {
           <p className="text-sm font-semibold text-white">Customer Analytics</p>
         </Badge>
         <h1 className="max-w-4xl text-3xl font-bold md:text-6xl lg:text-7xl">
-          Optimize your business by predicting customers' future with AI
+          Optimize your business by predicting customers&apos; future with AI
         </h1>
         <p className="mt-5 max-w-prose dark:text-gray-400 text-gray-600  sm:text-lg">
           Our proven AI and ML provides actionable predictions of customer
