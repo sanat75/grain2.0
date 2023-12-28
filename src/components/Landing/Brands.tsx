@@ -9,25 +9,11 @@ interface BrandsProps {
   height: number;
   className: string;
 }
-
-const Brands: React.FC = () => {
-  const brands = [
-    "/assets/images/grain-client-logos/KPMG.svg",
-    "/assets/images/grain-client-logos/Allstream.svg",
-    "/assets/images/grain-client-logos/aldo.svg",
-    "/assets/images/grain-client-logos/Bell.svg",
-    "/assets/images/grain-client-logos/zayo.svg",
-    "/assets/images/grain-client-logos/Brookfield.svg",
-    "/assets/images/grain-client-logos/canadian-tire.svg",
-    "/assets/images/grain-client-logos/Deloitte.svg",
-    "/assets/images/grain-client-logos/homesquare.svg",
-    "/assets/images/grain-client-logos/Queens.svg",
-    "/assets/images/grain-client-logos/SportChek.png",
-    "/assets/images/grain-client-logos/TDbank.svg",
-    "/assets/images/grain-client-logos/toronto.png",
-    "/assets/images/grain-client-logos/vale.svg",
-    "/assets/images/grain-client-logos/smith.png",
-  ];
+type BrandProps = {
+  Logos: string[];
+};
+const Brands = ({ Logos }: BrandProps) => {
+  console.log("Logos", Logos);
   useEffect(() => {
     const div = document.getElementById("logos-container");
 
@@ -48,7 +34,7 @@ const Brands: React.FC = () => {
         id="logos-container"
         className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll "
       >
-        {brands.map((src, index) => (
+        {Logos.map((src, index) => (
           <BrandItem
             key={index}
             src={src}
