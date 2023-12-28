@@ -13,7 +13,6 @@ type BrandProps = {
   Logos: string[];
 };
 const Brands = ({ Logos }: BrandProps) => {
-  console.log("Logos", Logos);
   useEffect(() => {
     const div = document.getElementById("logos-container");
 
