@@ -91,17 +91,6 @@ const page = () => {
       </div>
       {/* Feature section */}
       <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
-        <div className="mb-12 px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="mt-2 font-bold text-4xl">
-              Start chatting in minutes
-            </h2>
-            <p className="mt-4 text-lg dark:text-gray-400 text-gray-600">
-              Chatting to your PDF files has never been easier than with
-              Infinidocs.
-            </p>
-          </div>
-        </div>
         {/* steps */}
         <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
@@ -137,6 +126,8 @@ const page = () => {
               </span>
             </div>
           </li>
+        </ol>
+        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Campaign Optimization
@@ -172,6 +163,8 @@ const page = () => {
               </span>
             </div>
           </li>
+        </ol>
+        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Lead Scoring
@@ -191,8 +184,7 @@ const page = () => {
             </div>
           </li>
         </ol>
-
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
+        {/* <div className="mx-auto max-w-6xl px-6 lg:px-8">
           <div className="mt-16 flow-root sm:mt-24">
             <Card className="bg-primary/10 -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
               <Image
@@ -204,7 +196,7 @@ const page = () => {
               />
             </Card>
           </div>
-        </div>
+        </div> */}
       </div>
       <Footer />
     </>
