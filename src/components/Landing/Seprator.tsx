@@ -20,8 +20,8 @@ const Seprator = () => {
           Who we are
         </h1>
         <h1 className="text-2xl md:text-5xl font-semibold text-white px-2 my-3">
-          We're advisors, strategists, and engineers focused on people, above
-          all else
+          We&apos;re advisors, strategists, and engineers focused on people,
+          above all else
         </h1>
         {/* <p className="text-sm md:text-sm font-medium text-center p-2">
           We work with you to identify gaps and find solutions perfect for you
