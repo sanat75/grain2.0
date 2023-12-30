@@ -41,19 +41,16 @@ const TechTools = [
   "/assets/images/techtools/azure.svg",
   "/assets/images/techtools/databricks.svg",
   "/assets/images/techtools/meta.svg",
-  "/assets/images/techtools/tiktok.svg",
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",
   "/assets/images/techtools/azure.svg",
   "/assets/images/techtools/databricks.svg",
   "/assets/images/techtools/meta.svg",
-  "/assets/images/techtools/tiktok.svg",
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",
   "/assets/images/techtools/azure.svg",
   "/assets/images/techtools/databricks.svg",
   "/assets/images/techtools/meta.svg",
-  "/assets/images/techtools/tiktok.svg",
 ];
 const Home = () => {
   return (
@@ -86,7 +83,7 @@ const Home = () => {
       </div>
       <div className=" md:p-10 py-10 px-3 text-center  ">
         <h1 className="text-xl font-extrabold  text-primary uppercase">
-          Partnered with the largest ad tech and data platforms
+          Supported the largest tech and data platforms
         </h1>
         {/* <p className="text-sm text-gray-600">
             Our approach starts with understanding your data evolution stage.
@@ -113,9 +110,13 @@ const Home = () => {
         </p> */}
       </div>
       {/* <StudyDesk /> */}
-      <Wrapper>
-        <StudySlide />
-      </Wrapper>
+      <div className="block sm:hidden">
+        <Wrapper>
+          <StudySlide />
+        </Wrapper>
+      </div>
+      <StudyDesk />
+
       {/* <StudyMob /> */}
       <Wrapper>
         <Team />

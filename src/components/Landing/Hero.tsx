@@ -100,7 +100,10 @@ const Hero = () => {
             </p>
           </div>
           <div>
-            <Link href={"/contact"}>
+            <Link
+              target="_blank"
+              href={"https://calendly.com/grainanalytics1/30min"}
+            >
               <motion.div
                 variants={buttonVariants}
                 initial="hidden"

@@ -33,15 +33,15 @@ const MobileDNATimeLine = () => {
     },
   ];
   const [currentItem, setCurrentItem] = useState(0);
-  const [inViewImage, setInViewImage] = useState("v1.png");
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentItem((currentItem) =>
         currentItem === scrollData.length - 1 ? 0 : currentItem + 1
       );
-    }, 3000);
+    }, 10000);
     return () => clearInterval(interval);
   }, [currentItem]);
+
   const goToSlide = (slideIndex: React.SetStateAction<number>) => {
     setCurrentItem(slideIndex);
   };

@@ -21,19 +21,16 @@ const TechTools = [
   "/assets/images/techtools/azure.svg",
   "/assets/images/techtools/databricks.svg",
   "/assets/images/techtools/meta.svg",
-  "/assets/images/techtools/tiktok.svg",
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",
   "/assets/images/techtools/azure.svg",
   "/assets/images/techtools/databricks.svg",
   "/assets/images/techtools/meta.svg",
-  "/assets/images/techtools/tiktok.svg",
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",
   "/assets/images/techtools/azure.svg",
   "/assets/images/techtools/databricks.svg",
   "/assets/images/techtools/meta.svg",
-  "/assets/images/techtools/tiktok.svg",
 ];
 const page = () => {
   return (
@@ -56,7 +53,8 @@ const page = () => {
             size: "lg",
             className: "mt-5",
           })}
-          href="/sign-up"
+          target="_blank"
+          href={"https://calendly.com/grainanalytics1/30min"}
         >
           Book a Demo <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
