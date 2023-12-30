@@ -36,9 +36,6 @@ const page = () => {
   return (
     <>
       <Wrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
-        <Badge className="mx-auto mb-4 flex max-w-fit items-center rounded-sm  justify-center space-x-2 overflow-hidden border  px-7 py-2 shadow-md backdrop-blur transition-all">
-          <p className="text-sm font-semibold text-white">Pricing Analytics</p>
-        </Badge>
         <h1 className="max-w-4xl text-3xl font-bold md:text-6xl lg:text-7xl">
           Economic Rollercoaster: Riding the Waves of Uncertainty with Price
           Agility
@@ -73,13 +70,14 @@ const page = () => {
         <div>
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="mt-16 flow-root sm:mt-24">
-              <Card className="bg-primary/10 -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+              <Card className=" -m-2  lgnonem-none-4 shadow-none border-none lg:p-16 p-4 md:p-8">
                 <Image
                   alt="preview of the upload page"
-                  src="/assets/images/analyitics_background.png"
+                  src="/assets/images/Pricing/pricing1.png"
                   width={1364}
                   height={866}
                   quality={100}
+                  className="object-cover rounded-sm"
                 />
               </Card>
             </div>
@@ -93,10 +91,10 @@ const page = () => {
         </div>
       </div>
       {/* Feature section */}
-      <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
+      <div className="mx-auto mb-32 mt-10 max-w-5xl sm:mt-56">
         {/* steps */}
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
-          <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Pricing Strategy &amp; Operations Diagnostics
             </span>
@@ -115,7 +113,7 @@ const page = () => {
               </span>
             </div>
           </li>
-          <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Value-Based Algorithmic Price Optimisation
             </span>
@@ -137,8 +135,8 @@ const page = () => {
             </div>
           </li>
         </ol>
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
-          <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Customer and Product Segmentation
             </span>
@@ -156,7 +154,7 @@ const page = () => {
               </span>
             </div>
           </li>
-          <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Pricing Performance Monitoring
             </span>
@@ -176,8 +174,8 @@ const page = () => {
             </div>
           </li>
         </ol>
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
-          <li className="md:flex-1 bg-primary/10 p-8 rounded-lg shadow-none border-none">
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary">
               Value-Based Sales &amp; Negotiation Strategy Workshops
             </span>
@@ -201,7 +199,7 @@ const page = () => {
         </ol>
         {/* <div className="mx-auto max-w-6xl px-6 lg:px-8">
         <div className="mt-16 flow-root sm:mt-24">
-          <Card className="bg-primary/10 -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+          <Card className=" -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
             <Image
               alt="preview of the upload page"
               src="/assets/images/analyitics_background.png"

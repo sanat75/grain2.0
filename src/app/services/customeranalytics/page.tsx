@@ -68,13 +68,14 @@ const page = () => {
         <div>
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
             <div className="mt-16 flow-root sm:mt-24">
-              <Card className=" -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
+              <Card className=" -m-2 lgnonem-none-4 shadow-none lg:p-16 p-4 md:p-8 border-none">
                 <Image
                   alt="preview of the upload page"
-                  src="/assets/images/analyitics_background.png"
+                  src="/assets/images/Customer/MMX2.png"
                   width={1364}
                   height={866}
                   quality={100}
+                  className="rounded-sm"
                 />
               </Card>
             </div>
@@ -84,7 +85,7 @@ const page = () => {
       {/* Feature section */}
       <div className="mx-auto mb-32 mt-12 max-w-5xl sm:mt-56">
         {/* steps */}
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
+        <ol className=" space-y-4 md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary ">
               Marketing Mix Modelling
@@ -119,7 +120,7 @@ const page = () => {
             </div>
           </li>
         </ol>
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary ">
               Campaign Optimization
@@ -156,7 +157,7 @@ const page = () => {
             </div>
           </li>
         </ol>
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
             <span className="text-xl font-medium text-primary ">
               Lead Scoring
