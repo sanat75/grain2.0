@@ -62,7 +62,7 @@ const BrandItem: React.FC<BrandsProps> = ({
   className,
 }) => (
   <div className="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0">
-    <Image
+    <img
       src={src}
       alt={alt}
       width={width}

@@ -1,6 +1,6 @@
 "use client";
 import { ArrowRight } from "lucide-react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Wrapper from "../Container/Wrapper";
@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
   const [ref, inView] = useInView({
     triggerOnce: true,
   });
@@ -54,6 +55,39 @@ const Hero = () => {
     },
   };
 
+  useEffect(() => {
+    // Ensure that the videoRef is defined before accessing its properties
+    if (videoRef.current) {
+      // Add an event listener to handle cases where the user interacts with the video before the timeout
+      const handleUserInteraction = () => {
+        videoRef.current?.play().catch((error) => {
+          // Handle autoplay error (e.g., due to user interaction requirements)
+          console.error("Autoplay error:", error);
+        });
+
+        // Remove the event listener once the video starts playing
+        document.removeEventListener("click", handleUserInteraction);
+      };
+
+      // Delayed autoplay after 2 seconds
+      const timeoutId = setTimeout(() => {
+        // Attempt to play the video
+        videoRef.current?.play().catch((error) => {
+          // Handle autoplay error (e.g., due to user interaction requirements)
+          console.error("Autoplay error:", error);
+
+          // Add an event listener for user interaction (e.g., click) to play the video
+          document.addEventListener("click", handleUserInteraction);
+        });
+      }, 2000);
+
+      // Clear the timeout and remove the event listener on component unmount
+      return () => {
+        clearTimeout(timeoutId);
+        document.removeEventListener("click", handleUserInteraction);
+      };
+    }
+  }, []);
   return (
     <motion.div
       className="h-full w-full flex items-center flex-row justify-between bg-primary"
@@ -67,26 +101,20 @@ const Hero = () => {
           variants={imageVariants}
           className="object-cover w-full h-full "
         >
-          {/* <Image
-            alt="analytics background image"
-            src={"/assets/Hero/main-1.png"}
-            width={1920}
-            height={1080}
-            className="object-cover w-full h-full"
-          /> */}
           <video
-            // poster="/assets/videos/home-screen.png"
+            ref={videoRef}
+            poster="/assets/videos/home-screen.png"
             autoPlay
             loop
             muted
+            playsInline
             className="object-cover w-full h-full"
           >
-            {/* <source src="/assets/videos/home-screen.webm" type="video/webm" /> */}
+            <source src="/assets/videos/home-screen.webm" type="video/webm" />
             <source
               src="https://utfs.io/f/7fd3ed86-8251-4e01-bbfb-e4532cc4902a-rpwk4m.webm"
-              type="video/mp4"
+              type="video/webm"
             />
-            Your browser does not support the video tag.
           </video>
         </motion.div>
       </div>
