@@ -1,8 +1,7 @@
 import Wrapper from "@/components/Container/Wrapper";
-import Footer from "@/components/Footer/Footer";
-import Brands from "@/components/Landing/Brands";
+
 import ToolsLogos from "@/components/ToolsLogos";
-import { Badge } from "@/components/ui/badge";
+
 import { buttonVariants } from "@/components/ui/button";
 
 import { Card } from "@/components/ui/card";
