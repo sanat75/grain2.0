@@ -110,11 +110,11 @@ const Hero = () => {
             playsInline
             className="object-cover w-full h-full"
           >
-            <source src="/assets/videos/home-screen.webm" type="video/webm" />
             <source
               src="https://utfs.io/f/7fd3ed86-8251-4e01-bbfb-e4532cc4902a-rpwk4m.webm"
               type="video/webm"
             />
+            <source src="/assets/videos/home-screen.webm" type="video/webm" />
           </video>
         </motion.div>
       </div>
