@@ -1,6 +1,8 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
+import Brands from "@/components/Landing/Brands";
 import Header from "@/components/Navigation/Header";
+import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Card,
@@ -13,321 +15,190 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
+const TechTools = [
+  "/assets/images/techtools/getintouch.svg",
+  "/assets/images/techtools/aws.svg",
+  "/assets/images/techtools/azure.svg",
+  "/assets/images/techtools/databricks.svg",
+  "/assets/images/techtools/meta.svg",
+  "/assets/images/techtools/getintouch.svg",
+  "/assets/images/techtools/aws.svg",
+  "/assets/images/techtools/azure.svg",
+  "/assets/images/techtools/databricks.svg",
+  "/assets/images/techtools/meta.svg",
+  "/assets/images/techtools/getintouch.svg",
+  "/assets/images/techtools/aws.svg",
+  "/assets/images/techtools/azure.svg",
+  "/assets/images/techtools/databricks.svg",
+  "/assets/images/techtools/meta.svg",
+];
 const page = () => {
   return (
     <>
-      <div className="font-bold pt-36  text-center space-y-5">
-        <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl space-y-5 font-extrabold">
-          <h1>
-            Limitless Possibilities, One Platform:{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
-              Grain Analytics
-            </span>{" "}
-          </h1>
-        </div>
-        <div className="text-sm md:text-xl font-light text-zinc-400">
-          AI-powered Chatbot, Code, Video, Music, and Image Generation - All in
-          One Place.
-        </div>
-        <div>
-          <Link href={"/signin"}>
-            <Button
-              variant="premium"
-              className="md:text-lg p-4 md:p-6 rounded-full font-semibold"
-            >
-              Start Generating For Free
-            </Button>
-          </Link>
-        </div>
-        <div className="text-zinc-400 text-xs md:text-sm font-normal">
-          No credit card required.
-        </div>
-      </div>
-      <div className="w-full h-56 justify-center  flex items-center flex-col px-4 text-center gap-y-4">
-        <h1 className="font-extrabold text-2xl md:text-4xl">
-          Turn your ideas into reality, Let AI enhance your creativity.
+      <Wrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+        <h1 className="max-w-4xl text-3xl font-bold md:text-6xl lg:text-7xl">
+          Demand Forecasting
         </h1>
-        <p className="text-gray-400 text-sm md:text-lg">
-          Engage with Genius: Embrace the Unrivaled Potential of AI
-          Conversations.
+        <p className="mt-5 max-w-prose dark:text-gray-400 text-gray-600  sm:text-lg">
+          Predict future consumer demand for everything you sell. Get insight
+          into the factors that drive demand. Inform data-driven decisions
+          across the business, including sales, finance, marketing, and
+          production. Improve inventory levels, reduce costs, and deliver
+          products efficiently to make customers happy.
         </p>
-      </div>
-      <div>
-        <div className="relative isolate">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          >
-            <div
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-500"
-            />
-          </div>
-        </div>
 
-        <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="mt-16 flow-root sm:mt-24">
-            <Card className="bg-primary-foreground -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
-              <Image
-                alt="growth image"
-                src={"/assets/images/pagesimages/2.png"}
-                className="w-full"
-                width={1419}
-                height={732}
-                quality={100}
-              />
-            </Card>
+        <Link
+          className={buttonVariants({
+            size: "lg",
+            className: "mt-5",
+          })}
+          target="_blank"
+          href={"https://calendly.com/grainanalytics1/30min"}
+        >
+          Book a Demo <ArrowRight className="ml-2 h-5 w-5" />
+        </Link>
+      </Wrapper>
+      <div className=" md:p-10 py-10 px-3 text-center  ">
+        <h1 className="text-xl font-extrabold  text-primary uppercase">
+          Supporting the largest tech and data platforms
+        </h1>
+        {/* <p className="text-sm text-gray-600">
+          Our approach starts with understanding your data evolution stage.
+        </p> */}
+      </div>
+
+      <Brands Logos={TechTools} />
+      <div>
+        <div>
+          <div className="mx-auto max-w-6xl px-6 lg:px-8">
+            <div className="mt-16 flow-root sm:mt-24">
+              <Card className=" -m-2  lgnonem-none-4 shadow-none border-none lg:p-16 p-4 md:p-8">
+                <Image
+                  alt="preview of the upload page"
+                  src="/assets/images/Pricing/pricing1.png"
+                  width={1364}
+                  height={866}
+                  quality={100}
+                  className="object-cover rounded-sm"
+                />
+              </Card>
+            </div>
+          </div>
+          <div className="relative isolate">
+            <div
+              aria-hidden="true"
+              className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+            ></div>
           </div>
         </div>
       </div>
-      <div className="mx-auto mb-32 mt-32 max-w-5xl sm:mt-56">
-        <div className="mb-12 px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="mt-2 font-bold text-4xl ">
-              Start chatting in minutes
-            </h2>
-            <p className="mt-4 text-lg dark:text-gray-400 text-gray-600">
-              Chatting to your PDF files has never been easier than with
-              Infinidocs.
-            </p>
-          </div>
-        </div>
+      {/* Feature section */}
+      <div className="mx-auto mb-32 mt-10 max-w-5xl sm:mt-56">
         {/* steps */}
-        <ol className="my-8 space-y-4 pt-8 md:flex md:space-x-12 md:space-y-0 p-4">
-          <li className="md:flex-1 bg-primary-foreground p-8 rounded-lg shadow-lg border">
-            <span className="text-sm font-medium text-primary">Step 1</span>
-            <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-              <span className="text-xl font-semibold">
-                Sign up for an account
-              </span>
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
+            <span className="text-xl font-medium text-primary">
+              Plan for Consumer Demand
+            </span>
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+              {/* <span className="text-md font-semibold">
+                Complete your marketing measurement and optimize budget
+              </span> */}
               <span className="mt-2 dark:text-gray-400 text-gray-600">
-                Either starting out with a free plan or choose our{" "}
-                <Link
-                  href="/pricing"
-                  className="text-primary underline underline-offset-2"
-                >
-                  pro plan
-                </Link>
-                .
+                Foresee consumer demand with trustworthy forecasts of sales,
+                orders, shipments, or other volume metrics. Enrich datasets with
+                external data on market trends. Gain accurate predictive
+                insights into what influences buyer behavior.
               </span>
             </div>
           </li>
-          <li className="md:flex-1 bg-primary-foreground p-8 rounded-lg shadow-lg border">
-            <span className="text-sm font-medium text-primary">Step 2</span>
-            <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-              <span className="text-xl font-semibold">
-                Upload your PDF file
-              </span>
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
+            <span className="text-xl font-medium text-primary">
+              Make Hyper-Granular Predictions
+            </span>
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+              {/* <span className="text-md font-semibold">
+                Predict ROAS early to focus on high-value audiences
+              </span> */}
               <span className="mt-2 dark:text-gray-400 text-gray-600">
-                We&apos;ll process your file and make it ready for you to chat
-                with.
-              </span>
-            </div>
-          </li>
-          <li className="md:flex-1 bg-primary-foreground p-8 rounded-lg shadow-lg border">
-            <span className="text-sm font-medium text-primary">Step 3</span>
-            <div className="flex flex-col space-y-2 border-l-4 border-zinc-300 py-2 pl-4 md:border-l-0 md:border-t-2 md:pb-0 md:pl-0 md:pt-4">
-              <span className="text-xl font-semibold">
-                Start asking questions
-              </span>
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
-                It&apos;s that simple. Try out Infinidocs today - it really
-                takes less than a minute.
+                Predict demand at the level of granularity that fits your
+                business need: SKU, Store + SKU, or the aggregation that works
+                best for you. Immediately see which products customers want —
+                and how and where to stock them — over a 30-, 45-, or 180-day
+                period
               </span>
             </div>
           </li>
         </ol>
-
-        <div className="relative isolate">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
-          >
-            <div
-              style={{
-                clipPath:
-                  "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-              }}
-              className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem] bg-gradient-to-r from-yellow-200 via-yellow-300 to-yellow-500"
-            />
-          </div>
-        </div>
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
+            <span className="text-xl font-medium text-primary">
+              Forecast Sales and Cash Flow
+            </span>
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+              {/* <span className="text-md font-semibold">
+                Boost campaigns with predictive analytics
+              </span> */}
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                Predict sales trends and understand their impact on cash flow.
+                Better align resources across the business to meet customer
+                expectations and revenue goals with demand forecasting.
+              </span>
+            </div>
+          </li>
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
+            <span className="text-xl font-medium text-primary">
+              Drive Customer Experience
+            </span>
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+              {/* <span className="text-md font-semibold">
+                Keep your customers engaged for the long haul
+              </span> */}
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                Provide an excellent customer experience with the right products
+                and resources at the right time. Improve CSAT and your bottom
+                line with predictive analytics.
+              </span>
+            </div>
+          </li>
+        </ol>
+        <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
+            <span className="text-xl font-medium text-primary">
+              Manage Inventory and Reduce Overstock
+            </span>
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+              {/* <span className="text-md font-semibold">
+                Prioritize the right leads with predictions and watch revenue
+                rise
+              </span> */}
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                Prevent overstocking or stockouts, optimizing inventory levels
+                for improved operational efficiency. Reduce inventory holding
+                costs by as much as 20%. Reduce supply lead time, lower reverse
+                logistics costs, and increase sales with better product
+                availability.
+              </span>
+            </div>
+          </li>
+          <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
+            <span className="text-xl font-medium text-primary">
+              Automate Integrations for Seamless Forecasts
+            </span>
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+              {/* <span className="text-md font-semibold">
+                Prioritize the right leads with predictions and watch revenue
+                rise
+              </span> */}
+              <span className="mt-2 dark:text-gray-400 text-gray-600">
+                Eliminate manual data ingestion and preparation processes.
+                Automate the entire data workflow, from ingestion to your ERP,
+                with seamless connections to and from Pecan.
+              </span>
+            </div>
+          </li>
+        </ol>
       </div>
-      {/* <div className="hidden sm:block mx-auto max-w-3xl px-6 lg:px-8">
-        <div className="flow-root ">
-          <Card className="border-none shadow-none -m-2 rounded-xl lg:-m-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
-            <Image
-              alt="growth image"
-              src={"/assets/images/pagesimages/8.svg"}
-              className="w-full"
-              width={100}
-              quality={100}
-              height={100}
-            />
-          </Card>
-        </div>
-      </div>
-      <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
-          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
-            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1 className="text-3xl">
-                Build a Roadmap based on User Stories
-              </h1>
-            </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
-              Your research is only as valuable as its reach. Amplify your
-              findings by turning hours of customer interviews into beautiful
-              and engaging stories—ready to share with your stakeholders.
-            </div>
-          </div>
-          <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
-            <Image
-              alt="growth image"
-              src={"/assets/images/pagesimages/2.png"}
-              className="rounded-md shadow-lg w-full h"
-              width={500}
-              height={100}
-            />
-          </div>
-        </Wrapper>
-      </div>
-      <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
-            <Image
-              alt="growth image"
-              src={"/assets/images/pagesimages/3.png"}
-              className="rounded-md shadow-lg w-full h"
-              width={500}
-              height={100}
-            />
-          </div>
-          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
-            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1 className="text-3xl">
-                Customer Meetings to Insights in Seconds
-              </h1>
-            </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
-              Ditch the manual notes and capture insightful moments as they
-              happen. No need to edit long recordings, switch between multiple
-              apps or re-type your call notes.
-            </div>
-          </div>
-        </Wrapper>
-      </div>
-      <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col-reverse sm:flex-row justify-between items-center">
-          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
-            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1 className="text-3xl">
-                Share your Customer&apos;s Perspective Everywhere
-              </h1>
-            </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
-              Share and collaborate with your team effortlessly. Publish Grain
-              highlights and stories directly into your team’s favorite tools
-              like Slack, Asana, Notion, and Productboard.
-            </div>
-          </div>
-          <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
-            <Image
-              alt="growth image"
-              src={"/assets/images/pagesimages/4.png"}
-              className="rounded-md shadow-lg w-full h"
-              width={500}
-              height={100}
-            />
-          </div>
-        </Wrapper>
-      </div>
-      <div className="min-h-[350px] md:min-h-[550px] w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4">
-        <Wrapper className="w-full max-w-screen-xl px-2.5 md:px-12 flex flex-col sm:flex-row justify-between items-center">
-          <div className="flex w-full mt-10 sm:mt-0 sm:w-1/2 h-full justify-end items-center">
-            <Image
-              alt="growth image"
-              src={"/assets/images/pagesimages/5.png"}
-              className="rounded-md shadow-lg w-full h"
-              width={500}
-              height={100}
-            />
-          </div>
-          <div className="font-bold  md:text-start md:w-1/2 md:p-8">
-            <div className="text-lg  font-extrabold  mt-10 sm:mt-0">
-              <h1 className="text-3xl">Democratize Research Insights</h1>
-            </div>
-            <div className="text-zinc-600 text-md font-normal pt-14">
-              Use Grain on your customer meetings to build an easy-to-use,
-              searchable repository of customer and market knowledge. Your
-              stakeholders can hear from the customer first hand, without any
-              hand-holding.
-            </div>
-          </div>
-        </Wrapper>
-      </div> */}
-      <Wrapper>
-        <div className="w-full flex flex-wrap gap-2 justify-between items-center  sm:mb-20 ">
-          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
-            <CardHeader>
-              <Image
-                alt="growth image"
-                src={"/assets/images/pagesimages/6.png"}
-                className="rounded-md shadow-lg w-full h-56"
-                width={100}
-                height={100}
-              />
-              <CardTitle className="text-lg  mt-4 font-medium text-center">
-                Parse and Analyze All Your Interviews
-              </CardTitle>
-              {/* <CardDescription>
-                Clip the golden nuggets from your customer interviews and share
-                them effortlessly.
-              </CardDescription> */}
-            </CardHeader>
-          </Card>
-          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
-            <CardHeader>
-              <Image
-                alt="growth image"
-                src={"/assets/images/pagesimages/7.png"}
-                className="rounded-md shadow-lg w-full h-56"
-                width={100}
-                height={100}
-              />
-              <CardTitle className="text-lg  mt-4 font-medium text-center">
-                Embed Your Customer&apos;s Perspective in Product Briefs and
-                Engineering Tickets
-              </CardTitle>
-              {/* <CardDescription>
-                Let your stakeholders hear from customers first-hand on the most
-                important problems to solve.
-              </CardDescription> */}
-            </CardHeader>
-          </Card>
-          <Card className="w-full h-[350px] sm:w-[350px] shadow-lg border">
-            <CardHeader>
-              <Image
-                alt="growth image"
-                src={"/assets/images/pagesimages/2.png"}
-                className="rounded-md shadow-lg w-full h-56"
-                width={100}
-                height={100}
-              />
-              <CardTitle className="text-lg  mt-4 font-medium text-center">
-                Compile Stories of User Feedback
-              </CardTitle>
-              {/* <CardDescription>
-                Remix and combine customer clips to tell a powerful narrative.
-              </CardDescription> */}
-            </CardHeader>
-          </Card>
-        </div>
-      </Wrapper>
     </>
   );
 };

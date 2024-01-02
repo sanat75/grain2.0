@@ -74,8 +74,15 @@ const Hero = () => {
             height={1080}
             className="object-cover w-full h-full"
           /> */}
-          <video autoPlay loop muted className="object-cover w-full h-full ">
+          <video
+            poster="/assets/videos/home-screen.png"
+            autoPlay
+            loop
+            muted
+            className="object-cover w-full h-full "
+          >
             <source src="/assets/videos/home-screen.webm" type="video/webm" />
+            <source src="/assets/videos/home-screen.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </motion.div>
