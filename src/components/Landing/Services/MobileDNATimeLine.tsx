@@ -56,7 +56,7 @@ const MobileDNATimeLine = () => {
     setCurrentItem(slideIndex);
   };
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <div className="absolute inset-0 bg-black/50 z-10" />
       <div className="mobile-mockup-screen absolute flex-box absolute-center w">
         <Image

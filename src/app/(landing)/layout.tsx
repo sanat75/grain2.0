@@ -5,7 +5,7 @@ import Header from "@/components/Navigation/Header";
 const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-      <div className="relative w-screen h-[600px] md:h-screen">
+      <div className="relative w-screen h-[600px] md:h-screen overflow-hidden">
         <Header />
         {children}
       </div>
