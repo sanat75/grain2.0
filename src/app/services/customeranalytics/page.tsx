@@ -1,6 +1,7 @@
 import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Brands from "@/components/Landing/Brands";
+import ToolsLogos from "@/components/ToolsLogos";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 
@@ -30,11 +31,11 @@ const TechTools = [
 const page = () => {
   return (
     <>
-      <Wrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <Wrapper className="mb-12 mt-20 sm:mt-40 flex flex-col items-center justify-center text-center">
         {/* <Badge className="mx-auto mb-4 flex max-w-fit items-center rounded-sm  justify-center space-x-2 overflow-hidden border  px-7 py-2 shadow-md backdrop-blur transition-all">
           <p className="text-sm font-semibold text-white">Customer Analytics</p>
         </Badge> */}
-        <h1 className="max-w-4xl text-3xl font-bold md:text-6xl lg:text-7xl">
+        <h1 className="max-w-4xl text-2xl font-bold md:text-6xl lg:text-7xl">
           Optimize your business by predicting customers&apos; future with AI
         </h1>
         <p className="mt-5 max-w-prose dark:text-gray-400 text-gray-600  sm:text-lg">
@@ -63,11 +64,11 @@ const page = () => {
           </p> */}
       </div>
 
-      <Brands Logos={TechTools} />
+      <ToolsLogos Logos={TechTools} />
       <div>
         <div>
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="mt-16 flow-root sm:mt-24">
+            <div className="mt-8 flow-root">
               <Card className=" -m-2 lgnonem-none-4 shadow-none lg:p-16 p-4 md:p-8 border-none">
                 <Image
                   alt="preview of the upload page"
@@ -83,7 +84,7 @@ const page = () => {
         </div>
       </div>
       {/* Feature section */}
-      <div className="mx-auto mb-32 mt-12 max-w-5xl sm:mt-56">
+      <div className="mx-auto mb-32 mt-12 max-w-5xl  ">
         {/* steps */}
         <ol className=" space-y-4 md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
@@ -94,7 +95,7 @@ const page = () => {
               <span className="text-md font-semibold">
                 Complete your marketing measurement and optimize budget
               </span>
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Predict your channels performance so you can refine your channel
                 mix and budget allocation. Know which channels will drive the
                 highest future value and take immediate action. Grains
@@ -110,7 +111,7 @@ const page = () => {
               <span className="text-md font-semibold">
                 Predict ROAS early to focus on high-value audiences
               </span>
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Discover a campaign&apos;s total value and likely return on ad
                 spend (ROAS) early by predicting and aggregating customer
                 lifetime value.  Invest more in campaigns that will drive
@@ -129,7 +130,7 @@ const page = () => {
               <span className="text-md font-semibold">
                 Boost campaigns with predictive analytics
               </span>
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Maximize campaign results with the power of machine learning.
                 Transform your optimization strategy with AI-driven predictive
                 events fueled by rich user and engagement data. Gain greater
@@ -146,7 +147,7 @@ const page = () => {
               <span className="text-md font-semibold">
                 Keep your customers engaged for the long haul
               </span>
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Identify which of your customers are most likely to churn. Use
                 predictions to proactively improve retention and drive customer
                 lifetime value. Boost your retention campaigns through rapid
@@ -167,7 +168,7 @@ const page = () => {
                 Prioritize the right leads with predictions and watch revenue
                 rise
               </span>
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Feed AI-generated predictions directly into your CRM so teams
                 can prioritize deals most likely to close. Don&apos;t waste time
                 and money on leads that won&apos;t go anywhere. With scores at
@@ -178,7 +179,7 @@ const page = () => {
           </li>
         </ol>
         {/* <div className="mx-auto max-w-6xl px-6 lg:px-8">
-          <div className="mt-16 flow-root sm:mt-24">
+           <div className="mt-8 flow-root">
             <Card className=" -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
               <Image
                 alt="preview of the upload page"

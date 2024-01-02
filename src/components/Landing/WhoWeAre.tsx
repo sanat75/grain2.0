@@ -1,42 +1,15 @@
 "use client";
 import React from "react";
-
-import { Button } from "../ui/button";
-import { ArrowRight } from "lucide-react";
 import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import { motion } from "framer-motion";
 import Wrapper from "../Container/Wrapper";
 
 const WhoWeAre = () => {
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.4,
-  });
-
-  const animationVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1, type: "spring", bounce: 0.5 },
-    },
-  };
-
-  // Trigger the animation when inView becomes true
-  if (inView) {
-    controls.start("visible");
-  }
-
   return (
     <Wrapper>
       <motion.div
-        ref={ref}
         initial="hidden"
-        animate={controls}
-        variants={animationVariants}
-        className="min-h-[320px] md:min-h-[650px] mt-8 sm:mt-0 w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4"
+        className="min-h-[220px] md:min-h-[650px] mt-8 sm:mt-0 w-full flex flex-col justify-center items-center md:flex-row md:justify-between px-4"
       >
         <div className="w-full max-w-screen-xl  flex justify-between  items-center">
           <div className="font-bold md:text-start md:w-1/2">
@@ -54,14 +27,6 @@ const WhoWeAre = () => {
               goal, find the gaps, then match you with the right people,
               processes, and tools to get there – coaching you the entire way.
             </div>
-            {/* <div className="w-full flex pt-4 justify-center sm:justify-start">
-              <Button className="text-white bg-primary-secondary flex gap-2 items-center hover:scale-105 transition-all">
-                <span>Work With us</span>
-                <span>
-                  <ArrowRight />
-                </span>
-              </Button>
-            </div> */}
           </div>
           <div className="hidden md:flex md:w-1/2 h-full justify-end items-center">
             <Image

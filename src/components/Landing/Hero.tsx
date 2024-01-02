@@ -79,7 +79,7 @@ const Hero = () => {
             autoPlay
             loop
             muted
-            className="object-cover w-full h-full "
+            className="object-cover w-full h-full"
           >
             <source src="/assets/videos/home-screen.webm" type="video/webm" />
             <source src="/assets/videos/home-screen.mp4" type="video/mp4" />

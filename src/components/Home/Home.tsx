@@ -18,6 +18,8 @@ import MobileScroll from "@/components/mobileScroll/MobileScroll";
 import MobileScreen from "../mobileScroll/MobileScreen";
 import Team from "../Team/Team";
 import MobileDNATimeLine from "../Landing/Services/MobileDNATimeLine";
+import CompaniesLogos from "../ToolsLogos";
+import ToolsLogos from "../ToolsLogos";
 const brands = [
   "/assets/images/grain-client-logos/KPMG.svg",
   "/assets/images/grain-client-logos/Allstream.svg",
@@ -89,7 +91,7 @@ const Home = () => {
             Our approach starts with understanding your data evolution stage.
           </p> */}
       </div>
-      <Brands Logos={TechTools} />
+      <ToolsLogos Logos={TechTools} />
       <Seprator />
       {/* <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-6xl space-y-5 font-extrabold text-center text-primary md:p-10 py-10 px-3">
   YOUR ANALYTICS JOURNEY BEGINS HERE

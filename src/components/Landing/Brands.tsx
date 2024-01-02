@@ -55,7 +55,7 @@ const BrandItem: React.FC<BrandsProps> = ({
   height,
   className,
 }) => (
-  <div className="w-32 h-32 flex items-center justify-center hover:bg-secondary hover:shadow-2xl transition-all border border-dashed border-secondary grayscale hover:grayscale-0 ">
+  <div className="w-32 h-32 flex items-center justify-center grayscale hover:grayscale-0">
     <Image
       src={src}
       alt={alt}

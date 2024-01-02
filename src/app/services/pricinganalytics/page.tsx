@@ -2,6 +2,7 @@ import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Brands from "@/components/Landing/Brands";
 import Header from "@/components/Navigation/Header";
+import ToolsLogos from "@/components/ToolsLogos";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -35,7 +36,7 @@ const TechTools = [
 const page = () => {
   return (
     <>
-      <Wrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <Wrapper className="mb-12 mt-20 sm:mt-40 flex flex-col items-center justify-center text-center">
         <h1 className="max-w-4xl text-3xl font-bold md:text-6xl lg:text-7xl">
           Economic Rollercoaster: Riding the Waves of Uncertainty with Price
           Agility
@@ -65,11 +66,11 @@ const page = () => {
         </p> */}
       </div>
 
-      <Brands Logos={TechTools} />
+      <ToolsLogos Logos={TechTools} />
       <div>
         <div>
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="mt-16 flow-root sm:mt-24">
+            <div className="mt-8 flow-root">
               <Card className=" -m-2  lgnonem-none-4 shadow-none border-none lg:p-16 p-4 md:p-8">
                 <Image
                   alt="preview of the upload page"
@@ -91,7 +92,7 @@ const page = () => {
         </div>
       </div>
       {/* Feature section */}
-      <div className="mx-auto mb-32 mt-10 max-w-5xl sm:mt-56">
+      <div className="mx-auto mb-32 mt-10 max-w-5xl  ">
         {/* steps */}
         <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
@@ -102,7 +103,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Complete your marketing measurement and optimize budget
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 The Pricing Strategy and Operations Diagnostic is an independent
                 assessment of your current pricing practices that identifies
                 margin risks and earnings opportunities via a series of quick
@@ -121,7 +122,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Predict ROAS early to focus on high-value audiences
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Value-based algorithmic price optimisation is a sophisticated
                 approach to pricing that will address these key challenges and
                 deliver between $2.0M and $9.0M for every $100M of revenue
@@ -144,7 +145,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Boost campaigns with predictive analytics
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Build customer and product segments based on similarity in
                 pricing behavior and pricing power. With data-driven
                 micro-segmentation, your organization can analyze margins by
@@ -162,7 +163,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Keep your customers engaged for the long haul
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Best-in-class pricing processes with clear pricing metrics and
                 visibility into the effectiveness of pricing decisions. Tailored
                 intelligence dashboards combine our pricing expertise with your
@@ -184,7 +185,7 @@ const page = () => {
                 Prioritize the right leads with predictions and watch revenue
                 rise
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 A Value-Based Sales &amp; Negotiation Strategy Workshop is a
                 fast, cost- effective way to bring teams together to create a
                 shared understanding of value. A workshop will enable teams to
@@ -198,7 +199,7 @@ const page = () => {
           </li>
         </ol>
         {/* <div className="mx-auto max-w-6xl px-6 lg:px-8">
-        <div className="mt-16 flow-root sm:mt-24">
+         <div className="mt-8 flow-root">
           <Card className=" -m-2 rounded-xl lgnonem-none-4 lg:rounded-2xl lg:p-16 p-4 md:p-8">
             <Image
               alt="preview of the upload page"

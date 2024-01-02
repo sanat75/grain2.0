@@ -27,7 +27,10 @@ const Footer = () => {
                 Uncover the true value of your data.
               </p>
               <div>
-                <Link href={"/contact"}>
+                <Link
+                  target="_blank"
+                  href={"https://calendly.com/grainanalytics1/30min"}
+                >
                   <Button className="bg-primary text-white px-8 py-2  mt-4">
                     Get in touch <SendIcon className="w-4 h-4 ml-2" />
                   </Button>

@@ -2,6 +2,7 @@ import Wrapper from "@/components/Container/Wrapper";
 import Footer from "@/components/Footer/Footer";
 import Brands from "@/components/Landing/Brands";
 import Header from "@/components/Navigation/Header";
+import ToolsLogos from "@/components/ToolsLogos";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
 import {
@@ -35,7 +36,7 @@ const TechTools = [
 const page = () => {
   return (
     <>
-      <Wrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
+      <Wrapper className="mb-12 mt-20 sm:mt-40 flex flex-col items-center justify-center text-center">
         <h1 className="max-w-4xl text-3xl font-bold md:text-6xl lg:text-7xl">
           Demand Forecasting
         </h1>
@@ -67,15 +68,15 @@ const page = () => {
         </p> */}
       </div>
 
-      <Brands Logos={TechTools} />
+      <ToolsLogos Logos={TechTools} />
       <div>
         <div>
           <div className="mx-auto max-w-6xl px-6 lg:px-8">
-            <div className="mt-16 flow-root sm:mt-24">
+            <div className="mt-8 flow-root">
               <Card className=" -m-2  lgnonem-none-4 shadow-none border-none lg:p-16 p-4 md:p-8">
                 <Image
                   alt="preview of the upload page"
-                  src="/assets/images/Pricing/pricing1.png"
+                  src="/assets/images/Demand/demandForcasting.png"
                   width={1364}
                   height={866}
                   quality={100}
@@ -93,7 +94,7 @@ const page = () => {
         </div>
       </div>
       {/* Feature section */}
-      <div className="mx-auto mb-32 mt-10 max-w-5xl sm:mt-56">
+      <div className="mx-auto mb-32 mt-10 max-w-5xl  ">
         {/* steps */}
         <ol className=" space-y-4  md:flex md:space-x-12 md:space-y-0 p-4">
           <li className="md:flex-1  p-8 rounded-lg shadow-none border-none">
@@ -104,7 +105,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Complete your marketing measurement and optimize budget
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Foresee consumer demand with trustworthy forecasts of sales,
                 orders, shipments, or other volume metrics. Enrich datasets with
                 external data on market trends. Gain accurate predictive
@@ -120,7 +121,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Predict ROAS early to focus on high-value audiences
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Predict demand at the level of granularity that fits your
                 business need: SKU, Store + SKU, or the aggregation that works
                 best for you. Immediately see which products customers want —
@@ -139,7 +140,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Boost campaigns with predictive analytics
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Predict sales trends and understand their impact on cash flow.
                 Better align resources across the business to meet customer
                 expectations and revenue goals with demand forecasting.
@@ -154,7 +155,7 @@ const page = () => {
               {/* <span className="text-md font-semibold">
                 Keep your customers engaged for the long haul
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Provide an excellent customer experience with the right products
                 and resources at the right time. Improve CSAT and your bottom
                 line with predictive analytics.
@@ -172,7 +173,7 @@ const page = () => {
                 Prioritize the right leads with predictions and watch revenue
                 rise
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Prevent overstocking or stockouts, optimizing inventory levels
                 for improved operational efficiency. Reduce inventory holding
                 costs by as much as 20%. Reduce supply lead time, lower reverse
@@ -190,7 +191,7 @@ const page = () => {
                 Prioritize the right leads with predictions and watch revenue
                 rise
               </span> */}
-              <span className="mt-2 dark:text-gray-400 text-gray-600">
+              <span className="mt-2 dark:text-gray-400 text-gray-600 text-sm">
                 Eliminate manual data ingestion and preparation processes.
                 Automate the entire data workflow, from ingestion to your ERP,
                 with seamless connections to and from Pecan.

@@ -42,10 +42,19 @@ const MobileDNATimeLine = () => {
     return () => clearInterval(interval);
   }, [currentItem]);
 
+  const nextItem = () => {
+    setCurrentItem((prev) => (prev + 1) % scrollData.length);
+  };
+
+  const prevItem = () => {
+    setCurrentItem(
+      (prevItem) => (prevItem - 1 + scrollData.length) % scrollData.length
+    );
+  };
+
   const goToSlide = (slideIndex: React.SetStateAction<number>) => {
     setCurrentItem(slideIndex);
   };
-
   return (
     <div className="relative">
       <div className="absolute inset-0 bg-black/50 z-10" />
@@ -69,27 +78,27 @@ const MobileDNATimeLine = () => {
                 : "hidden"
             }`}
           >
-            <h1 className="font-bold text-5xl text-primary">
+            <h1 className="font-bold text-5xl text-primary px-4">
               {screen.heading}
             </h1>
-            <p className="text-md py-4 text-white">{screen.description}</p>
+            <p className="text-md py-4 text-white px-4">{screen.description}</p>
             <Link href={screen.route}>
               <Button
                 variant="outline"
-                className="md:text-lg p-4 md:p-6 text-primary border-primary hover:bg-primary hover:text-white transition-all ease-in-out"
+                className="md:text-lg p-4 ml-4 md:p-6 text-primary border-primary hover:bg-primary hover:text-white transition-all ease-in-out"
               >
                 know more
               </Button>
             </Link>
           </div>
         ))}
-        {/* <div className="sm:hidden group-hover:block absolute top-1/2 -translate-x-0 -translate-y-1/2 left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactLeft onClick={prevItem} size={30} />
+        <div className="sm:hidden group-hover:block absolute top-1/2 -translate-x-0 -translate-y-1/2 -left-3 text-2xl rounded-full p-2 font-bold z-50 text-white cursor-pointer">
+          <BsChevronCompactLeft onClick={prevItem} size={50} />
         </div>
 
-        <div className="sm:hidden group-hover:block absolute top-1/2 -translate-x-0 -translate-y-1/2 right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
-          <BsChevronCompactRight onClick={nextItem} size={30} />
-        </div> */}
+        <div className="sm:hidden group-hover:block absolute top-1/2 -translate-x-0 -translate-y-1/2 -right-3 text-2xl rounded-full p-2 font-bold z-50 text-white cursor-pointer">
+          <BsChevronCompactRight onClick={nextItem} size={50} />
+        </div>
 
         <div className="flex top-4 justify-center py-2 z-20">
           {scrollData.map((_, slideIndex) => (
