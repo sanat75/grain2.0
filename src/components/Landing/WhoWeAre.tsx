@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
-import Image from "next/image";
+
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 import Wrapper from "../Container/Wrapper";
 
 const WhoWeAre = () => {
@@ -31,7 +33,7 @@ const WhoWeAre = () => {
           <div className="hidden md:flex md:w-1/2 h-full justify-end items-center">
             <Image
               alt="growth image"
-              src={"/assets/images/report.jpg"}
+              src={"/assets/images/graincomman.avif"}
               width={500}
               height={500}
             />
