@@ -1,8 +1,11 @@
 "use client";
-import { useState } from "react";
 import "./mobileScroll.css";
-import ScreenText from "./ScreenText";
+
+import { useState } from "react";
+
 import Image from "next/image";
+
+import ScreenText from "./ScreenText";
 
 const scrollData = [
   {

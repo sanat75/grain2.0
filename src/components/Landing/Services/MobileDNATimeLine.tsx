@@ -66,6 +66,7 @@ const MobileDNATimeLine = () => {
           className=" bg-primary transition-all ease-out relative"
           width={500}
           height={100}
+          quality={50}
           key={scrollData[currentItem].mobile_img}
         />
       </div>
