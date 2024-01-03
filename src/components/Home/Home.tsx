@@ -1,25 +1,16 @@
 import React from "react";
+
 import Wrapper from "@/components/Container/Wrapper";
-import Footer from "@/components/Footer/Footer";
-import Brands from "@/components/Landing/Brands";
-import CaseStudy from "@/components/Landing/CaseStudy";
-import OurDNA from "@/components/Landing/OurDNA";
 import Seprator from "@/components/Landing/Seprator";
-import DNATimeLine from "@/components/Landing/Services/DNATimeLine";
-import TimeLine from "@/components/Landing/Services/TimeLine";
-import Studies from "@/components/Landing/Studies";
-import WhatWeDo from "@/components/Landing/WhatWeDo";
 import WhoWeAre from "@/components/Landing/WhoWeAre";
-import Header from "@/components/Navigation/Header";
-import StudyDesk from "@/components/Study/StudyDesk";
-import StudyMob from "@/components/Study/StudyMob";
-import StudySlide from "@/components/Study/StudySlide";
 import MobileScroll from "@/components/mobileScroll/MobileScroll";
-import MobileScreen from "../mobileScroll/MobileScreen";
-import Team from "../Team/Team";
+import StudyDesk from "@/components/Study/StudyDesk";
+import StudySlide from "@/components/Study/StudySlide";
+
 import MobileDNATimeLine from "../Landing/Services/MobileDNATimeLine";
-import CompaniesLogos from "../ToolsLogos";
+import Team from "../Team/Team";
 import ToolsLogos from "../ToolsLogos";
+
 const brands = [
   "/assets/images/grain-client-logos/KPMG.svg",
   "/assets/images/grain-client-logos/Allstream.svg",

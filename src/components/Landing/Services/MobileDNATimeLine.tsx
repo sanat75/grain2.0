@@ -1,12 +1,13 @@
 "use client";
-import Wrapper from "@/components/Container/Wrapper";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import React, { useEffect, useState } from "react";
+
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+
+import { Button } from "@/components/ui/button";
+
 const MobileDNATimeLine = () => {
   const scrollData = [
     {
@@ -20,7 +21,7 @@ const MobileDNATimeLine = () => {
       heading: "Retail Analytics",
       description:
         "Get insight into the factors that drive demand. Inform data- driven decisions across the business, including sales, finance, marketing, and production. Improve inventory levels, reduce costs, and deliver products efficiently to make customers happy.",
-      mobile_img: "/assets/images/dashboard/dash2.jpg",
+      mobile_img: "/assets/images/dashboard/dash2.webp",
       route: "/services/retailanalytics",
     },
 
