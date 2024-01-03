@@ -21,7 +21,7 @@ const MobileDNATimeLine = () => {
       heading: "Retail Analytics",
       description:
         "Get insight into the factors that drive demand. Inform data- driven decisions across the business, including sales, finance, marketing, and production. Improve inventory levels, reduce costs, and deliver products efficiently to make customers happy.",
-      mobile_img: "/assets/images/dashboard/dash2.webp",
+      mobile_img: "/assets/images/dashboard/dash2.jpg",
       route: "/services/retailanalytics",
     },
 

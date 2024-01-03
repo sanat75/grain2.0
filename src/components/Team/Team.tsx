@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import { Button } from "../ui/button";
-import Link from "next/link";
+
 const Team = () => {
   return (
     <section className="pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
@@ -9,13 +8,14 @@ const Team = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span className="mb-2 block font-semibold text-primary uppercase text-xl">
+              <h1 className="text-xl font-extrabold  text-primary uppercase mb-2">
                 Our Team
-              </span>
+              </h1>
 
               <p className="text-base text-body-color dark:text-dark-6">
-                We are a team of passionate people whose goal is to improve
-                everyone&apos;s life through disruptive products.
+                Our team includes some of the most experienced data scientists,
+                modelling experts, statisticians and marketing experts in North
+                America.
               </p>
             </div>
           </div>
