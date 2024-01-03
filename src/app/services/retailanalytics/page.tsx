@@ -1,21 +1,14 @@
-import Wrapper from "@/components/Container/Wrapper";
-import Footer from "@/components/Footer/Footer";
-import Brands from "@/components/Landing/Brands";
-import Header from "@/components/Navigation/Header";
-import ToolsLogos from "@/components/ToolsLogos";
-import { Badge } from "@/components/ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import React from "react";
+
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
+import Wrapper from "@/components/Container/Wrapper";
+import ToolsLogos from "@/components/ToolsLogos";
+import { buttonVariants } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
 const TechTools = [
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",
@@ -101,7 +94,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Plan for Consumer Demand
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Complete your marketing measurement and optimize budget
               </span> */}
@@ -117,7 +110,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Make Hyper-Granular Predictions
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Predict ROAS early to focus on high-value audiences
               </span> */}
@@ -136,7 +129,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Forecast Sales and Cash Flow
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Boost campaigns with predictive analytics
               </span> */}
@@ -151,7 +144,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Drive Customer Experience
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Keep your customers engaged for the long haul
               </span> */}
@@ -168,7 +161,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Manage Inventory and Reduce Overstock
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Prioritize the right leads with predictions and watch revenue
                 rise
@@ -186,7 +179,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Automate Integrations for Seamless Forecasts
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Prioritize the right leads with predictions and watch revenue
                 rise

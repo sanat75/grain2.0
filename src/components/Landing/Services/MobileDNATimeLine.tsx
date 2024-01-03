@@ -87,9 +87,9 @@ const MobileDNATimeLine = () => {
             <Link href={screen.route}>
               <Button
                 variant="outline"
-                className="md:text-lg p-4 ml-4 md:p-6 text-primary border-primary hover:bg-primary hover:text-white transition-all ease-in-out"
+                className="md:text-lg uppercase p-4 ml-4 md:p-6 text-primary border-primary hover:bg-primary hover:text-white transition-all ease-in-out"
               >
-                know more
+                Learn More
               </Button>
             </Link>
           </div>

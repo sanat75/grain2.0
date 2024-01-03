@@ -1,15 +1,14 @@
-import Wrapper from "@/components/Container/Wrapper";
+import React from "react";
 
-import ToolsLogos from "@/components/ToolsLogos";
-
-import { buttonVariants } from "@/components/ui/button";
-
-import { Card } from "@/components/ui/card";
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-import React from "react";
+import Wrapper from "@/components/Container/Wrapper";
+import ToolsLogos from "@/components/ToolsLogos";
+import { buttonVariants } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
 const TechTools = [
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",

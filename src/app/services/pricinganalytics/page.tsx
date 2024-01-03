@@ -92,7 +92,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Pricing Strategy &amp; Operations Diagnostics
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Complete your marketing measurement and optimize budget
               </span> */}
@@ -111,7 +111,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Value-Based Algorithmic Price Optimisation
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Predict ROAS early to focus on high-value audiences
               </span> */}
@@ -134,7 +134,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Customer and Product Segmentation
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Boost campaigns with predictive analytics
               </span> */}
@@ -152,7 +152,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Pricing Performance Monitoring
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Keep your customers engaged for the long haul
               </span> */}
@@ -173,7 +173,7 @@ const page = () => {
             <span className="text-xl font-medium text-primary">
               Value-Based Sales &amp; Negotiation Strategy Workshops
             </span>
-            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4">
+            <div className="flex flex-col space-y-2 border-l-4  py-2 pl-4 md:border-l-0 border-primary  md:pb-0 md:pl-0 md:pt-4 mt-4">
               {/* <span className="text-md font-semibold">
                 Prioritize the right leads with predictions and watch revenue
                 rise
