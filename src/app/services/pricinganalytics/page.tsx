@@ -1,21 +1,14 @@
-import Wrapper from "@/components/Container/Wrapper";
-import Footer from "@/components/Footer/Footer";
-import Brands from "@/components/Landing/Brands";
-import Header from "@/components/Navigation/Header";
-import ToolsLogos from "@/components/ToolsLogos";
-import { Badge } from "@/components/ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import React from "react";
+
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
+import Wrapper from "@/components/Container/Wrapper";
+import ToolsLogos from "@/components/ToolsLogos";
+import { buttonVariants } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+
 const TechTools = [
   "/assets/images/techtools/getintouch.svg",
   "/assets/images/techtools/aws.svg",
@@ -74,7 +67,7 @@ const page = () => {
               <Card className=" -m-2  lgnonem-none-4 shadow-none border-none lg:p-16 p-4 md:p-8">
                 <Image
                   alt="preview of the upload page"
-                  src="/assets/images/Pricing/pricing1.png"
+                  src="/assets/images/Pricing/Pricing1.png"
                   width={1364}
                   height={866}
                   quality={100}
