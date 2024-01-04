@@ -65,12 +65,12 @@ const Team = () => {
             />
 
             <TeamCard
-              name="Chanddeep Singh"
+              name="Chandeep Singh"
               profession="Analytics Consultant"
               imageSrc="/assets/images/team/PHOTO-2023-11-25-00-53-28.jpg"
             />
             <TeamCard
-              name="tanishq Malik"
+              name="Tanishq Malik"
               profession="Analytics Consultant"
               imageSrc="/assets/images/team/Tanishq Malik.jpg"
             />
