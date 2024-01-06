@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import Wrapper from "../Container/Wrapper";
-import { buttonVariants } from "../ui/button";
 import MobileNavigation from "./MobileNavigation";
 import { components, ListItem } from "./Navigation";
 
@@ -75,7 +74,7 @@ const Header = ({ TextColor }: { TextColor: string }) => {
                   </NavigationMenuContent>
                 </NavigationMenuItem>
               </NavigationMenu>
-              <Link
+              {/* <Link
                 href="/"
                 className={buttonVariants({
                   variant: "ghost",
@@ -107,7 +106,7 @@ const Header = ({ TextColor }: { TextColor: string }) => {
                 })}
               >
                 Contact US
-              </Link>
+              </Link> */}
             </div>
           </div>
         </Wrapper>
