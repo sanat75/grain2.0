@@ -1,20 +1,20 @@
 export const Casetudy = [
   {
     id: 1,
-    title: "Bell Canada",
-    type: "Telecommunication",
-    content:
-      "Designed an advanced analytics solution focused on identifying new sales and booking opportunities for Bells B2B Division. The solution provides direct visibility into High Value and High-Sales volume prospect businesses, allowing Bell to develop an advanced customer-segmentation based marketing and pricing strategies.",
-    image: "/assets/images/client-images/1.webp",
-  },
-  {
-    id: 2,
 
     title: "Canadian Tire Corporation",
     type: "Retail",
     content:
       "Deployed an off-the-shelf demand planning  suite. Our solution helped reduce forecast inaccuracies to less than 5% for 95% of the stores resulting in improved labor plans. The solution deployed helps identify detailed root causes for stores with high forecast errors which then enables corrective actions.",
     image: "/assets/images/client-images/2.jpg",
+  },
+  {
+    id: 2,
+    title: "Bell Canada",
+    type: "Telecommunication",
+    content:
+      "Designed an advanced analytics solution focused on identifying sales and booking opportunities for Bell's B2B Division. The solution provides direct visibility into High Value and High-Sales volume prospect businesses, allowing Bell to develop an advanced customer-segmentation based marketing and pricing strategies.",
+    image: "/assets/images/client-images/1.webp",
   },
   {
     id: 3,
@@ -31,8 +31,16 @@ export const Casetudy = [
     type: "Retail",
     desc: "Leading a digital transformation project enabling ALDO to move its Point of Sales.",
     content:
-      "Currently leading a digital transformation project enabling ALDO to move its Point of Sales, Inventory and Transaction data from traditional environments such as SAP, Oracle and MicroStrategy to Cloud (Amazon Web Services). The team has identified 100+ diverse data sources that have to be migrated to the target cloud environment.",
+      "Implemented a digital transformation project enabling ALDO to move its Point of Sales, Inventory and Transaction data from traditional environments such as SAP, Oracle and MicroStrategy to Cloud (Amazon Web Services). The team identified 100+ diverse data sources that were migrated to the target cloud environment.",
     image: "/assets/images/client-images/4.jpg",
+  },
+  {
+    id: 8,
+    title: "Vale Canada",
+    type: "Mining & Metals",
+    image: "/assets/images/client-images/7.webp",
+    content:
+      "Developed a plant-wide dynamic simulation and optimization software for one of the largest metals mining companies. The software allows production engineers working at the processing plant to operate the facility at the prescribed optimal sets points of controllers and ensures that the operating conditions and capacity constraints are met.",
   },
   {
     id: 5,
@@ -57,12 +65,4 @@ export const Casetudy = [
   //     "Homesquare.com specializes in providing ecommerce and logistics solutions to manufacturers, retailers and end-consumers. Successfully deployed a team of data scientists and software engineers to develop a machine learning infrastructure to optimize pricing for single and multi-seller products on Amazon, Walmart and other website channels.",
   //   image: "/assets/images/grain-client-logos/homesquare.svg",
   // },
-  {
-    id: 8,
-    title: "Vale Canada",
-    type: "Mining & Metals",
-    image: "/assets/images/client-images/7.webp",
-    content:
-      "Developed a plant-wide dynamic simulation and optimization software for one of the largest metals mining companies. The software allows production engineers working at the processing plant to operate the facility at the prescribed optimal sets points of controllers and ensures that the operating conditions and capacity constraints are met.",
-  },
 ];

@@ -1,17 +1,21 @@
 "use client";
+import React, { useEffect, useState } from "react";
+
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import { buttonVariants } from "../ui/button";
-import Wrapper from "../Container/Wrapper";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { ListItem, components } from "./Navigation";
 
-const Header = () => {
+import Wrapper from "../Container/Wrapper";
+import { buttonVariants } from "../ui/button";
+import MobileNavigation from "./MobileNavigation";
+import { components, ListItem } from "./Navigation";
+
+const Header = ({ TextColor }: { TextColor: string }) => {
   // State to track whether the user has scrolled
   const [scrolled, setScrolled] = useState(false);
 
@@ -38,7 +42,7 @@ const Header = () => {
 
   // Define the header classes based on the scroll state
   const headerClasses = `fixed h-14 inset-x-0 top-0 z-30 w-full transition-all ${
-    scrolled ? "bg-gradient-emerald text-black" : "text-white"
+    scrolled ? "bg-gradient-emerald text-black" : `text-${TextColor}`
   }`;
 
   return (
@@ -49,7 +53,7 @@ const Header = () => {
             <Link href="/" className="flex z-40 font-semibold">
               <span>GRAIN ANALYTICS.</span>
             </Link>
-
+            <MobileNavigation />
             <div className="hidden items-center space-x-2 sm:flex font-bold">
               <NavigationMenu>
                 <NavigationMenuItem className="list-none">

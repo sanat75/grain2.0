@@ -1,8 +1,9 @@
+import type { Metadata } from "next";
+
 import Footer from "@/components/Footer/Footer";
 import Home from "@/components/Home/Home";
 import Header from "@/components/Navigation/Header";
-import type { Metadata } from "next";
-import Head from "next/head";
+
 export const metadata: Metadata = {
   title: "Grainanalytics",
   description:
@@ -13,7 +14,7 @@ const LandingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <div className="relative w-screen h-[600px] md:h-screen overflow-hidden">
-        <Header />
+        <Header TextColor="white" />
         {children}
       </div>
       <Home />
