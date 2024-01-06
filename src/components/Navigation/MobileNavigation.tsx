@@ -6,6 +6,15 @@ import { ArrowRight, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuItem,
+  NavigationMenuTrigger,
+} from "@radix-ui/react-navigation-menu";
+
+import { components, ListItem } from "./Navigation";
+
 const MobileNavigation = () => {
   const [isOpen, setOpen] = useState<boolean>(false);
 
@@ -29,7 +38,7 @@ const MobileNavigation = () => {
         {isOpen ? (
           <X
             onClick={toggleOpen}
-            className={`relative z-50 h-5 w-5 text-black`}
+            className={`relative z-50 h-5 w-5 text-white`}
           />
         ) : (
           <Menu onClick={toggleOpen} className={`relative z-50 h-5 w-5`} />
@@ -38,9 +47,9 @@ const MobileNavigation = () => {
 
       {isOpen ? (
         <div className="fixed  animate-in slide-in-from-top-5 fade-in-20 inset-0 z-0 w-full">
-          <ul className="absolute bg-white text-black shadow-xl grid w-full gap-3 px-10 pt-20 pb-8">
+          <ul className="absolute bg-gray-900/95 text-white shadow-xl grid w-full gap-3 px-10 pt-20 pb-8">
             <>
-              {/* <NavigationMenu>
+              <NavigationMenu>
                 <NavigationMenuItem className="list-none">
                   <NavigationMenuTrigger className="flex items-center w-full font-semibold m-0 p-o bg-transparent">
                     Services
@@ -60,8 +69,8 @@ const MobileNavigation = () => {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-              </NavigationMenu> */}
-              <li>
+              </NavigationMenu>
+              {/* <li>
                 <Link
                   className="flex items-center w-full font-semibold"
                   href="/services/pricinganalytics"
@@ -86,7 +95,7 @@ const MobileNavigation = () => {
                 >
                   Retail Analytics
                 </Link>
-              </li>
+              </li> */}
 
               {/* <li>
                 <Link

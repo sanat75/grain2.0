@@ -42,7 +42,7 @@ const Header = ({ TextColor }: { TextColor: string }) => {
 
   // Define the header classes based on the scroll state
   const headerClasses = `fixed h-14 inset-x-0 top-0 z-30 w-full transition-all ${
-    scrolled ? "bg-gradient-emerald text-black" : `text-${TextColor}`
+    scrolled ? "bg-gradient-emerald text-white" : `text-${TextColor}`
   }`;
 
   return (

@@ -1,9 +1,9 @@
 "use client";
 
 import * as React from "react";
-import Link from "next/link";
 
-import { cn } from "@/lib/utils";
+import { ArrowBigDown } from "lucide-react";
+import Link from "next/link";
 
 import {
   NavigationMenu,
@@ -14,7 +14,7 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { ArrowBigDown } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 export const components: {
   title: string;
@@ -123,7 +123,7 @@ export const ListItem = React.forwardRef<
             {...props}
           >
             <div className="text-sm font-medium leading-none">{title}</div>
-            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+            <p className="line-clamp-2 text-sm leading-snug text-gray-400">
               {children}
             </p>
           </a>
