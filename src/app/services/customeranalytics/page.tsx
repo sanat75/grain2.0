@@ -55,7 +55,7 @@ const page = () => {
       </Wrapper>
       <div className=" md:p-10 py-10 px-3 text-center  ">
         <h1 className="text-xl font-extrabold  text-primary uppercase">
-          Supporting the largest tech and data platforms
+          Supporting largest tech and data platforms
         </h1>
         {/* <p className="text-sm text-gray-600">
             Our approach starts with understanding your data evolution stage.
