@@ -11,6 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 
 import Wrapper from "../Container/Wrapper";
+import { buttonVariants } from "../ui/button";
 import MobileNavigation from "./MobileNavigation";
 import { components, ListItem } from "./Navigation";
 
@@ -60,14 +61,14 @@ const Header = ({ TextColor }: { TextColor: string }) => {
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
+                    <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[300px] ">
                       {components.map((component) => (
                         <ListItem
                           key={component.title}
                           title={component.title}
                           href={component.href}
                         >
-                          {component.description}
+                          {/* {component.description} */}
                         </ListItem>
                       ))}
                     </ul>
@@ -99,14 +100,15 @@ const Header = ({ TextColor }: { TextColor: string }) => {
               >
                 About
               </Link>
+              */}
               <Link
                 href="/"
                 className={buttonVariants({
-                  variant: "ghost",
+                  variant: "premium",
                 })}
               >
-                Contact US
-              </Link> */}
+                Book a Demo
+              </Link>
             </div>
           </div>
         </Wrapper>
