@@ -23,11 +23,11 @@ const Team = () => {
 
         <div className="flex overflow-x-scroll pb-10 hide-scroll-bar">
           <div className="flex flex-nowrap gap-8 md:gap-16">
-            <TeamCard
+            {/* <TeamCard
               name="Harshdeep Singh (MMA)"
               profession="Founder & Principal Consultant"
               imageSrc="/assets/images/team/harsh.jpg"
-            />
+            /> */}
             <TeamCard
               name="Yuri Levin"
               profession="Professor of Management Analytics and Senior Advisor"
