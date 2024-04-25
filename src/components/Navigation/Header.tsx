@@ -101,8 +101,25 @@ const Header = ({ TextColor }: { TextColor: string }) => {
                 About
               </Link>
               */}
+              {/* <Link
+                href="/OurTeam"
+                className={buttonVariants({
+                  variant: "premium",
+                })}
+                
+              >
+                Our Team
+              </Link> */}
+             <Link
+  href="/OurTeam"
+  className="inline-block px-6 py-3 text-gray-800 font-semibold transition duration-300 bg-white rounded-full shadow-md hover:bg-gray-200 hover:text-gray-900"
+>
+  Our Team
+</Link>
+
+
               <Link
-                href="/"
+                href={"https://calendly.com/grainanalytics1/30min"}
                 className={buttonVariants({
                   variant: "premium",
                 })}

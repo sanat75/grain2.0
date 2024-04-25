@@ -39,6 +39,12 @@ export const components: {
     description:
       "Complex analytics applied to comprehensive data generate the right roadmap to improve the top line, margins, market share, and customer experience. Bring together real-time insights from your e-commerce site, customer data, competitive research, and more.",
   },
+  // {
+  //   title: "Our Team",
+  //   href: "/OurTeam",
+  //   description:
+  //     "Complex analytics applied to comprehensive data generate the right roadmap to improve the top line, margins, market share, and customer experience. Bring together real-time insights from your e-commerce site, customer data, competitive research, and more.",
+  // },
 ];
 
 export function Navigation() {
@@ -133,3 +139,4 @@ export const ListItem = React.forwardRef<
   );
 });
 ListItem.displayName = "ListItem";
+

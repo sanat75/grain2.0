@@ -116,7 +116,7 @@ const Home = () => {
 
       {/* <StudyMob /> */}
       <Wrapper>
-        <Team />
+        {/* <Team /> */}
       </Wrapper>
     </>
   );

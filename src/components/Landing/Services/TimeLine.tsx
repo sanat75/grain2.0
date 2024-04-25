@@ -76,6 +76,7 @@ const TimeLine = () => {
                       better results. Build optimized user acquisition and
                       retention strategies through advanced knowledge of user
                       behavior and precise targeting.
+
                     </p>
                     <div className="text-white text-sm font-normal mt-3">
                       <p>

@@ -65,7 +65,7 @@ const DNATimeLine = () => {
                 Our proven AI and ML provide actionable predictions of customer
                 activity, proven to guide business decisions for better results.
                 Build optimized user acquisition and retention strategies
-                through advanced knowledge of user behavior and precise
+                through advanced knowledge of user behavior and preise
                 targeting.
               </motion.p>
               <div className="flex w-full flex-wrap justify-between gap-y-2">
