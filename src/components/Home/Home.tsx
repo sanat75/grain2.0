@@ -48,7 +48,7 @@ const TechTools = [
 const Home = () => {
   return (
     <>
-      <ToolsLogos Logos={brands} />
+      {/* <ToolsLogos Logos={brands} /> */}
 
       <WhoWeAre />
 

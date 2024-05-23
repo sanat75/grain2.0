@@ -7,159 +7,66 @@ import Wrapper from "../Container/Wrapper";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ToolsLogos from "../ToolsLogos";
 
-const Hero = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [ref, inView] = useInView({
-    triggerOnce: true,
-  });
 
-  const imageVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        duration: 1,
-      },
-    },
+const brands = [
+  "/assets/images/grain-client-logos/KPMG.svg",
+  "/assets/images/grain-client-logos/Allstream.svg",
+  "/assets/images/grain-client-logos/aldo.svg",
+  "/assets/images/grain-client-logos/Bell.svg",
+  "/assets/images/grain-client-logos/zayo.svg",
+  "/assets/images/grain-client-logos/Brookfield.svg",
+  "/assets/images/grain-client-logos/canadian-tire.svg",
+  "/assets/images/grain-client-logos/Deloitte.svg",
+  "/assets/images/grain-client-logos/homesquare.svg",
+  "/assets/images/grain-client-logos/Queens.svg",
+  "/assets/images/grain-client-logos/SportChek.png",
+  "/assets/images/grain-client-logos/TDbank.svg",
+  "/assets/images/grain-client-logos/toronto.png",
+  "/assets/images/grain-client-logos/vale.svg",
+  "/assets/images/grain-client-logos/smith.png",
+];
+const Hero=()=>{
+  const divStyle = {
+    background: "linear-gradient(161deg, #F2B947 22.09%, #F8DA3E 79.17%, #FFE870 100%)"
   };
+  return (<div style={divStyle} className="h-3/4 w-full">
+    <div className="size-full flex-col content-center px-4">
+      {/* <div className="flex justify-center justify-items-center text-balance text-3xl font-semibold"><h1>Revitlising Data Insights with Innovation</h1></div> */}
+      <div className="flex-col py-4">
+        <div className="flex justify-center justify-items-center flex-wrap text-3xl font-semibold lg:hidden"><h1>Revitalising </h1></div>
+        <div className="flex justify-center justify-items-center flex-wrap text-3xl font-semibold lg:hidden"><h1> Data Insights </h1></div>
+        <div className="flex justify-center justify-items-center flex-wrap text-3xl font-semibold lg:hidden"><h1>with Innovation</h1></div>
+        <div className="flex justify-center justify-items-center flex-wrap text-4xl font-semibold hidden lg:flex"><h1>Revitalising Data Insights with Innovation</h1></div>
+        
 
-  const textVariants = {
-    hidden: {
-      x: -50,
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.7,
-      },
-    },
-  };
-
-  const buttonVariants = {
-    hidden: {
-      scale: 0.8,
-      opacity: 0,
-    },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        delay: 0.5,
-      },
-    },
-  };
-
-  useEffect(() => {
-    // Ensure that the videoRef is defined before accessing its properties
-    if (videoRef.current) {
-      // Add an event listener to handle cases where the user interacts with the video before the timeout
-      const handleUserInteraction = () => {
-        videoRef.current?.play().catch((error) => {
-          // Handle autoplay error (e.g., due to user interaction requirements)
-          console.error("Autoplay error:", error);
-        });
-
-        // Remove the event listener once the video starts playing
-        document.removeEventListener("click", handleUserInteraction);
-      };
-
-      // Delayed autoplay after 2 seconds
-      const timeoutId = setTimeout(() => {
-        // Attempt to play the video
-        videoRef.current?.play().catch((error) => {
-          // Handle autoplay error (e.g., due to user interaction requirements)
-          console.error("Autoplay error:", error);
-
-          // Add an event listener for user interaction (e.g., click) to play the video
-          document.addEventListener("click", handleUserInteraction);
-        });
-      }, 2000);
-
-      // Clear the timeout and remove the event listener on component unmount
-      return () => {
-        clearTimeout(timeoutId);
-        document.removeEventListener("click", handleUserInteraction);
-      };
-    }
-  }, []);
-  return (
-    <motion.div
-      className="h-full w-full flex items-center flex-row justify-between bg-primary"
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-    >
-      <div className="relative w-full h-full ">
-        <div className="absolute inset-0 bg-black/50" />
-        <motion.div
-          variants={imageVariants}
-          className="object-cover w-full h-full "
-        >
-          <video
-            ref={videoRef}
-            poster="/assets/videos/home-screen.png"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="object-cover w-full h-full"
-          >
-            <source
-              src="https://utfs.io/f/7fd3ed86-8251-4e01-bbfb-e4532cc4902a-rpwk4m.webm"
-              type="video/webm"
-            />
-            <source src="/assets/videos/home-screen.webm" type="video/webm" />
-          </video>
-        </motion.div>
       </div>
+      <div className="flex-col py-6">
+        <div className="flex justify-center justify-items-center lg:hidden text-lg"><p>Harnessing your data potential </p></div>
+        <div className="flex justify-center justify-items-center lg:hidden text-lg"><p>by combining strategic insight </p></div>
+        <div className="flex justify-center justify-items-center lg:hidden text-lg"><p>with developmental proficiency</p></div>
+        <div className="flex justify-center justify-items-center hidden lg:flex text-lg"><p>Harnessing your data potential by combining strategic</p></div>
+        <div className="flex justify-center justify-items-center hidden lg:flex text-lg"><p>insight with developmental proficiency</p></div>
+        
+      </div>
+      <div className="flex justify-center ">
+        <div className="flex my-4 bg-white rounded-sm p-2 font-medium justify-center justify-items-center w-60 shadow-md  "><Link
+                href={"https://calendly.com/grainanalytics1/30min"}>
+                Book a Demo
+              </Link></div>
+      </div>
+    </div>
+    
+    <ToolsLogos Logos={brands} />
+    </div>
+    
+    
+    
+    
+    );
+}
 
-      <Wrapper className="absolute">
-        <motion.div
-          variants={textVariants}
-          className="font-bold pt-10 md:pt-32 space-y-5  "
-        >
-          <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl space-y-5 font-extrabold text-white">
-            <h1>
-              Revitalizing Data Insights with{" "}
-              <span className="text-primary">Innovation.</span>{" "}
-            </h1>
-          </div>
-          <div className="text-sm md:text-lg font-medium text-white">
-            <p> Pioneering the Age of Data Science and AI Advancements.</p>
-            <p>
-              We assist organizations in harnessing their data potential by
-              combining strategic insight with development proficiency.
-            </p>
-          </div>
-          <div>
-            <Link
-              target="_blank"
-              href={"https://calendly.com/grainanalytics1/30min"}
-            >
-              <motion.div
-                variants={buttonVariants}
-                initial="hidden"
-                animate={inView ? "visible" : "hidden"}
-              >
-                <Button className="md:text-lg p-4 text-white md:p-6 font-semibold flex gap-2 hover:scale-105 transition-all">
-                  <span>Book a demo</span>
-                  <span>
-                    <ArrowRight />
-                  </span>
-                </Button>
-              </motion.div>
-            </Link>
-          </div>
-        </motion.div>
-      </Wrapper>
-    </motion.div>
-  );
-};
+
 
 export default Hero;
