@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="w-full md:w-3/5 flex flex-col ">
               <div className="w-full flex flex-col md:flex-row gap-4">
-                <div className="w-full md:w-1/3">
+                {/* <div className="w-full md:w-1/3">
                   <h2 className="text-lg font-semibold mb-4 text-primary">
                     EXPERTISE
                   </h2>
@@ -54,7 +54,7 @@ const Footer = () => {
                       Pricing Analytics
                     </li>
                   </ul>
-                </div>
+                </div> */}
                 {/* <div className="w-full md:w-1/3">
                   <h2 className="text-lg font-semibold mb-4 text-primary">
                     PARTNERS

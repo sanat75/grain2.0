@@ -6,6 +6,7 @@ import WhoWeAre from "@/components/Landing/WhoWeAre";
 import MobileScroll from "@/components/mobileScroll/MobileScroll";
 import StudyDesk from "@/components/Study/StudyDesk";
 import StudySlide from "@/components/Study/StudySlide";
+import Stats from "../Landing/Stat_circles"
 
 import MobileDNATimeLine from "../Landing/Services/MobileDNATimeLine";
 import Team from "../Team/Team";
@@ -49,7 +50,10 @@ const Home = () => {
   return (
     <>
       {/* <ToolsLogos Logos={brands} /> */}
-
+      <div className="flex w-full justify-center py-4 pb-6">
+        <h1 className="text-2xl font-bold">How we help</h1>
+      </div>
+      <Stats></Stats>
       <WhoWeAre />
 
       {/* <WhatWeDo /> */}

@@ -65,15 +65,15 @@ const Team = () => {
 
 
       <div className="mx-4 flex-col lg:mx-24">
-        <div className="p-4 col-span-1 md:center">       
+        {/* <div className="p-4 col-span-1 md:center">       
    
           <h1 className="text-xl font-extrabold  text-primary uppercase mb-2">Our Team</h1>
           <p className="text-base text-body-color dark:text-dark-6">Our team includes some of the most experienced data scientists, modelling experts, statisticians and marketing experts in North
             America.</p>
-        </div>
-        <div className="flex flex-col m-4 md:flex-row">
+        </div> */}
+        {/* <div className="flex flex-col m-4 md:flex-row"> */}
         
-            <OurTeamCard
+            {/* <OurTeamCard
               name="Lokesh Verma"
               profession="Senior Design Consultant and Advisor"
               imageSrc="/assets/images/team/design.jpeg"
@@ -97,9 +97,9 @@ const Team = () => {
             <OurTeamCard  
               name="Arunim Chaudhary"
               profession="Technical Consultant & Software Developer"
-              imageSrc="/assets/images/team/PHOTO-2023-11-25-00-52-19.jpg"/>
+              imageSrc="/assets/images/team/PHOTO-2023-11-25-00-52-19.jpg"/> */}
 
-        </div>
+        {/* </div> */}
       </div>
       
 
