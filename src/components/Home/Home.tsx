@@ -7,6 +7,7 @@ import MobileScroll from "@/components/mobileScroll/MobileScroll";
 import StudyDesk from "@/components/Study/StudyDesk";
 import StudySlide from "@/components/Study/StudySlide";
 import Stats from "../Landing/Stat_circles"
+import Productsteps from "../Landing/Productsteps";
 
 import MobileDNATimeLine from "../Landing/Services/MobileDNATimeLine";
 import Team from "../Team/Team";
@@ -54,7 +55,8 @@ const Home = () => {
         <h1 className="text-2xl font-bold">How we help</h1>
       </div>
       <Stats></Stats>
-      <WhoWeAre />
+      <Productsteps></Productsteps>
+      {/* <WhoWeAre /> */}
 
       {/* <WhatWeDo /> */}
 

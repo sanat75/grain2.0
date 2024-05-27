@@ -39,6 +39,7 @@ module.exports = {
           "linear-gradient(to right, rgb(254, 240, 138), rgb(234, 179, 8))",
       },
       colors: {
+        'bright_yellow_theme':'#F8DA3E',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
