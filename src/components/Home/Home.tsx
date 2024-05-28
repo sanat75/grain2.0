@@ -55,6 +55,8 @@ const Home = () => {
         <h1 className="text-2xl font-bold">How we help</h1>
       </div>
       <Stats></Stats>
+      <br></br>
+      <br></br>
       <Productsteps></Productsteps>
       {/* <WhoWeAre /> */}
 
