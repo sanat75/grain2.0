@@ -31,7 +31,7 @@ const Stepwise_cards=()=>{
     {Step_number:"Step 4", heading:"Sign the contract", paragraph:"We start delivering the results while keeping you updated on the progress", working: "2 Working Days"}
     ]
     return (
-        <div className="flex  flex-col md:grid md:grid-cols-4">
+        <div className="flex  flex-col md:grid md:grid-cols-4 p-4 my-4">
         {data.map((Step, index)=>
         <div className="flex flex-col md:flex-row ">
             <div className="flex flex-col bg-white p-4 rounded-lg md:h-1/5 md:h-auto md:w-2/3">

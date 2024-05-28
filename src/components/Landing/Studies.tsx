@@ -50,9 +50,7 @@ const Studies = () => {
             <h1 className="text-primary uppercase font-semibold text-sm break-words">
               {item.title}
             </h1>
-            {/* <p className="text-muted-foreground text-sm">{item.desc}</p> */}
 
-            {/* <div className="flex justify-end "></div> */}
           </div>
         </motion.div>
       ))}
