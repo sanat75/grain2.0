@@ -29,7 +29,7 @@ const brands = [
         </div>
         <div className="flex flex-row flex-wrap p-4 justify-center">
             {brands.map((b,index)=>(
-                <div>
+                <div key={index}>
                     <Brand_card src={b}></Brand_card>
                 </div>
             )
@@ -44,7 +44,12 @@ const brands = [
 
   };
 
-  const Brand_card=({src})=>{
+  interface BrandCardProps {
+    src: string;
+    
+}
+
+const Brand_card: React.FC<BrandCardProps> = ({ src }) => {
     return(
     <div>
         <div className="">
