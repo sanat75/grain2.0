@@ -51,9 +51,9 @@ const MobileNavigation = () => {
             <>
               <NavigationMenu>
                 <NavigationMenuItem className="list-none">
-                  <NavigationMenuTrigger className="flex items-center w-full font-semibold m-0 p-o bg-transparent">
+                  {/* <NavigationMenuTrigger className="flex items-center w-full font-semibold m-0 p-o bg-transparent">
                     Services
-                  </NavigationMenuTrigger>
+                  </NavigationMenuTrigger> */}
                   <NavigationMenuContent>
                     <ul className="grid w-[370px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                       {components.map((component) => (

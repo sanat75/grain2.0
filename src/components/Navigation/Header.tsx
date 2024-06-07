@@ -57,9 +57,9 @@ const Header = ({ TextColor }: { TextColor: string }) => {
             <div className="hidden items-center space-x-2 sm:flex font-bold">
               <NavigationMenu>
                 <NavigationMenuItem className="list-none">
-                  <NavigationMenuTrigger className="bg-transparent ">
+                  {/* <NavigationMenuTrigger className="bg-transparent ">
                     Services
-                  </NavigationMenuTrigger>
+                  </NavigationMenuTrigger> */}
                   <NavigationMenuContent>
                     <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[300px] ">
                       {components.map((component) => (
@@ -111,10 +111,9 @@ const Header = ({ TextColor }: { TextColor: string }) => {
                 Our Team
               </Link> */}
              <Link
-  href="/OurTeam"
-  className="inline-block px-6 py-3 text-gray-800 font-semibold transition duration-300 bg-white rounded-full shadow-md hover:bg-gray-200 hover:text-gray-900"
->
-  Our Team
+ href="/OurTeam" className="inline-block px-6 py-3 text-white font-semibold transition duration-300 bg-transparent rounded-full shadow-md hover:bg-gray-200 hover:text-gray-900"> Our Team
+
+  
 </Link>
 
 
