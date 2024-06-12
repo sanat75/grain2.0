@@ -111,7 +111,7 @@ const Header = ({ TextColor }: { TextColor: string }) => {
                 Our Team
               </Link> */}
              <Link
- href="/OurTeam" className="inline-block px-6 py-3 text-white font-semibold transition duration-300 bg-transparent rounded-full shadow-md hover:bg-gray-200 hover:text-gray-900"> Our Team
+ href="/OurTeam" className="inline-block px-6 py-2 text-white font-semibold transition duration-300 bg-transparent rounded-md  hover:bg-gray-200 hover:text-gray-900"> Our Team
 
   
 </Link>

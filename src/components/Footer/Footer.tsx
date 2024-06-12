@@ -6,7 +6,7 @@ import { Input } from "../ui/input";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-black/80 text-white mt-10 px-2 md:px-0 ">
+      <footer className="bg-black/80 text-white mt-10 px-2 md:px-6 ">
         <div className=" px-8 py-8 md:py-12">
           <div className="flex flex-col md:flex-row justify-between items-start gap-8">
             <div className="w-full md:w-2/5">
