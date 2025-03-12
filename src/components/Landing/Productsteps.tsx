@@ -6,7 +6,7 @@ const Productsteps=()=>{
     <div>
         <div className="bg-bright_yellow_theme p-4 md:p-8">
             <h1 className="text-3xl font-bold py-3">How we work</h1>
-            <p className="text-base pb-6">We combine the industry's best service delivery standards with unprecedented solution personalization practices</p>
+            <p className="text-base pb-6">{`We combine the industrys best service delivery standards with unprecedented solution personalization practices`}</p>
             <Stepwise_cards></Stepwise_cards>
             
 
@@ -33,7 +33,7 @@ const Stepwise_cards=()=>{
     return (
         <div className="flex  flex-col md:grid md:grid-cols-4 p-4 my-4">
         {data.map((Step, index)=>
-        <div className="flex flex-col md:flex-row ">
+        <div className="flex flex-col md:flex-row " key={index.toString()}>
             <div className="flex flex-col bg-white p-4 rounded-lg md:h-1/5 md:h-auto md:w-2/3">
                 <div className="flex justify-center bg-orange-100 rounded w-1/3 md:w-auto inline-block">
                     <p className="font-bold text-orange-400">{Step.Step_number}</p>

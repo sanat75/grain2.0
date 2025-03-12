@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Markdown from 'react-markdown'
 import {markdownstr} from "../markdown/markdown"
 
 
@@ -16,7 +15,7 @@ const Team = () => {
             America.</p>
         </div>
         <div className="flex flex-col m-4 md:col-span-4 grid md:grid-cols-2  ">
-        <TeamCard
+        {/* <TeamCard
               name="Yuri Levin"
               profession="Professor of Management Analytics and Senior Advisor"
               imageSrc="/assets/images/team/images3.jpeg"
@@ -57,7 +56,7 @@ const Team = () => {
               imageSrc="/assets/images/team/images2.jpeg"
               role=""
             />
-          
+           */}
 
         </div>
       </div>
@@ -315,101 +314,101 @@ const Team = () => {
 export default Team;
 
 
-export const TeamCard = ({
-  imageSrc,
-  name,
-  profession,
-  role,
-}: {
-  imageSrc: string;
-  name: string;
-  profession: string;
-  role:string;
-}) => {
-  return (
-    // <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-8 lg:mb-0">
-    //   <div className="relative pb-64 mb-4 rounded shadow lg:pb-80">
-    //     <img
-    //       className="absolute object-cover w-full h-full rounded"
-    //       src={imageSrc}
-    //       alt="Person"
-    //     />
-    //   </div>
-    //   <div className="flex flex-col items-start">
-    //     <p className="text-sm font-semibold">{name}</p>
-    //     <p className="text-xs text-gray-800">{profession}</p>
-    //   </div>
-    // </div>
-    <div className="py-4 w-full grid grid-cols-3 md:grid md:grid-cols-1  md:w-5/6  md:h-full md:px-2 md:py-2 md:mb-8 lg:mb-0 md:my-2">
-    <div className="grid-col-span-1 md:relative md:pb-64 md:mb-4 md:rounded md:shadow  lg:pb-56 ">
+// export const TeamCard = ({
+//   imageSrc,
+//   name,
+//   profession,
+//   role,
+// }: {
+//   imageSrc: string;
+//   name: string;
+//   profession: string;
+//   role:string;
+// }) => {
+//   return (
+//     // <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-8 lg:mb-0">
+//     //   <div className="relative pb-64 mb-4 rounded shadow lg:pb-80">
+//     //     <img
+//     //       className="absolute object-cover w-full h-full rounded"
+//     //       src={imageSrc}
+//     //       alt="Person"
+//     //     />
+//     //   </div>
+//     //   <div className="flex flex-col items-start">
+//     //     <p className="text-sm font-semibold">{name}</p>
+//     //     <p className="text-xs text-gray-800">{profession}</p>
+//     //   </div>
+//     // </div>
+//     <div className="py-4 w-full grid grid-cols-3 md:grid md:grid-cols-1  md:w-5/6  md:h-full md:px-2 md:py-2 md:mb-8 lg:mb-0 md:my-2">
+//     <div className="grid-col-span-1 md:relative md:pb-64 md:mb-4 md:rounded md:shadow  lg:pb-56 ">
       
-      <img
-        className="md:absolute md:object-cover md:w-full md:h-full rounded-full md:rounded"
-        src={imageSrc}
-        alt="Person"
-      />
-    </div>
-    <div className=" px-2 col-span-2 flex flex-col justify-items-center justify-center md:items-start">
-      <p className="text-sm md:text-lg font-semibold">{name}</p>
-      <p className="text-sm md:text-base text-gray-800">{profession}</p>
-      <p className="text-xs text-gray-800 py-2 hidden md:block">{role}</p>
-    </div>
-  </div>
-  //   <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-8 lg:mb-0">
-  //   <div className="relative pb-64 mb-4 rounded shadow lg:pb-80">
-  //     <img
-  //       className=" "
-  //       src={imageSrc}
-  //       alt="Person"
-  //     />
-  //   </div>
-  //   <div className="flex flex-col items-start">
-  //     <p className="text-sm font-semibold">{name}</p>
-  //     <p className="text-xs text-gray-800">{profession}</p>
-  //   </div>
-  // </div>
-  );
-};
+//       <img
+//         className="md:absolute md:object-cover md:w-full md:h-full rounded-full md:rounded"
+//         src={imageSrc}
+//         alt="Person"
+//       />
+//     </div>
+//     <div className=" px-2 col-span-2 flex flex-col justify-items-center justify-center md:items-start">
+//       <p className="text-sm md:text-lg font-semibold">{name}</p>
+//       <p className="text-sm md:text-base text-gray-800">{profession}</p>
+//       <p className="text-xs text-gray-800 py-2 hidden md:block">{role}</p>
+//     </div>
+//   </div>
+//   //   <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-8 lg:mb-0">
+//   //   <div className="relative pb-64 mb-4 rounded shadow lg:pb-80">
+//   //     <img
+//   //       className=" "
+//   //       src={imageSrc}
+//   //       alt="Person"
+//   //     />
+//   //   </div>
+//   //   <div className="flex flex-col items-start">
+//   //     <p className="text-sm font-semibold">{name}</p>
+//   //     <p className="text-xs text-gray-800">{profession}</p>
+//   //   </div>
+//   // </div>
+//   );
+// };
 
 
-export const OurTeamCard = ({
-  imageSrc,
-  name,
-  profession,
-}: {
-  imageSrc: string;
-  name: string;
-  profession: string;
-}) => {
-  return (
-    // <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-8 lg:mb-0">
-    //   <div className="relative pb-64 mb-4 rounded shadow lg:pb-80">
-    //     <img
-    //       className="absolute object-cover w-full h-full rounded"
-    //       src={imageSrc}
-    //       alt="Person"
-    //     />
-    //   </div>
-    //   <div className="flex flex-col items-start">
-    //     <p className="text-sm font-semibold">{name}</p>
-    //     <p className="text-xs text-gray-800">{profession}</p>
-    //   </div>
-    // </div>
-    <div className="w-full md:w-1/3  md:h-full px-2 mb-8 lg:mb-0 md:my-4 md:m-2">
-    <div className="relative pb-64 mb-4  lg:pb-56 ">
-      <img
-        className="absolute object-cover w-full h-full rounded md:rounded-full"
-        src={imageSrc}
-        alt="Person"
-      />
-    </div>
-    <div className="flex flex-col">
-      <div className="md:flex items-center justify-center h-full w-full"><p className="text-sm font-semibold ">{name}</p></div>
-      <div className="md:flex items-center justify-center h-full w-full"><p className="text-xs text-gray-800 ">{profession}</p></div>
+// export const OurTeamCard = ({
+//   imageSrc,
+//   name,
+//   profession,
+// }: {
+//   imageSrc: string;
+//   name: string;
+//   profession: string;
+// }) => {
+//   return (
+//     // <div className="w-full sm:w-1/2 md:w-1/3 px-2 mb-8 lg:mb-0">
+//     //   <div className="relative pb-64 mb-4 rounded shadow lg:pb-80">
+//     //     <img
+//     //       className="absolute object-cover w-full h-full rounded"
+//     //       src={imageSrc}
+//     //       alt="Person"
+//     //     />
+//     //   </div>
+//     //   <div className="flex flex-col items-start">
+//     //     <p className="text-sm font-semibold">{name}</p>
+//     //     <p className="text-xs text-gray-800">{profession}</p>
+//     //   </div>
+//     // </div>
+//     <div className="w-full md:w-1/3  md:h-full px-2 mb-8 lg:mb-0 md:my-4 md:m-2">
+//     <div className="relative pb-64 mb-4  lg:pb-56 ">
+//       <img
+//         className="absolute object-cover w-full h-full rounded md:rounded-full"
+//         src={imageSrc}
+//         alt="Person"
+//       />
+//     </div>
+//     <div className="flex flex-col">
+//       <div className="md:flex items-center justify-center h-full w-full"><p className="text-sm font-semibold ">{name}</p></div>
+//       <div className="md:flex items-center justify-center h-full w-full"><p className="text-xs text-gray-800 ">{profession}</p></div>
       
       
-    </div>
-  </div>
+//     </div>
+//   </div>
 
-  );
-};
+//   );
+// };
