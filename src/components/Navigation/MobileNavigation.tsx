@@ -109,16 +109,7 @@ const MobileNavigation = () => {
               </li> */}
             </>
             <>
-            <li>
-                <Link
-                  // className="flex items-center w-full font-semibold text-primary"
-                  className="flex items-center w-full font-semibold m-0 p-o bg-transparent"
-                  href={"/OurTeam"}
-                >
-                  Our Team
-                  {/* <ArrowRight className="ml-2 h-5 w-5" /> */}
-                </Link>
-              </li>
+               
               <li>
                 <Link
                   className="flex items-center w-full font-semibold text-primary"
