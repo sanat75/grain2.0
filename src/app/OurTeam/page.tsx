@@ -20,42 +20,42 @@ const Team = () => {
               name="Yuri Levin"
               profession="Professor of Management Analytics and Senior Advisor"
               imageSrc="/assets/images/team/images3.jpeg"
-              role="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi "
+              role=""
 
             />
             <TeamCard
               name="⁠Mikhail Nediak (PHD)"
               profession="Professor of Management Analytics and Principal Consultant"
               imageSrc="/assets/images/team/images1.jpg"
-              role="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+              role=""
 
             />
             <TeamCard
               name="Anton Ovchinnikov"
               profession="Professor of Management Analytics and Consultant"
               imageSrc="/assets/images/team/Anton.jpeg"
-              role="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+              role=""
 
             />
             <TeamCard
               name="Fraser Gray Smith (MIB, MSc)"
               profession="Analytics & Data Science Advisor"
               imageSrc="/assets/images/team/john.jpeg"
-              role="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+              role=""
 
             />
             <TeamCard
               name="Joe Quaresima"
               profession="Analytics & Business Advisor"
               imageSrc="/assets/images/team/joe2.jpeg"
-              role="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+              role=""
 
             />
             <TeamCard
               name="Michael Tang"
               profession="Analytics & Business Advisor"
               imageSrc="/assets/images/team/images2.jpeg"
-              role="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi"
+              role=""
             />
           
 
